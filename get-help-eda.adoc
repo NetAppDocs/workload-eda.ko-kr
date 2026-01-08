@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: get-help-eda.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: 'NetApp Workload Factory 및 클라우드 서비스에 대해 다양한 방식으로 지원을 제공합니다. 지식 기반(KB) 문서 및 커뮤니티 포럼과 같은 광범위한 무료 자가 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 고객 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.' 
+---
+= EDA용 Workload Factory 관련 도움을 받으세요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory 및 클라우드 서비스에 대해 다양한 방식으로 지원을 제공합니다. 지식 기반(KB) 문서 및 커뮤니티 포럼과 같은 광범위한 무료 자가 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 고객 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.
+
+
+
+== ONTAP 용 FSx 지원을 받으세요
+
+FSx for ONTAP, 해당 인프라 또는 해당 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 Workload Factory 설명서에 있는 "도움 받기" 섹션을 참조하십시오.
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["ONTAP 용 Amazon FSx"^]
+
+Workload Factory 및 해당 스토리지 솔루션과 서비스에 대한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.
+
+
+
+== 셀프 지원 옵션 사용
+
+다음 옵션은 주 7일, 하루 24시간 무료로 이용 가능합니다.
+
+* 설명서
++
+현재 보고 계신 것은 Workload Factory 문서입니다.
+
+* https://kb.netapp.com["지식 기반"^]
++
+Workload Factory 기술 자료를 검색하여 문제 해결에 도움이 되는 문서를 찾아보세요.
+
+* http://community.netapp.com/["커뮤니티"^]
++
+Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 팔로우하거나 새로운 토론을 시작해 보세요.
+
+
+
+
+
+== NetApp 지원을 통해 사례 만들기
+
+위에 나열된 셀프 지원 옵션 외에도, 지원을 활성화한 후 NetApp 지원 전문가와 협력하여 문제를 해결할 수 있습니다.
+
+.시작하기 전에
+*케이스 생성* 기능을 사용하려면 먼저 지원 등록을 해야 합니다. NetApp 지원 사이트 자격 증명을 Workload Factory 로그인과 연결하십시오. link:support-registration.html["지원 등록 방법 알아보기"].
+
+.단계
+. Workload Factory 콘솔의 오른쪽 상단에서 *도움말 > 지원*을 선택하십시오.
++
+이 옵션을 선택하면 NetApp Console 새 브라우저 탭에서 열리고 지원 대시보드가 ​​로드됩니다.
+
+. *리소스* 페이지에서 기술 지원 아래에 있는 사용 가능한 옵션 중 하나를 선택하세요.
++
+.. 전화로 상담원과 통화하고 싶으시면 *전화하기*를 선택하세요. netapp.com에서 전화할 수 있는 전화번호가 나열된 페이지로 이동하게 됩니다.
+.. NetApp 지원 전문가에게 티켓을 열려면 *사례 만들기*를 선택하세요.
++
+*** *서비스*: *워크로드 팩토리*를 선택하세요.
+*** *사례 우선순위*: 낮음, 보통, 높음 또는 중요로 사례의 우선순위를 선택합니다.
++
+이러한 우선순위에 대한 자세한 내용을 알아보려면 필드 이름 옆에 있는 정보 아이콘 위에 마우스를 올려놓으세요.
+
+*** *문제 설명*: 해당 오류 메시지나 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공하세요.
+*** *추가 이메일 주소*: 이 문제를 다른 사람에게 알리려면 추가 이메일 주소를 입력하세요.
+*** *첨부파일(선택사항)*: 최대 5개의 첨부파일을 한 번에 하나씩 업로드하세요.
++
+첨부파일은 파일당 25MB로 제한됩니다. 다음 파일 확장자가 지원됩니다: txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx, csv.
+
+
+
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["NetApp 지원팀에 사례를 생성할 수 있는 사례 생성 양식의 스크린샷입니다."]
+
+
+
+.당신이 완료한 후
+지원 사례 번호가 포함된 팝업이 나타납니다. NetApp 지원 전문가가 귀하의 사례를 검토하고 곧 연락드릴 것입니다.
+
+지원 사례 기록을 보려면 *설정 > 타임라인*을 선택하고 "지원 사례 만들기"라는 이름의 작업을 찾으세요. 가장 오른쪽에 있는 버튼을 누르면 동작을 확장하여 자세한 내용을 볼 수 있습니다.
+
+사례를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.
+
+"선택한 서비스에 대해 사례를 생성할 권한이 없습니다."
+
+이 오류는 NSS 계정과 해당 계정이 연결된 등록 회사가 NetApp Console 계정)의 등록 회사와 동일하지 않음을 의미할 수 있습니다. 960xxxx) 또는 시스템 일련 번호. 다음 옵션 중 하나를 이용하여 도움을 요청할 수 있습니다.
+
+* 제품 내 채팅을 사용하세요
+* 비기술적 사례를 제출하세요 https://mysupport.netapp.com/site/help[]
+
+
+
+
+== 지원 사례 관리(미리 보기)
+
+NetApp Console 에서 진행 중인 지원 사례와 해결된 지원 사례를 직접 확인하고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 사례를 관리할 수 있습니다.
+
+사례 관리 기능은 미리 보기로 제공됩니다. 우리는 이 경험을 더욱 개선하고 향후 릴리스에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 이용해 피드백을 보내주세요.
+
+다음 사항에 유의하세요.
+
+* 페이지 상단의 사례 관리 대시보드는 두 가지 보기를 제공합니다.
++
+** 왼쪽 보기는 귀하가 제공한 NSS 계정 사용자에 의해 지난 3개월 동안 열린 총 사례를 보여줍니다.
+** 오른쪽 보기는 사용자 NSS 계정을 기준으로 지난 3개월 동안 회사 수준에서 열린 총 사례를 보여줍니다.
+
+
++
+표의 결과는 귀하가 선택한 보기와 관련된 사례를 반영합니다.
+
+* 관심 있는 열을 추가하거나 제거할 수 있으며, 우선순위 및 상태와 같은 열의 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.
++
+자세한 내용은 아래 단계를 참조하세요.
+
+* 사례별로 사례 메모를 업데이트하거나 아직 닫힘 또는 닫힘 보류 상태가 아닌 사례를 닫는 기능을 제공합니다.
+
+
+.단계
+. Workload Factory 콘솔의 오른쪽 상단에서 *도움말 > 지원*을 선택하십시오.
++
+이 옵션을 선택하면 NetApp Console 새 브라우저 탭에서 열리고 지원 대시보드가 ​​로드됩니다.
+
+. *케이스 관리*를 선택하고, 메시지가 표시되면 NetApp Console 에 NSS 계정을 추가하세요.
++
+*케이스 관리* 페이지에는 NetApp Console 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. 이 계정은 *NSS 관리* 페이지 상단에 표시되는 것과 동일한 NSS 계정입니다.
+
+. 필요에 따라 표에 표시되는 정보를 수정합니다.
++
+** *조직 사례*에서 *보기*를 선택하면 회사와 관련된 모든 사례를 볼 수 있습니다.
+** 정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정하세요.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["케이스 관리 페이지의 표 위에 있는 옵션의 스크린샷으로, 이를 통해 정확한 날짜 범위나 지난 7일, 30일 또는 3개월을 선택할 수 있습니다."]
+
+** 열의 내용을 필터링합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["활성 또는 닫힘과 같은 특정 상태와 일치하는 사례를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷입니다."]
+
+** 표에 나타나는 열을 변경하려면 다음을 선택하세요.image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["표에 나타나는 플러스 아이콘"] 그런 다음 표시하려는 열을 선택합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["표에 표시할 수 있는 열을 보여주는 스크린샷입니다."]
+
+
+
+. 기존 사례를 관리하려면 다음을 선택하세요.image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["표의 마지막 열에 나타나는 세 개의 점이 있는 아이콘"] 그리고 사용 가능한 옵션 중 하나를 선택하세요:
++
+** *사례 보기*: 특정 사례에 대한 전체 세부 정보를 확인하세요.
+** *사례 메모 업데이트*: 문제에 대한 추가 세부 정보를 제공하거나 *파일 업로드*를 선택하여 최대 5개의 파일을 첨부하세요.
++
+첨부파일은 파일당 25MB로 제한됩니다. 다음 파일 확장자가 지원됩니다: txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx, csv.
+
+** *사건 종결*: 사건을 종결하는 이유를 자세히 입력하고 *사건 종결*을 선택하세요.
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["표의 마지막 열에 있는 메뉴를 선택한 후 취할 수 있는 작업을 보여주는 스크린샷입니다."]
+
+

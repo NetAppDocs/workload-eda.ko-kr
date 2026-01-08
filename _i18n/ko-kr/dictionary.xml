@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="4cd460e2c71c2ffba346f4471ea0fa00" category="doc">빌더 워크로드 초기 릴리스</block>
+  <block id="323dd81fcb961ffe9d54fa99152c0e51" category="paragraph">BlueXP Workload Factory for Builders는 소프트웨어 버전 사용 및 접근을 간소화하여 맞춤형 도구나 스크립트가 필요하지 않도록 해줍니다. 이 기능을 통해 Perforce Helix Core와 통합된 편리한 개발 작업 공간으로 소프트웨어 버전을 즉시 복제하여 사용할 수 있으므로 시간과 리소스를 절약할 수 있습니다.</block>
+  <block id="5f9f7bdd8b86c6cc583afabbd903007c" category="paragraph">초기 릴리스에는 Codebox를 사용하여 프로젝트 및 작업 공간을 관리하고 작업을 자동화하는 기능이 포함되어 있습니다. 빌더를 Perforce Helix Core와 통합하면 각 프로젝트의 다양한 버전을 관리하고 빠르게 전환할 수 있습니다.</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="doc">업데이트된 권한 용어</block>
+  <block id="962abee1b74c5d5ab5f9bd0c47cbb068" category="paragraph">Workload Factory 사용자 인터페이스 및 문서에서는 이제 읽기 권한을 나타낼 때 "읽기 전용"이라는 용어를, 자동화 권한을 나타낼 때 "읽기/쓰기"라는 용어를 사용합니다.</block>
+  <block id="fc031ba945e09cb6053f39527ae4937f" category="doc">클론 지원</block>
+  <block id="2755dd60db288e29e6f06b54dc696d1e" category="paragraph">이제 BlueXP Workload Factory for Builders에서 프로젝트를 복제할 수 있습니다. 프로젝트를 복제하면 Builders는 스냅샷에서 원본과 동일한 구성의 새 프로젝트를 생성합니다. 클론 기능은 유사한 프로젝트를 빠르게 생성하거나 테스트 목적으로 사용할 때 유용합니다. Builders의 지침에 따라 새 프로젝트 복제본을 마운트할 수 있습니다.</block>
+  <block id="2c66253b5627d775e178720764bbf7bf" category="inline-link">BlueXP Workload Factory for Builder 프로젝트의 버전을 관리합니다.</block>
+  <block id="5cfea31bf03490b6d93b9e2e79a99599" category="paragraph"><block ref="5cfea31bf03490b6d93b9e2e79a99599" category="inline-link-rx"></block></block>
+  <block id="2bbead322f2dd5c4a40fbd66537e304f" category="doc">BlueXP workload factory NetApp Workload Factory 변경되었습니다.</block>
+  <block id="9c80606adc6065bc48c6d99fbb8c3f1d" category="paragraph">BlueXP 데이터 인프라 관리에 있어서의 역할을 더 잘 반영하도록 이름이 바뀌고 재설계되었습니다. 결과적으로 BlueXP workload factory NetApp Workload Factory 로 이름이 변경되었습니다.</block>
+  <block id="ef702fb37688ffbfdf16f6b005df7436" category="doc">NetApp Workload Factory for Builders가 이제 NetApp Workload Factory for EDA로 변경되었습니다.</block>
+  <block id="f48bd4568e33f95e23f1ea90df81f8af" category="paragraph">Workload Factory for Builders가 이제 Workload Factory for EDA로 이름이 변경되었습니다. 이번 명칭 변경은 전자 설계 자동화(EDA) 워크로드에 대한 집중을 반영합니다.</block>
+  <block id="8e2c84558eaf80d5e8e99422d320b395" category="paragraph">Workload Factory for EDA는 여러 파일 시스템에서 ONTAP 용 FSx를 최적화하는 데 도움을 줍니다. 스토리지 매개변수를 자동화하고, 성능 제약 조건을 분석하고, EDA 프로젝트에 대한 통찰력을 얻음으로써 성능을 최적화하고 운영 비용을 절감할 수 있습니다. EDA용 워크로드 팩토리는 IaC(Infrastructure as Code) 프레임워크와 통합되도록 설계되었습니다.</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="section-title">Ask me AI 어시스턴트 홈페이지 통합</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
+  <block id="08c1bf6e31ef174ff608b5eb3d282063" category="summary">Codebox를 사용하면 호스트 배포, 데이터베이스 생성 등을 자동화할 수 있습니다.</block>
+  <block id="e7865839bdb0670c8ccd4e6029a8580b" category="doc">Codebox를 사용하여 EDA 워크로드 작업을 자동화하세요.</block>
+  <block id="971492a505365b895740e7ae6a7e5a70" category="paragraph">Codebox를 사용하면 프로젝트 생성 및 데이터 보호 작업을 자동화할 수 있습니다. Codebox는 Workload Factory에서 지원하는 모든 작업을 실행하는 코드를 생성하는 데 도움이 되는 IaC(Infrastructure as Code) 보조 도구입니다.</block>
+  <block id="bd282943a337f4287ca0d70f9a836261" category="inline-link-macro">코드박스 자동화</block>
+  <block id="7954c9f6b266222ad558a397a97a8531" category="paragraph">자세히 알아보기 <block ref="d6a91743d83ea88006a3d66c27289981" category="inline-link-macro-rx"></block> 그리고 사용 방법.</block>
+  <block id="14f9e37de51ef9bfb9372bcc2644a7d3" category="summary">NetApp Workload Factory for EDA의 워크스페이스는 프로젝트 스냅샷을 기반으로 하는 프로젝트의 Perforce 표현입니다. EDA 프로젝트의 일부로 워크스페이스를 생성할 수 있습니다.</block>
+  <block id="fb1790577e5f5d791fc376eb201401a4" category="doc">EDA 워크스페이스를 생성하세요</block>
+  <block id="ae1c3d36c4598376c2263464aa4284de" category="paragraph">NetApp Workload Factory for EDA의 워크스페이스는 특정 시점의 프로젝트를 Perforce로 표현한 것입니다. 워크스페이스는 프로젝트 스냅샷을 기반으로 생성됩니다. EDA 프로젝트 내에서 새로운 작업 공간을 만들 수 있습니다. Perforce UI에서 워크스페이스를 생성할 수 있습니다.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
+  <block id="678fde6363662adb0e14514d5e0ea203" category="inline-link-macro">Perforce와 EDA를 통합하세요</block>
+  <block id="40e2dc00245d381e14b11b6af1aa9325" category="paragraph">Perforce Helix Visual Client에 EDA가 통합되었는지 확인하십시오. 보다 <block ref="4451768d6f25b13dcd53f8576a8b3816" category="inline-link-macro-rx"></block> 더 자세한 정보를 원하시면.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
+  <block id="da8298c164d94d09143ffe89648c5d3c" category="list-text">Perforce에 로그인하세요.</block>
+  <block id="0d8bfed2e411f7c8b7dff958995d4b8d" category="list-text">Perforce 메뉴에서 *보기* &gt; *WF*를 선택합니다.</block>
+  <block id="905278c1db6bd8497d1b33523cff6fc7" category="paragraph">Perforce UI 내에 Workload Factory 로그인 화면이 나타납니다.</block>
+  <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">콘솔 경험</block>
+  <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">다음 중 하나를 사용하여 로그인하세요. <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>.</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다.</block>
+  <block id="b8e80bdc143cd93756cdc18a9e1dbec8" category="list-text">메뉴를 선택하세요 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 그런 다음 *EDA*를 선택하십시오.</block>
+  <block id="e697a1da1a063826188852846e2e5db7" category="list-text">CI/CD를 선택하세요.</block>
+  <block id="d09286017eb6bb6a42c1f431c40b762f" category="list-text">*프로젝트 생성*을 선택한 다음 *워크스페이스 생성*을 선택합니다.</block>
+  <block id="7e8ef7f44044b6d0f74789559287feea" category="list-text">워크스페이스 프로젝트 생성 페이지에서 다음 정보를 제공하십시오.</block>
+  <block id="84e0437fbb34f7df37fde5cd3164b871" category="list-text">워크스페이스의 기반으로 사용할 스냅샷을 선택하세요.</block>
+  <block id="823e06a14b6847643d4e237d4323c8c4" category="list-text">워크스페이스 이름을 입력하세요.</block>
+  <block id="23746643d2ed59cbb329d766d3165e53" category="list-text">선택적으로, 작업 공간을 확보하기 위한 사용자 식별자를 입력할 수 있습니다. 이 식별자는 이 워크스페이스를 사용할 개발자의 Perforce 사용자 ID와 일치해야 합니다.</block>
+  <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">*만들기*를 선택하세요.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
+  <block id="2d8f6486127f82c2bea30c11d743290d" category="paragraph">워크스페이스가 생성되었으며, 워크스페이스 페이지의 워크스페이스 목록에 나타납니다.</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp Workload Factory 및 클라우드 서비스에 대해 다양한 방식으로 지원을 제공합니다. 지식 기반(KB) 문서 및 커뮤니티 포럼과 같은 광범위한 무료 자가 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 고객 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="9dd6fbb22308fb878005d005d21076f4" category="doc">EDA용 Workload Factory 관련 도움을 받으세요</block>
+  <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">ONTAP 용 FSx 지원을 받으세요</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">FSx for ONTAP, 해당 인프라 또는 해당 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 Workload Factory 설명서에 있는 "도움 받기" 섹션을 참조하십시오.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 용 Amazon FSx</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="paragraph"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Workload Factory 및 해당 스토리지 솔루션과 서비스에 대한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">셀프 지원 옵션 사용</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">다음 옵션은 주 7일, 하루 24시간 무료로 이용 가능합니다.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">설명서</block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">현재 보고 계신 것은 Workload Factory 문서입니다.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">지식 기반</block>
+  <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Workload Factory 기술 자료를 검색하여 문제 해결에 도움이 되는 문서를 찾아보세요.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 팔로우하거나 새로운 토론을 시작해 보세요.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp 지원을 통해 사례 만들기</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위에 나열된 셀프 지원 옵션 외에도, 지원을 활성화한 후 NetApp 지원 전문가와 협력하여 문제를 해결할 수 있습니다.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">시작하기 전에</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법 알아보기</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">*케이스 생성* 기능을 사용하려면 먼저 지원 등록을 해야 합니다. NetApp 지원 사이트 자격 증명을 Workload Factory 로그인과 연결하십시오. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>.</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Workload Factory 콘솔의 오른쪽 상단에서 *도움말 &gt; 지원*을 선택하십시오.</block>
+  <block id="6e74b203173a9994c366c7e7a3cf4748" category="paragraph">이 옵션을 선택하면 NetApp Console 새 브라우저 탭에서 열리고 지원 대시보드가 ​​로드됩니다.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">*리소스* 페이지에서 기술 지원 아래에 있는 사용 가능한 옵션 중 하나를 선택하세요.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 상담원과 통화하고 싶으시면 *전화하기*를 선택하세요. netapp.com에서 전화할 수 있는 전화번호가 나열된 페이지로 이동하게 됩니다.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">NetApp 지원 전문가에게 티켓을 열려면 *사례 만들기*를 선택하세요.</block>
+  <block id="d7d0da18fbb8f8f85c1364883fbdf4c7" category="list-text">*서비스*: *워크로드 팩토리*를 선택하세요.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*사례 우선순위*: 낮음, 보통, 높음 또는 중요로 사례의 우선순위를 선택합니다.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">이러한 우선순위에 대한 자세한 내용을 알아보려면 필드 이름 옆에 있는 정보 아이콘 위에 마우스를 올려놓으세요.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*문제 설명*: 해당 오류 메시지나 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공하세요.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*추가 이메일 주소*: 이 문제를 다른 사람에게 알리려면 추가 이메일 주소를 입력하세요.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*첨부파일(선택사항)*: 최대 5개의 첨부파일을 한 번에 하나씩 업로드하세요.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부파일은 파일당 25MB로 제한됩니다. 다음 파일 확장자가 지원됩니다: txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx, csv.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp 지원팀에 사례를 생성할 수 있는 사례 생성 양식의 스크린샷입니다.</block>
+  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">당신이 완료한 후</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 사례 번호가 포함된 팝업이 나타납니다. NetApp 지원 전문가가 귀하의 사례를 검토하고 곧 연락드릴 것입니다.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">지원 사례 기록을 보려면 *설정 &gt; 타임라인*을 선택하고 "지원 사례 만들기"라는 이름의 작업을 찾으세요. 가장 오른쪽에 있는 버튼을 누르면 동작을 확장하여 자세한 내용을 볼 수 있습니다.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">사례를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"선택한 서비스에 대해 사례를 생성할 권한이 없습니다."</block>
+  <block id="3f13dd54818447375c92bf35e0a35f00" category="paragraph">이 오류는 NSS 계정과 해당 계정이 연결된 등록 회사가 NetApp Console 계정)의 등록 회사와 동일하지 않음을 의미할 수 있습니다. 960xxxx) 또는 시스템 일련 번호. 다음 옵션 중 하나를 이용하여 도움을 요청할 수 있습니다.</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용하세요</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">비기술적 사례를 제출하세요<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">지원 사례 관리(미리 보기)</block>
+  <block id="289d2ab2d9b0e116790d035921c12b56" category="paragraph">NetApp Console 에서 진행 중인 지원 사례와 해결된 지원 사례를 직접 확인하고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 사례를 관리할 수 있습니다.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">사례 관리 기능은 미리 보기로 제공됩니다. 우리는 이 경험을 더욱 개선하고 향후 릴리스에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 이용해 피드백을 보내주세요.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">다음 사항에 유의하세요.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">페이지 상단의 사례 관리 대시보드는 두 가지 보기를 제공합니다.</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">왼쪽 보기는 귀하가 제공한 NSS 계정 사용자에 의해 지난 3개월 동안 열린 총 사례를 보여줍니다.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">오른쪽 보기는 사용자 NSS 계정을 기준으로 지난 3개월 동안 회사 수준에서 열린 총 사례를 보여줍니다.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">표의 결과는 귀하가 선택한 보기와 관련된 사례를 반영합니다.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">관심 있는 열을 추가하거나 제거할 수 있으며, 우선순위 및 상태와 같은 열의 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">자세한 내용은 아래 단계를 참조하세요.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">사례별로 사례 메모를 업데이트하거나 아직 닫힘 또는 닫힘 보류 상태가 아닌 사례를 닫는 기능을 제공합니다.</block>
+  <block id="f9a63cd3a07378e169c58addd5fdce8d" category="paragraph">이 옵션을 선택하면 NetApp Console 새 브라우저 탭에서 열리고 지원 대시보드가 ​​로드됩니다.</block>
+  <block id="785b440c0be1d853c5e2f4fb1f1ee2ab" category="list-text">*케이스 관리*를 선택하고, 메시지가 표시되면 NetApp Console 에 NSS 계정을 추가하세요.</block>
+  <block id="c80d8addb8aa8e8872bbc44894b077f3" category="paragraph">*케이스 관리* 페이지에는 NetApp Console 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. 이 계정은 *NSS 관리* 페이지 상단에 표시되는 것과 동일한 NSS 계정입니다.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">필요에 따라 표에 표시되는 정보를 수정합니다.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">*조직 사례*에서 *보기*를 선택하면 회사와 관련된 모든 사례를 볼 수 있습니다.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정하세요.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션의 스크린샷으로, 이를 통해 정확한 날짜 범위나 지난 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
+  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 닫힘과 같은 특정 상태와 일치하는 사례를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷입니다.</block>
+  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">표에 나타나는 플러스 아이콘</block>
+  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">표에 나타나는 열을 변경하려면 다음을 선택하세요.<block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block> 그런 다음 표시하려는 열을 선택합니다.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여주는 스크린샷입니다.</block>
+  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 나타나는 세 개의 점이 있는 아이콘</block>
+  <block id="000a1376035909240f559b8ab724030c" category="list-text">기존 사례를 관리하려면 다음을 선택하세요.<block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block> 그리고 사용 가능한 옵션 중 하나를 선택하세요:</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*사례 보기*: 특정 사례에 대한 전체 세부 정보를 확인하세요.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*사례 메모 업데이트*: 문제에 대한 추가 세부 정보를 제공하거나 *파일 업로드*를 선택하여 최대 5개의 파일을 첨부하세요.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*사건 종결*: 사건을 종결하는 이유를 자세히 입력하고 *사건 종결*을 선택하세요.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에 있는 메뉴를 선택한 후 취할 수 있는 작업을 보여주는 스크린샷입니다.</block>
+  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e2c3d4fe26e2a57771176f8d971d83e0" category="summary">Perforce와 EDA를 통합하는 방법을 알아보세요.</block>
+  <block id="cdca25b114cc65b57af3f2dc65baa554" category="paragraph">EDA를 Perforce Helix Visual Client(P4V)와 통합하여 개발자가 Perforce CLI를 사용하여 작업 공간을 관리할 수 있도록 합니다. 이를 통해 개발자는 프로젝트와 작업 공간 간에 빠르게 전환할 수 있어 개발 시간을 절약할 수 있습니다.</block>
+  <block id="46a36d37c0e9a3ece7f56b7e840f1b27" category="inline-link">P4V 통합 파일</block>
+  <block id="7c359035b875bf519bc132bc94cafdab" category="list-text">다운로드하세요<block ref="093cf1344a1daf53cd0d14d747e3c73f" category="inline-link-rx"></block>.</block>
+  <block id="f5a1a9adabcc26ef07e31dc7417fb595" category="list-text">P4V를 열고 *도구* &gt; *도구 관리* &gt; *HTML 탭*으로 이동하세요.</block>
+  <block id="78b6e5d76f833be63e70a3cd5925a698" category="list-text">*HTML 탭 가져오기*를 선택하세요.</block>
+  <block id="e0ca1ffa7a7ff194727a7c27c1091abd" category="list-text">P4V 통합 XML 파일을 선택하고 *가져오기*를 선택합니다.</block>
+  <block id="8021afdc93837bf89b4d2209922664f5" category="list-text">*보기* &gt; *워크로드 팩토리*로 이동하세요.</block>
+  <block id="9a68fc2523ab5eb5357c2c3ba6b626d9" category="paragraph">NetApp Workload Factory for EDA 웹 UI는 P4V 클라이언트 내에서 HTML 탭으로 나타납니다.</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">다음은 무엇인가요?</block>
+  <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">마이그레이션 어드바이저를 사용하여 Amazon EC2 배포 계획을 생성합니다.</block>
+  <block id="87ca10f516e69b36084d36d28809162e" category="paragraph"><block ref="a5520c5bc95caf26ab1a143ec38e8340" category="inline-link-macro-rx"></block>.</block>
+  <block id="1eba71d64e6c5e410e558530711e835b" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.</block>
+  <block id="f340a055e7f6e6033a05917a218d98bf" category="doc">NetApp Workload Factory for EDA의 알려진 제한 사항</block>
+  <block id="406b6743d6cb27b667d9600f28f51fe8" category="section-title">운영자 권한이 필요합니다</block>
+  <block id="c1ff9ef1c0ec2e919c5fb8f99ade5a2c" category="paragraph">NetApp Workload Factory for EDA가 정상적으로 작동하려면 운영자 권한이 필요합니다.</block>
+  <block id="09593340bc6b0dc8107502c02818e9b4" category="summary">NetApp Workload Factory for EDA에서 Perforce 통합을 사용하는 방법을 알아보세요.</block>
+  <block id="1df0a36c15777610fdaa9898d2c03d7b" category="doc">NetApp Workload Factory for EDA에서 Perforce 통합에 대해 알아보세요.</block>
+  <block id="aaece55db43004e3cc685d5bd165253e" category="paragraph">Perforce를 CI/CD 파이프라인과 통합하면 빌드, 테스트 및 배포를 자동화하여 개발 프로세스를 개선하고 더 빠르고 안정적인 소프트웨어 제공이 가능해집니다.</block>
+  <block id="e365225a054a446470ef3e9d340e350c" category="paragraph">EDA에서 지속적 통합 및 지속적 배포(CI/CD)는 소프트웨어 개발자를 위한 신속한 빌드 환경 구축 도구입니다. 이를 통해 개인 개발 환경을 빠르게 설정할 수 있어 시간을 절약하고 개발자가 셀프 서비스를 이용할 수 있으며, DevOps 팀은 인프라에 대한 제어권을 유지할 수 있습니다. CI/CD를 사용하면 소프트웨어 개발자는 특수 데이터 저장소나 개발 인프라에 대한 이해 없이도 신속하게 작업 공간을 만들 수 있습니다.</block>
+  <block id="44583f52606e67cb0d8ed1bc84bffdad" category="section-title">CI/CD란 무엇인가요?</block>
+  <block id="4e7764c6c48491248a7f9cb95e3bb4b2" category="paragraph">CI/CD를 사용하면 개발자가 소프트웨어의 다양한 버전을 관리하고 상호 작용하는 방식을 간소화할 수 있습니다. 이 기능은 Perforce Helix Core와 연동하여 소프트웨어 버전을 즉시 복제하고 개발, QA 및 CI/CD를 위한 작업 공간을 생성합니다.</block>
+  <block id="7459a9c0d44a28a6af05450d4b5725c6" category="paragraph">프로젝트를 쉽게 생성하고 소프트웨어 환경 및 관련 파일을 나타내는 볼륨을 할당할 수 있습니다. 소프트웨어를 업데이트할 때 볼륨의 스냅샷을 생성하여 해당 시점의 소프트웨어 상태를 기록할 수 있습니다. 동기화 없이 모든 소프트웨어 버전에 즉시 액세스할 수 있어 시간과 자원을 절약할 수 있습니다.</block>
+  <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="inline-link-macro">워크로드 팩토리 개요</block>
+  <block id="3eb276000847b70b99710a1321f3d0fd" category="paragraph">NetApp ONTAP 의 스냅샷 및 클론 기능을 사용하면 소프트웨어의 다양한 버전에 빠르게 액세스하여 업데이트를 더 신속하게 개발하고 배포할 수 있습니다. Workload Factory에 대한 자세한 내용은 다음을 참조하십시오. <block ref="74c54dbaee345ad32db577029257fe31" category="inline-link-macro-rx"></block>.</block>
+  <block id="738d1e9d6dd124044b0ec1a288e6f583" category="section-title">CI/CD 기능</block>
+  <block id="f727cac0ddae92d9de3567e9a3b11511" category="inline-link-macro">프로젝트 관리</block>
+  <block id="768616a039ef86952662b0f5f95dacff" category="list-text">프로젝트를 생성, 편집 및 삭제할 수 있습니다. 보다 <block ref="fb9c7d63e5ff0ecfa02b9d9ceca63ade" category="inline-link-macro-rx"></block>.</block>
+  <block id="adbb6bf856639e7a9dcf34b22158718f" category="inline-link-macro">프로젝트 버전 관리</block>
+  <block id="9e2b5fcc0baa9499d81cb1d33e0351cc" category="list-text">정의된 소프트웨어 버전의 스냅샷을 생성합니다. 보다 <block ref="3450e7fe73800d5e4b142cc04d5492a2" category="inline-link-macro-rx"></block>.</block>
+  <block id="5638176be5dd4e400efc77338868cf55" category="inline-link-macro">워크스페이스 만들기</block>
+  <block id="13cc80731190b5b6c8a04fe1cd7b905f" category="list-text">(복제본을 기반으로) 워크스페이스를 생성하고 삭제합니다. 보다 <block ref="b6d499cb2bdcbe9fb792f99b678211f5" category="inline-link-macro-rx"></block>.</block>
+  <block id="11573c020d9072fbccd8d9e1bf8ddeb7" category="list-text">프로젝트에 대한 접근 권한을 제어하는 접근 정책을 생성하세요.</block>
+  <block id="8b6548bf1466502744b54390adb22945" category="list-text">각 프로젝트의 용량 사용량을 분석하십시오.</block>
+  <block id="0df732682654fdd4c15db93d5b63bf29" category="list-text">각 프로젝트에 대한 클론 크기 제한 및 클론 보존 기간을 제어합니다.</block>
+  <block id="7d20cea7fccf92ee5c728f01adf10466" category="inline-link-macro">Perforce와 통합</block>
+  <block id="e502bf8ed1d56ac2c9a91fb93607144c" category="list-text">Perforce와 같은 버전 관리 시스템과 통합하십시오. 보다 <block ref="3ab2b6936d981c86648665276d6f8cb3" category="inline-link-macro-rx"></block>.</block>
+  <block id="a087ba044cc23ff2c6dc451db3a70ced" category="section-title">EDA의 프로젝트 및 작업 공간</block>
+  <block id="427ad364fcc508c8123dff592683a053" category="paragraph">프로젝트를 생성하고 소프트웨어 환경 및 해당 아티팩트를 나타내는 볼륨을 할당할 수 있습니다. 소프트웨어의 새 버전을 만들 때마다 볼륨 데이터를 다시 동기화하고 프로젝트 스냅샷을 생성하여 볼륨 상태를 알려진 버전으로 표시해야 합니다. 프로젝트 소스 볼륨은 롤링 업데이트를 받을 수 있으며 여러 버전을 표시하기 위해 여러 스냅샷을 가질 수 있습니다. 각 스냅샷은 즉시 복제본으로 사용할 수 있으며, 개발자, QA 또는 빌드 프로세스에서 사용할 수 있는 전용 또는 공유 편집 가능 저장소 역할을 합니다. 특정 소프트웨어 버전의 맥락에서 클론은 워크스페이스를 의미합니다.</block>
+  <block id="5354d1e9ecaabd928d4235d17bb92d9e" category="section-title">Codebox Workload Factory를 이용한 자동화</block>
+  <block id="e8d2772773d0b560ee5057d9b413b85b" category="paragraph">워크로드 팩토리는 _Codebox_를 통해 내장 자동화 기능을 제공합니다. Codebox는 다음과 같은 자동화 이점을 제공합니다.</block>
+  <block id="f1214f35af0ff103c79251078e169af6" category="list-text">*코드 스니펫 생성*: 인프라스트럭처 코드(IaC) 스니펫은 리소스 생성 중에 생성되므로 기존 오케스트레이션 워크플로와 원활하게 통합할 수 있습니다.</block>
+  <block id="3b9355b880979c4a10f7d88ded288364" category="list-text">*인프라스트럭처 코드 코파일럿*: 코드박스는 개발자와 DevOps 엔지니어가 Workload Factory에서 지원하는 모든 작업을 실행하는 코드를 생성할 수 있도록 도와주는 인프라스트럭처 코드(IaC) 코파일럿입니다.</block>
+  <block id="d8135e6fae6748dcba5e9d108c9af427" category="list-text">*코드 뷰어 및 자동화 카탈로그*: 코드박스는 자동화를 빠르게 분석할 수 있는 코드 뷰어와 향후 재사용을 위한 자동화 카탈로그를 제공합니다.</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
+  <block id="e3cfd8fddc6e34f6e4b5bcb35c0eff93" category="paragraph">Workload Factory의 CI/CD 기능을 사용하는 데에는 비용이 들지 않습니다.</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">라이센스</block>
+  <block id="28e7b14076114555ea849e44c76b8f5d" category="paragraph">Workload Factory의 CI/CD 기능을 사용하기 위해 NetApp 으로부터 특별한 라이선스를 취득할 필요는 없습니다.</block>
+  <block id="5948f3347ebc02ebc690227c059661e1" category="section-title">지역</block>
+  <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">지원되는 Amazon 지역을 확인하세요.</block>
+  <block id="10476aa104cddb6c41cdc64fc271134e" category="paragraph">EDA는 FSx for ONTAP 이 지원되는 모든 상업 지역에서 지원됩니다.<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
+  <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">다음 AWS 지역은 지원되지 않습니다.</block>
+  <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">중국 지역</block>
+  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud(미국) 지역</block>
+  <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">시크릿 클라우드</block>
+  <block id="151ef168e17772f7a361db78a0c86552" category="list-text">극비 클라우드</block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">도움 받기</block>
+  <block id="d63f6bd7594c764e42de13a94ad6deed" category="paragraph">Amazon FSx for NetApp ONTAP 은 AWS의 자체 솔루션입니다. 지원이 필요하면 AWS Management Console의 지원 센터를 사용하여 사례를 개설하세요. "FSx for ONTAP"과 카테고리를 선택한 다음, 필요한 정보를 제공합니다.</block>
+  <block id="4061d1385f49cdab5cc5c663b17b9344" category="inline-link-macro">Workload Factory용 EDA 관련 도움을 받으세요</block>
+  <block id="af7e1e5db86c674cf11518c1e371ec9a" category="paragraph">Workload Factory 또는 Workload Factory 애플리케이션 및 서비스에 대한 일반적인 질문은 다음을 참조하십시오. <block ref="ed1f973cd7efc0e358f933a5620a23d0" category="inline-link-macro-rx"></block>.</block>
+  <block id="20e29dd4b2600e7b8ce680efd9bce4a1" category="summary">NetApp Workload Factory for EDA는 ONTAP 사용 성능에 맞게 FSx를 최적화하는 데 도움을 줍니다.</block>
+  <block id="e2f999d4cb1ec42e357866f39d18461e" category="doc">NetApp Workload Factory for EDA에 대해 알아보세요.</block>
+  <block id="1f50716a1dc398d31a2f5b4964e79b43" category="paragraph">Workload Factory for EDA는 여러 파일 시스템에서 ONTAP 용 FSx를 최적화하는 데 도움을 줍니다. 스토리지 매개변수를 자동화하고, 성능 제약 조건을 분석하고, EDA 프로젝트에 대한 통찰력을 얻음으로써 성능을 최적화하고 운영 비용을 절감할 수 있습니다.</block>
+  <block id="7e352fac3dcf36358e8bc2cf1bfa3922" category="paragraph">이 제품은 IaC(Infrastructure as Code) 프레임워크와 통합되도록 설계되었습니다.</block>
+  <block id="9f3e7d074ca9509cad5dc61c364243ae" category="paragraph">Workload Factory for EDA는 여러 FSx for ONTAP 파일 시스템을 관리하는 데 도움이 되는 대시보드와 스토리지 자동화 프레임워크 및 유틸리티를 제공합니다.</block>
+  <block id="26436f2413992fe24dbc64926658bc5b" category="paragraph">다음과 같은 기능을 제공합니다.</block>
+  <block id="7ab37bddd2d34b72128a35046a2b28fa" category="inline-link-macro">EDA 프로젝트 대시보드</block>
+  <block id="9bb927b46ba8405e6b26ef482f63fce8" category="list-text"><block ref="b9507aa4ad79652e28b98ba9f8b1d274" category="inline-link-macro-rx"></block>FSx for ONTAP 파일 시스템 전반의 스토리지 사용량을 중앙 집중식으로 관리하여 프로젝트 전반에 걸쳐 스토리지 사용량을 계획하고, 비용을 평가하고, 관련 정보를 수집할 수 있도록 지원합니다.</block>
+  <block id="a91e4ff4bf49e8de7de911d95062662e" category="inline-link-macro">CI/CD</block>
+  <block id="737d3db4a03ab89d7e0df877e3aa077f" category="list-text"><block ref="fedcbac8f77f4477ef069024bcbbfdde" category="inline-link-macro-rx"></block>FSx를 활용한 ONTAP 볼륨 복제 기능을 통해 소프트웨어 빌드 시간을 간소화하고 단축합니다.</block>
+  <block id="5f225b11f8fcd5f0bc2d9460c6da4cd8" category="doc">NetApp Workload Factory for EDA 관련 법적 고지</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지사항은 저작권 표시, 상표, 특허 등에 대한 접근을 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, NETAPP 로고 및 NetApp 상표 페이지에 나열된 마크는 NetApp, Inc.의 상표입니다. 다른 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유한 특허 목록은 다음에서 확인할 수 있습니다.</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인정보 보호정책</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">공지 파일은 NetApp 소프트웨어에서 사용되는 타사 저작권 및 라이선스에 대한 정보를 제공합니다.</block>
+  <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp Workload Factory</block>
+  <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
+  <block id="aee6f8bed903be1fd0e588691dc83ee2" category="summary">Workload Factory for Databases에서 Microsoft SQL Server 인스턴스를 관리하세요.</block>
+  <block id="542205217e86e3e0edf1c789d246d4ba" category="doc">EDA 프로젝트 관리</block>
+  <block id="7a96064e2353eee73d82c2c834e20b4f" category="paragraph">NetApp Workload Factory for EDA에서 각 프로젝트의 코드 및 아티팩트 관리 방식을 제어하려면 EDA 프로젝트를 관리할 수 있습니다.</block>
+  <block id="be86ca474df5e14056bc0f20d2cdb767" category="section-title">프로젝트 만들기</block>
+  <block id="595ed1445f27184aa0033396b3201df3" category="paragraph">Amazon FSX for NetApp ONTAP 파일 시스템의 데이터 보호 기능을 활용하여 코드와 아티팩트를 보호할 수 있도록 새로운 EDA 프로젝트를 생성할 수 있습니다. 단계</block>
+  <block id="b69f6093d3af738998065396fbb1b499" category="list-text">*프로젝트 생성*을 선택하세요.</block>
+  <block id="3b6aee0d7586fa2e996955209e86b05d" category="list-text">프로젝트 생성 페이지에서 다음 정보를 입력하세요.</block>
+  <block id="7ee7bbb308ec85b0e9fa63e91fe6f62f" category="list-text">*프로젝트명*: 프로젝트명을 입력하세요.</block>
+  <block id="0cca7644aa0cba3c4f8ebb05e857a455" category="list-text">*설명*: 프로젝트에 대한 설명을 입력하세요.</block>
+  <block id="ba325028343b8f10b90df796110a4920" category="list-text">*파일 시스템*: 다음 정보를 제공하십시오.</block>
+  <block id="595ae27652f3e5fcd27b27dd7e2995ec" category="list-text">*자격 증명*: 사용할 Amazon AWS 자격 증명을 선택하십시오. EDA는 이러한 자격 증명을 사용하여 이 프로젝트에서 사용할 수 있는 FSx for ONTAP 파일 시스템을 검색하고 프로젝트의 복제본 및 스냅샷을 생성합니다.</block>
+  <block id="8f4fb3217144e591177c8ab486235b32" category="list-text">*지역*: 이 FSx for ONTAP 파일 시스템이 위치한 지역을 선택하십시오.</block>
+  <block id="66386ee0d90d8185f4bf8daf0ad53e14" category="list-text">*FSx for ONTAP 파일 시스템*: 이 프로젝트에서 사용할 FSx for ONTAP 파일 시스템을 선택하십시오.</block>
+  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">링크에 대해 자세히 알아보세요</block>
+  <block id="d81239812675b4359f2d53d5493ec461" category="paragraph">링크가 구성된 파일 시스템만 선택할 수 있습니다.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
+  <block id="ec138dddaf46c45871ca71eed01a3e90" category="list-text">*볼륨 선택*: 프로젝트를 저장할 볼륨을 선택하십시오. EDA는 이 볼륨을 소프트웨어 저장소로 사용합니다.</block>
+  <block id="73699ce7a6810990bfdfcd9d66248475" category="paragraph">NFS 공유로 구성된 볼륨만 선택할 수 있습니다.</block>
+  <block id="54707d044b3f7dbd9190e90c0c26da4b" category="list-text">*운영 정책*: 프로젝트 복제본에 대한 제한 사항을 설정하세요.</block>
+  <block id="e55e29e359599d9e8e2c9c6bba3c7299" category="list-text">*최대 보존 기간(일)*: 복제본을 보존할 최대 일수를 입력하십시오. 이 일수가 지나면 Workload Factory는 복제본을 제거합니다.</block>
+  <block id="1b50a415b7236d521d4caff453dc9d8c" category="list-text">*사용자 또는 그룹당 최대 클론 수*: 사용자 또는 그룹에 대해 프로비저닝할 수 있는 최대 클론 수를 입력하십시오.</block>
+  <block id="1aa5ccae7f0dcce26f22d0ad5c7ad270" category="list-text">*최대 복제 크기(GiB)*: 프로젝트 복제본의 최대 크기를 GiB 단위로 입력하십시오.</block>
+  <block id="60df076fa27b46615c02a69a695d47fa" category="list-text">*접근 정책*: 특정 사용자 또는 그룹에게 프로젝트 접근 권한을 명시적으로 부여합니다.</block>
+  <block id="872c4bee2d347ff2c530983493966657" category="list-text">*정책 적용 범위*: 프로젝트 접근을 지정된 IP 주소 또는 IP 주소 범위로만 제한하려면 단일 IP 주소 또는 IP 주소 범위를 입력하십시오.</block>
+  <block id="6103d4c0df4fa9e11f3ff7d4206cb2c6" category="paragraph">예를 들어:<block ref="b80ff0a24c4ff47488b3e445109bfe19" prefix=" " category="inline-code"></block></block>
+  <block id="fbfbd4c7a8f9575234f1d85a65b369a0" category="list-text">*사용자 또는 그룹 식별자*: 프로젝트 접근 권한을 해당 사용자 또는 그룹으로만 제한하려면 사용자 또는 그룹 식별자를 입력하십시오.</block>
+  <block id="601e4c99c321f541ac2b8eb0510576a5" category="paragraph">예를 들어:<block ref="6edf26f6e0badff12fca32b16db38bf2" prefix=" " category="inline-code"></block></block>
+  <block id="48ddfff7668ec69b4b4aba6cb8178ea2" category="paragraph">프로젝트가 생성되었으며, 프로젝트 페이지의 프로젝트 목록에 나타납니다.</block>
+  <block id="5adc04409266bb451a371fe1fb4271b5" category="section-title">기존 프로젝트 보기</block>
+  <block id="a279392e9c267153717e18db2c1a3fe2" category="paragraph">다음 단계를 따르면 NetApp Workload Factory for EDA에서 생성된 기존 프로젝트를 볼 수 있습니다.</block>
+  <block id="5efe5319618aec329621bb926d321c12" category="list-text">*프로젝트 페이지로 이동*을 선택하세요.</block>
+  <block id="8d316038ebf1829df9f37bc4382f5c99" category="list-text">프로젝트 페이지에서 기존 프로젝트 목록을 확인하세요.</block>
+  <block id="83879b61fc6dcf133f90392c69f25d38" category="section-title">프로젝트 편집</block>
+  <block id="7725fdf63a5f6cb955bcaa6473dd1c51" category="paragraph">프로젝트 설정은 언제든지 수정할 수 있습니다.</block>
+  <block id="2041999f6b6b70199d1267ee84f453a6" category="inline-image-macro">옵션 버튼</block>
+  <block id="d0db1d4c3851445a0852041a52b296c9" category="list-text">프로젝트 페이지에서 선택하세요 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 편집하려는 프로젝트에 대해.</block>
+  <block id="66b51b35cd8204795ab7fee998410a48" category="list-text">프로젝트 구성에 필요한 변경 사항을 적용하십시오.</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">*저장*을 선택하세요.</block>
+  <block id="332e8f9755f014bf425402dbc3cb5c58" category="section-title">프로젝트의 작업 공간을 확인하세요</block>
+  <block id="9cfa855917c2aba68c914931f8189bc6" category="paragraph">프로젝트의 복제본 또는 스냅샷을 워크스페이스라고 합니다. 워크스페이스를 생성하면 해당 워크스페이스는 프로젝트 운영 정책에서 허용하는 기간 동안 유지됩니다. 다음 단계를 따르면 프로젝트의 기존 작업 공간을 볼 수 있습니다.</block>
+  <block id="63b8f67914ccd74aae4ec183f8b47a02" category="list-text">프로젝트 페이지에서 프로젝트를 선택하고 *보기*를 선택하세요.</block>
+  <block id="afe6f323353ce261146c3950281e3680" category="list-text">이 프로젝트의 모든 작업 공간 상태 및 세부 정보를 확인하세요.</block>
+  <block id="8ca9805ea33bde88fc83f8cc3dd200f0" category="list-text">워크스페이스에 대한 알림이나 경고가 표시되면 해당 알림 또는 경고 아이콘 위에 마우스를 올려놓으면 이유를 확인할 수 있습니다.</block>
+  <block id="bb92ae025a739a684fde28b70cb90df5" category="section-title">프로젝트 삭제</block>
+  <block id="7d597c8bc9a2f2e7d749c445b50fe509" category="paragraph">더 이상 필요하지 않은 프로젝트는 다음 단계를 따라 삭제할 수 있습니다.</block>
+  <block id="bafa817ae318f3f9b180bd46a2e63961" category="list-text">프로젝트 페이지에서 선택하세요 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 삭제하려는 프로젝트에 대해.</block>
+  <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">*삭제*를 선택하세요.</block>
+  <block id="8186fba50e8e4d5abb2f25404b3ac987" category="list-text">확인 대화 상자에서 *삭제*를 선택합니다.</block>
+  <block id="6acbdc8ddf8c914f95d450771ab7cede" category="paragraph">프로젝트가 삭제되고, 프로젝트와 관련된 모든 코드 또는 아티팩트가 볼륨에서 삭제됩니다. 프로젝트의 스냅샷과 복제본이 보존됩니다.</block>
+  <block id="22358702cb945913fe9b03fc1642777a" category="summary">데이터베이스에는 요구 사항이 서로 다른 세 가지 모드가 있습니다.</block>
+  <block id="761a234d3f3830d5e2b894f7f8c6df06" category="doc">EDA 빠른 시작</block>
+  <block id="67a78d8a3f1d46031c9a29ea5fc8a03a" category="paragraph">EDA 프로젝트 생성을 시작해 보세요. 관리자와 팀 리더는 EDA를 사용하여 개발자 팀의 프로젝트 및 작업 공간을 관리할 수 있습니다.</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">하나</block>
+  <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 워크로드 팩토리에 로그인하세요</block>
+  <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">Workload Factory에 계정을 만드세요</block>
+  <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">당신은 다음이 필요할 것입니다<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block> 다음 중 하나를 사용하여 로그인하세요.<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>.</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">둘</block>
+  <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>자격 증명 및 권한 추가</block>
+  <block id="1a2a34271660d68479742e2088763ce9" category="paragraph">귀하의 필요에 맞는 권한 정책을 선택하세요.</block>
+  <block id="7b99279c8c7f2ee4589e01f520d3ed8e" category="paragraph">권한을 부여하지 않기로 선택하면, 부분적으로 완성된 코드 샘플을 복사하기 위해 EDA용 워크로드 팩토리를 사용할 수 있습니다.</block>
+  <block id="f0b5a88b55550ee6b4c30aaba61be809" category="paragraph">권한을 부여하기로 선택한 경우, EDA 및 AI와 같은 워크로드 기능을 선택하고 필요한 권한에 대한 IAM 정책을 생성하는 등 자격 증명을 계정에 수동으로 추가해야 합니다.</block>
+  <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">자격 증명 및 권한을 추가하는 방법을 알아보세요.</block>
+  <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>.</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">삼</block>
+  <block id="9d416a07e693910e3f444835dcc86a81" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> EDA 요구사항을 충족하도록 환경을 설정하세요.</block>
+  <block id="fecfde27c537152de469ba41e82d7a28" category="paragraph">NFS 공유로 구성된 볼륨이 하나 이상 포함된, 배포 및 검색된 FSx for ONTAP 파일 시스템이 필요합니다.</block>
+  <block id="7601729d359de4f5cd6af27402c9e70e" category="inline-link-macro">EDA 요구사항에 대해 자세히 알아보세요.</block>
+  <block id="10b5ea1be0d70891fd944479056f796a" category="paragraph"><block ref="52ec48856eba661b3a8f3a8489ac6cc4" category="inline-link-macro-rx"></block>.</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
+  <block id="34eeb12f254dcf2a9f8b56de71337ad8" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 프로젝트 대시보드를 구성하세요</block>
+  <block id="912684b68ca184698a4e55744c3cbcca" category="paragraph">프로젝트 대시보드를 구성하여 시스템 상태, 성능 및 스토리지 사용량을 모니터링하고 EDA 환경을 효과적으로 최적화할 수 있습니다.</block>
+  <block id="28af2b5a7e7a84074709a118bb9b0eb5" category="inline-link-macro">프로젝트 대시보드를 구성하는 방법을 알아보세요.</block>
+  <block id="7313277f6c1d299dab9d7a1fbeaa1986" category="paragraph"><block ref="08702ddc4fe94c202550bb766938b242" category="inline-link-macro-rx"></block>.</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
+  <block id="22323438d1bdd2e3d1e9f7aa97e6fcac" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 다른 서비스와 통합</block>
+  <block id="816e9ad4acc00dc8e266d7bd5cec516b" category="paragraph">워크로드 팩토리 REST API를 사용하여 EDA를 서비스 포털 또는 Perforce Helix Core와 같은 다른 서비스와 통합하십시오.</block>
+  <block id="dce6d9a52d216801c96ea309acf6ac73" category="inline-link-macro">Perforce와 EDA를 통합하는 방법을 알아보세요.</block>
+  <block id="79d86c078f10e35b854431eab12b31a6" category="paragraph"><block ref="46b2e9ce515b7538a0db67e1aa1bc892" category="inline-link-macro-rx"></block>.</block>
+  <block id="0ce746c3ad5ad5ef805497116e224e0c" category="summary">NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다.</block>
+  <block id="a464dafbec2b55bfe0812751d811de55" category="doc">EDA 요구 사항</block>
+  <block id="e637e8dfaf1801d56b1ae323e4bb23fb" category="paragraph">NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다.</block>
+  <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">워크로드 팩토리 로그인 및 계정</block>
+  <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS 자격 증명 및 권한</block>
+  <block id="42f4fbe9bc96b7b414265e0b938084d8" category="list-text">Workload Factory에 읽기/쓰기 권한이 있는 AWS 자격 증명을 추가해야 합니다. 즉, EDA를 위해 Workload Factory를 읽기/쓰기 모드로 사용해야 합니다.</block>
+  <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">현재 _기본_ 모드와 _읽기 전용_ 모드 권한은 지원되지 않습니다.</block>
+  <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link">Workload Factory에 AWS 자격 증명을 추가하는 방법을 알아보세요.</block>
+  <block id="83106366073f0e7e6a64705516568b5d" category="paragraph"><block ref="83106366073f0e7e6a64705516568b5d" category="inline-link-rx"></block></block>
+  <block id="e48bc5875c01dd007b7b2a370e879cde" category="list-text">ONTAP 파일 시스템용 FSx</block>
+  <block id="c16810aa96ec44a060863610996db3f6" category="list-text">ONTAP 파일 시스템을 사용하려면 최소 1개의 FSx가 필요합니다.</block>
+  <block id="f9fada3871257363b73049c3d57c6260" category="list-text">EDA는 사용자가 생성하는 프로젝트와 작업 공간을 저장하기 위해 파일 시스템을 사용합니다.</block>
+  <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">이 FSx for ONTAP 파일 시스템은 FlexVol 볼륨을 사용해야 합니다. FlexGroup 볼륨은 지원되지 않습니다.</block>
+  <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">AWS FSx for ONTAP 파일 시스템이 있는 AWS 리전, VPC 및 서브넷을 알아야 합니다.</block>
+  <block id="a0241ec69557b1efd3602bf4d51ce98e" category="list-text">파일 시스템에 다음 구성의 볼륨이 하나 이상 필요합니다.</block>
+  <block id="a138b35d2cf3191dc5044ce9b7c8afc6" category="list-text">해당 볼륨은 NFS 공유로 구성되어야 합니다.</block>
+  <block id="d22045fbfcf6f7c1c69b271245369732" category="list-text">파일 시스템은 링크로 구성되어야 합니다.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
+  <block id="1f44141a0f383810dac8c932e0d76754" category="list-text">이번 배포에 포함된 AWS 리소스에 적용할 태그 키/값 쌍을 고려해야 합니다(선택 사항).</block>
+  <block id="d5858b81edfda50f75f7994c971764f0" category="inline-link">ONTAP 파일 시스템용 FSx를 배포하고 관리하는 방법을 알아보세요.</block>
+  <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
+  <block id="b334128403ed60ff931947907046e1f0" category="summary">NetApp 기술 지원팀에 지원 사례를 접수하기 전에 Workload Factory에 NetApp 지원 사이트 계정을 추가하고 지원을 등록해야 합니다.</block>
+  <block id="ba0f011d5889db25564cd78e6f5b974f" category="doc">NetApp Workload Factory for EDA 지원을 신청하세요.</block>
+  <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">NetApp Workload Factory 및 해당 스토리지 솔루션과 서비스에 대한 기술 지원을 받으려면 지원 등록이 필요합니다. Workload Factory와는 별도의 웹 기반 콘솔인 NetApp Console 에서 지원을 등록해야 합니다.</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">지원 등록을 한다고 해서 NetApp 클라우드 공급자 파일 서비스에 대한 지원을 받을 수 있는 것은 아닙니다. 클라우드 제공업체의 파일 서비스, 해당 인프라 또는 해당 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 Workload Factory 설명서의 "도움 받기" 섹션을 참조하십시오.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
+  <block id="eb803e55617f13b716b5e56642cce2b0" category="paragraph">NetApp Console 의 지원 리소스 페이지에 있는 20자리 일련 번호(960xxxxxxxxx)인 계정 ID 지원 구독을 등록하면 해당 번호가 단일 지원 구독 ID로 사용됩니다. 각 NetApp 계정 수준 지원 구독은 등록되어야 합니다.</block>
+  <block id="4cffd3c1dbf2f1038c01d18e7a860305" category="paragraph">회원가입을 하면 지원 티켓 접수 및 자동 케이스 생성과 같은 기능을 사용할 수 있습니다. 등록은 아래 설명된 대로 NetApp Console 에 NetApp 지원 사이트(NSS) 계정을 추가하여 완료됩니다.</block>
+  <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">NetApp 지원을 받으려면 계정을 등록하세요.</block>
+  <block id="f6c4a3ae75d6616126e6da8310ae7384" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 계정의 사용자 중 한 명이 NetApp Console 로그인에 NetApp 지원 사이트 계정을 연결해야 합니다. NetApp 지원을 등록하는 방법은 NetApp 지원 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSS 계정이 있는 기존 고객</block>
+  <block id="f732375b4bc27328f202e3b10a957017" category="paragraph">NetApp NSS 계정을 보유한 NetApp 고객이라면 NetApp Console 통해 지원을 등록하기만 하면 됩니다.</block>
+  <block id="f65aaf10469eac2932fc53c6a37afb71" category="list-text">NetApp Console 메뉴에서 *관리*를 선택한 다음 *자격 증명*을 선택합니다.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">*사용자 자격 증명*을 선택하세요.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">*NSS 자격 증명 추가*를 선택하고 NetApp 지원 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">등록 과정이 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 선택하고 *지원*을 선택하세요.</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">*리소스* 페이지에 계정이 지원 서비스에 등록되어 있음을 확인할 수 있습니다.</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 체크박스, 그리고 "지원 등록 완료"라는 문구가 표시된 스크린샷입니다.</block>
+  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9094354ffd09e4644caa0010edc66d24" category="paragraph">참고로, 다른 NetApp Console 사용자는 NetApp 지원 사이트 계정을 NetApp Console 로그인에 연결하지 않은 경우 이와 같은 지원 등록 상태를 볼 수 없습니다. 하지만 그렇다고 해서 NetApp 계정이 지원 대상에 등록되지 않았다는 의미는 아닙니다. 계정에 있는 사용자 중 한 명이라도 이러한 단계를 완료했다면 계정 등록이 완료된 것입니다.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정이 없습니다.</block>
+  <block id="a8f62b208e5177a219f0b0d4ce88e0a9" category="paragraph">기존 NetApp 고객으로 라이선스와 일련 번호는 있지만 NSS 계정이 없는 경우, NSS 계정을 생성하고 NetApp Console 로그인과 연결해야 합니다.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 지원 사이트 사용자 등록 양식</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">다음을 완료하여 NetApp 지원 사이트 계정을 만드십시오.<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">일반적으로 * NetApp 고객/최종 사용자*인 적절한 사용자 수준을 선택하세요.</block>
+  <block id="fb9b6bbcab5fb396a13f67594a0ba1ee" category="list-text">위에 사용된 NetApp 계정 일련 번호(960xxxx)를 복사하여 일련 번호 필드에 입력하십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
+  <block id="40eff8559acd41057187b6cb11fa1919" category="list-text">다음 단계를 완료하여 새 NSS 계정을 NetApp Console 로그인과 연결하십시오. <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp 의 새로운 기능</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp 처음 사용하시고 NSS 계정이 없으신 경우 아래의 각 단계를 따르세요.</block>
+  <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">지원 자료 페이지에서 계정 ID 일련 번호를 찾으세요.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">지원이 첫 번째 옵션으로 나열된 도움말 메뉴의 스크린샷</block>
+  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 지원 등록 사이트</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로 이동<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> *저는 등록된 NetApp 고객이 아닙니다*를 선택하세요.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 입력란(빨간색 별표가 있는 항목)을 작성해 주세요.</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">*제품군* 필드에서 *클라우드 관리자*를 선택한 다음 해당 청구 제공자를 선택하세요.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정 일련번호를 복사하고 보안 검사를 완료한 다음 NetApp의 글로벌 데이터 개인정보 보호정책을 읽었는지 확인하세요.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">이 안전한 거래를 마무리하기 위해 제공된 사서함으로 이메일이 즉시 전송됩니다. 몇 분 안에 인증 이메일이 도착하지 않으면 스팸 폴더를 확인하세요.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">이메일 내에서 작업을 확인하세요.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">확인을 클릭하면 귀하의 요청이 NetApp 에 ​​제출되고 NetApp 지원 사이트 계정을 만드는 것이 좋습니다.</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">위에 사용된 계정 일련번호(960xxxx)를 일련번호 필드에 꼭 복사해 두세요. 이렇게 하면 계정 처리가 빨라집니다.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp 귀하에게 연락을 드릴 것입니다. 이는 신규 사용자를 대상으로 한 일회성 온보딩 과정입니다.</block>
+  <block id="f335678326583cea28377216c5515221" category="paragraph">NetApp 지원 사이트 계정을 생성한 후에는 아래 단계를 완료하여 해당 계정을 NetApp Console 로그인과 연결하십시오. <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="487644be42ec68bfbe1af8bedccf87d4" category="summary">EDA 대시보드에 태그를 추가하여 메트릭을 수집하도록 구성하세요.</block>
+  <block id="b5ca39077f3b34df657d01b0e4e66348" category="doc">대시보드를 사용하세요</block>
+  <block id="9f87c2937598d5a669f7fda9b2860b22" category="paragraph">EDA에 처음 로그인하면 대시보드를 사용하여 FSx for ONTAP 파일 시스템 및 볼륨 전체에서 프로젝트 사용량을 확인할 수 있습니다. 대시보드에는 표시되는 정보를 사용자 지정하는 데 사용할 수 있는 몇 가지 기본 필터가 포함되어 있습니다. 또한, 특정 비즈니스 요구 사항에 따라 데이터를 구성하고 필터링하기 위해 자체 AWS 태그를 생성하고 적용할 수 있습니다.</block>
+  <block id="9108e435212992e269c4a0e10c304297" category="paragraph">대시보드를 통해 할당된 용량, 사용된 용량, 처리량 및 IOPS에 대한 스토리지 사용량을 모니터링할 수 있습니다.</block>
+  <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">CloudWatch에서 수집하는 지표는 다음과 같습니다.</block>
+  <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">프로비저닝된 용량: 프로비저닝된 스토리지 용량을 나타내는 볼륨 수준 메트릭입니다.</block>
+  <block id="99051abc318cae9824d95692d1c95b25" category="list-text">사용 용량: 사용된 저장 공간을 나타내는 볼륨 수준 측정 항목입니다.</block>
+  <block id="ff1cfca20a1660c53ade527b17be8ad8" category="list-text">평균/최대 처리량: 지정된 기간 동안 읽은 데이터 바이트 수와 쓴 데이터 바이트 수의 합계의 평균 또는 최대값으로 계산됩니다.</block>
+  <block id="a0932dae893409aa61370e810d740d59" category="list-text">평균/최대 IOPS: 지정된 기간 동안의 데이터 읽기 작업, 데이터 쓰기 작업 및 메타데이터 작업의 합계의 평균 또는 최댓값으로 계산됩니다.</block>
+  <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">대시보드를 설정하세요</block>
+  <block id="4a77707914ca5addc817ef4b8452e03d" category="paragraph">대시보드를 효과적으로 사용하려면 비즈니스 요구 사항에 따라 프로젝트 또는 사업부를 나타내는 태그와 같이 FSx의 ONTAP 볼륨에 AWS 태그를 구성하십시오. 자세한 내용은 다음을 참조하십시오. <block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>.</block>
+  <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">태그란 무엇인가요?</block>
+  <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS 리소스 그룹 태깅 API 참조</block>
+  <block id="3c533aef31dd27afb54ebf253685f3c2" category="paragraph">AWS 태그는 AWS 리소스에 대한 메타데이터입니다. 이러한 기능을 사용하면 프로젝트, 애플리케이션 또는 사업부 등 다양한 방식으로 AWS 리소스를 분류할 수 있습니다. 태그 지정에 대한 자세한 내용은 다음을 참조하세요.<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block> 그리고 <block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>.</block>
+  <block id="12b1905f436fbb7db0d6037ed14f827e" category="paragraph">설정을 완료한 후에는 *태그 구성* 페이지에서 AWS 태그 키 이름과 대시보드에 표시할 해당 레이블을 제공하십시오.</block>
+  <block id="b7292e9663476d06f727bb41cc243d7b" category="paragraph">이러한 태그가 적용되면 Workload Factory는 관련 CloudWatch 메트릭을 수집하고 표시하기 시작합니다.</block>
+  <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">대시보드는 조직의 요구 사항에 따라 비용을 정리하고 추적하며 리소스를 필터링하는 데 사용할 수 있는 동적인 도구가 됩니다.</block>
+  <block id="976e508c4d7059185077a486bc23c939" category="section-title">사용자 지정 필터 구성</block>
+  <block id="0de06b59453acb74b09edb405890d19b" category="paragraph">대시보드를 아직 구성하지 않았다면 자동으로 구성하라는 메시지가 표시됩니다.</block>
+  <block id="b5aff8f837547a2440ebe2a08de996e4" category="list-text">필요한 각 필터에 대해 필터 레이블 이름과 해당 필터와 연결할 AWS 태그 키 이름을 추가하세요.</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">*적용*을 선택하세요.</block>
+  <block id="cd272c40b08a69d4fcdc74ed592a2f25" category="list-text">태그나 필터를 적용한 후 변경 사항을 확인하려면 대시보드에서 새로 고침 아이콘을 선택하세요. 새로운 필터로 구성된 동적 대시보드가 EDA 프로젝트 대시보드에 표시됩니다.</block>
+  <block id="365caa3dff9ac22391eab30998fdad59" category="list-text">나중에 대시보드 구성을 수정하려면 *구성*을 선택하세요.</block>
+  <block id="26949f06981e97a3e3cda29668de2aff" category="section-title">대시보드를 필터링합니다</block>
+  <block id="6e25e66f3be3bae488d3ee4d44bfdd2d" category="paragraph">대시보드에 표시되는 정보는 다음 기본 필터 중 하나 또는 전부를 선택하거나 직접 만든 사용자 지정 필터를 사용하여 필터링할 수 있습니다.</block>
+  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">신임장</block>
+  <block id="f447ac856e7e72435904956e3b15f433" category="list-text">지역</block>
+  <block id="53b936091a984a22f4042eeb94499891" category="list-text">파일 시스템</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">볼륨 유형</block>
+  <block id="8ae4a627e28635267b1fc532c618e41b" category="list-text">시간 범위</block>
+  <block id="8a9876fcec3611024b1737894816d045" category="paragraph">필요한 필터를 선택했으면 새로고침 아이콘을 선택하여 대시보드 정보를 업데이트하세요.</block>
+  <block id="a3f123658200529c4e7f0b941eeacf6a" category="paragraph">카드에 표시된 정보에 대한 설명을 보려면 해당 카드의 정보 아이콘을 선택하십시오.</block>
+  <block id="663855c524023164098db8a9a351a92a" category="summary">스냅샷과 클론을 사용하여 EDA 프로젝트의 버전을 관리하세요.</block>
+  <block id="72cc10b2027da541649606ce0bdc96d6" category="doc">EDA 프로젝트를 위한 NetApp Workload Factory 의 버전을 관리합니다.</block>
+  <block id="0270aa16b7068d8fdfd9200b20cfc5ce" category="inline-link">워크로드 팩토리 REST API</block>
+  <block id="5c9c8db206c0c8031726241f0cedacaa" category="paragraph">Workload Factory에서 필요에 따라 스냅샷과 클론을 직접 생성하여 EDA 프로젝트의 다양한 버전을 사용할 수 있습니다. 프로젝트의 스냅샷과 복제본은 프로젝트가 생성될 당시 연결되었던 파일 시스템에 저장됩니다. 스냅샷과 클론도 관리할 수 있습니다.<block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>.</block>
+  <block id="1c88041df602722b072eab90c31d79ca" category="section-title">프로젝트 스냅샷을 생성합니다.</block>
+  <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">다음 단계를 따르면 프로젝트 스냅샷을 만들 수 있습니다.</block>
+  <block id="b6dd3178b375027143d1694361b475e4" category="list-text">프로젝트 페이지에서 선택하세요 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 스냅샷을 찍으려는 프로젝트의 경우.</block>
+  <block id="0cd11b8225f7c80bcdc81d2f77114559" category="list-text">나타나는 메뉴에서 *스냅샷 생성*을 선택합니다.</block>
+  <block id="a8ef1104b5eb15d48613229daace44e9" category="list-text">*스냅샷 만들기* 대화 상자에서 스냅샷 이름을 선택하고 *만들기*를 선택합니다.</block>
+  <block id="527db32c9553673d65f35d38b044b7de" category="section-title">프로젝트의 복제본을 생성합니다.</block>
+  <block id="73719741ef6e4fd3860e314290794eb4" category="paragraph">다음 단계를 따라 스냅샷에서 EDA 프로젝트를 복제하세요. 클론을 생성하면 클론을 담을 새로운 편집 가능한 볼륨이 생성됩니다.</block>
+  <block id="ffd0b63d4491cd8691ad26a9457b8f6a" category="list-text">프로젝트 페이지에서 선택하세요 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 복제하려는 프로젝트의 경우.</block>
+  <block id="e289b398c25a5d7192096ffdb52be29f" category="list-text">나타나는 메뉴에서 *복제본 만들기*를 선택합니다.</block>
+  <block id="1baa1309157b6d07509f68ee5fbfebaa" category="list-text">*복제본 만들기* 대화 상자에서 다음을 수행하십시오.</block>
+  <block id="c9f8a1bc51e7ad4b5dbd3b4fd54d159e" category="list-text">클론의 이름을 입력하세요.</block>
+  <block id="ef9eed0d84a82b3fb511fd837da2eef7" category="paragraph">클론의 기본 이름은 프로젝트 이름에 현재 날짜와 시간을 접미사로 붙인 것입니다.</block>
+  <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">클론의 기반으로 사용할 스냅샷을 선택하세요.</block>
+  <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">워크로드 팩토리는 프로젝트의 새로운 복제본을 생성하고, 이 복제본은 프로젝트 페이지에 새로운 프로젝트로 나타납니다.</block>
+  <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">EDA용 Workload Factory의 새로운 기능을 알아보세요.</block>
+  <block id="8aa901901d7a7435a17fc1f732006316" category="doc">NetApp Workload Factory for EDA의 새로운 기능은 무엇인가요?</block>
+  <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">Workload Factory의 EDA 기능에 새로 추가된 기능을 알아보세요.</block>
+  <block id="0ccb64fb4de18921b08df0c5dcb5549f" category="section-title">2026년 1월 4일</block>
+  <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025년 10월 5일</block>
+  <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025년 6월 16일</block>
+  <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025년 5월 4일</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
+  <block id="5a95308a37eeed889f29af5726a8c5f0" category="sidebar">NetApp Workload Factory 에서 성능을 최적화하고, IaC와 통합하여 스토리지 매개변수를 자동화하고, 운영 상태를 보장함으로써 EDA 스토리지 운영을 간소화하십시오.</block>
+  <block id="840dd1018fcf9154cab5478c53b3dfcb" category="sidebar">NetApp Workload Factory for EDA 문서</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하기</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 노트</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">빠른 시작</block>
+  <block id="caa089a1da7216e4a330dc949b81bd35" category="sidebar">프로젝트 대시보드를 사용하세요</block>
+  <block id="585b016fb4d762098f713d093667d688" category="sidebar">Perforce 통합 기능을 사용하세요.</block>
+  <block id="38929f60770d1a358e1351986015fff6" category="sidebar">Perforce 통합에 대해 알아보세요.</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="sidebar">요구 사항</block>
+  <block id="2ea6aca63123969c1931cd33bf4619a0" category="sidebar">Codebox로 자동화하세요</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="sidebar">지원 등록</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="sidebar">도움을 받으세요</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp Console</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp Data Services</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="c7e9eccd134165dc82f4a6c90642a09b" category="sidebar">EDA 워크로드 문서</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">알려진 제한 사항</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="sidebar">법적 고지</block>
+</blocks>

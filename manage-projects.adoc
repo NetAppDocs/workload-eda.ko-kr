@@ -1,0 +1,134 @@
+---
+sidebar: sidebar 
+permalink: manage-projects.html 
+keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
+summary: Workload Factory for Databases에서 Microsoft SQL Server 인스턴스를 관리하세요. 
+---
+= EDA 프로젝트 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory for EDA에서 각 프로젝트의 코드 및 아티팩트 관리 방식을 제어하려면 EDA 프로젝트를 관리할 수 있습니다.
+
+
+
+== 프로젝트 만들기
+
+Amazon FSX for NetApp ONTAP 파일 시스템의 데이터 보호 기능을 활용하여 코드와 아티팩트를 보호할 수 있도록 새로운 EDA 프로젝트를 생성할 수 있습니다. 단계
+
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *EDA*를 선택하십시오.
+. CI/CD를 선택하세요.
+. *프로젝트 생성*을 선택하세요.
+. 프로젝트 생성 페이지에서 다음 정보를 입력하세요.
++
+.. *프로젝트명*: 프로젝트명을 입력하세요.
+.. *설명*: 프로젝트에 대한 설명을 입력하세요.
+.. *파일 시스템*: 다음 정보를 제공하십시오.
++
+... *자격 증명*: 사용할 Amazon AWS 자격 증명을 선택하십시오. EDA는 이러한 자격 증명을 사용하여 이 프로젝트에서 사용할 수 있는 FSx for ONTAP 파일 시스템을 검색하고 프로젝트의 복제본 및 스냅샷을 생성합니다.
+... *지역*: 이 FSx for ONTAP 파일 시스템이 위치한 지역을 선택하십시오.
+... *FSx for ONTAP 파일 시스템*: 이 프로젝트에서 사용할 FSx for ONTAP 파일 시스템을 선택하십시오.
++
+링크가 구성된 파일 시스템만 선택할 수 있습니다. https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["링크에 대해 자세히 알아보세요"^].
+
+... *볼륨 선택*: 프로젝트를 저장할 볼륨을 선택하십시오. EDA는 이 볼륨을 소프트웨어 저장소로 사용합니다.
++
+NFS 공유로 구성된 볼륨만 선택할 수 있습니다.
+
+
+
+.. *운영 정책*: 프로젝트 복제본에 대한 제한 사항을 설정하세요.
++
+... *최대 보존 기간(일)*: 복제본을 보존할 최대 일수를 입력하십시오. 이 일수가 지나면 Workload Factory는 복제본을 제거합니다.
+... *사용자 또는 그룹당 최대 클론 수*: 사용자 또는 그룹에 대해 프로비저닝할 수 있는 최대 클론 수를 입력하십시오.
+... *최대 복제 크기(GiB)*: 프로젝트 복제본의 최대 크기를 GiB 단위로 입력하십시오.
+
+
+.. *접근 정책*: 특정 사용자 또는 그룹에게 프로젝트 접근 권한을 명시적으로 부여합니다.
++
+... *정책 적용 범위*: 프로젝트 접근을 지정된 IP 주소 또는 IP 주소 범위로만 제한하려면 단일 IP 주소 또는 IP 주소 범위를 입력하십시오.
++
+예를 들어: `172.16.0.0/24`
+
+... *사용자 또는 그룹 식별자*: 프로젝트 접근 권한을 해당 사용자 또는 그룹으로만 제한하려면 사용자 또는 그룹 식별자를 입력하십시오.
++
+예를 들어: `User1234`
+
+
+
+
+
+. *만들기*를 선택하세요.
+
+
+.결과
+프로젝트가 생성되었으며, 프로젝트 페이지의 프로젝트 목록에 나타납니다.
+
+
+
+== 기존 프로젝트 보기
+
+다음 단계를 따르면 NetApp Workload Factory for EDA에서 생성된 기존 프로젝트를 볼 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *EDA*를 선택하십시오.
+. CI/CD를 선택하세요.
+. *프로젝트 페이지로 이동*을 선택하세요.
+. 프로젝트 페이지에서 기존 프로젝트 목록을 확인하세요.
+
+
+
+
+== 프로젝트 편집
+
+프로젝트 설정은 언제든지 수정할 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *EDA*를 선택하십시오.
+. CI/CD를 선택하세요.
+. *프로젝트 페이지로 이동*을 선택하세요.
+. 프로젝트 페이지에서 선택하세요 image:icon-action.png["옵션 버튼"] 편집하려는 프로젝트에 대해.
+. 프로젝트 구성에 필요한 변경 사항을 적용하십시오.
+. *저장*을 선택하세요.
+
+
+
+
+== 프로젝트의 작업 공간을 확인하세요
+
+프로젝트의 복제본 또는 스냅샷을 워크스페이스라고 합니다. 워크스페이스를 생성하면 해당 워크스페이스는 프로젝트 운영 정책에서 허용하는 기간 동안 유지됩니다. 다음 단계를 따르면 프로젝트의 기존 작업 공간을 볼 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *EDA*를 선택하십시오.
+. CI/CD를 선택하세요.
+. *프로젝트 페이지로 이동*을 선택하세요.
+. 프로젝트 페이지에서 프로젝트를 선택하고 *보기*를 선택하세요.
+. 이 프로젝트의 모든 작업 공간 상태 및 세부 정보를 확인하세요.
+. 워크스페이스에 대한 알림이나 경고가 표시되면 해당 알림 또는 경고 아이콘 위에 마우스를 올려놓으면 이유를 확인할 수 있습니다.
+
+
+
+
+== 프로젝트 삭제
+
+더 이상 필요하지 않은 프로젝트는 다음 단계를 따라 삭제할 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *EDA*를 선택하십시오.
+. CI/CD를 선택하세요.
+. *프로젝트 페이지로 이동*을 선택하세요.
+. 프로젝트 페이지에서 선택하세요 image:icon-action.png["옵션 버튼"] 삭제하려는 프로젝트에 대해.
+. *삭제*를 선택하세요.
+. 확인 대화 상자에서 *삭제*를 선택합니다.
+
+
+.결과
+프로젝트가 삭제되고, 프로젝트와 관련된 모든 코드 또는 아티팩트가 볼륨에서 삭제됩니다. 프로젝트의 스냅샷과 복제본이 보존됩니다.

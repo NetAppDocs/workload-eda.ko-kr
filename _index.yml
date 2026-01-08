@@ -1,0 +1,40 @@
+---
+indexpage:
+  title: NetApp Workload Factory for EDA 문서
+  lead: NetApp Workload Factory 에서 성능을 최적화하고, IaC와 통합하여 스토리지 매개변수를 자동화하고, 운영 상태를 보장함으로써
+    EDA 스토리지 운영을 간소화하십시오.
+  tiles:
+  - title: 시작하기
+    links:
+    - title: 릴리스 노트
+      url: "/whats-new.html"
+    - title: NetApp Workload Factory for EDA에 대해 알아보세요.
+      url: "/learn-eda.html"
+    - title: 빠른 시작
+      url: "/quick-start-eda.html"
+  - title: 프로젝트 대시보드를 사용하세요
+    links:
+    - title: 대시보드를 사용하세요
+      url: "/task-configure-dashboard.html"
+  - title: Perforce 통합 기능을 사용하세요.
+    links:
+    - title: Perforce 통합에 대해 알아보세요.
+      url: "/learn-eda-workloads.html"
+    - title: 요구 사항
+      url: "/requirements-eda.html"
+    - title: Codebox로 자동화하세요
+      url: "/automate-codebox.html"
+  - title: 지식과 지원
+    links:
+    - title: 지원 등록
+      url: "/support-registration.html"
+    - title: 도움을 받으세요
+      url: "/get-help-eda.html"
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp Console
+      url: https://www.netapp.com/console
+    - title: NetApp Data Services
+      url: https://www.netapp.com/data-services/
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/

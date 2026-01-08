@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: integrate-perforce.html 
+keywords: software builders, integrate, integration, Perforce, EDA, electronic design automation 
+summary: Perforce와 EDA를 통합하는 방법을 알아보세요. 
+---
+= Perforce와 EDA를 통합하세요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+EDA를 Perforce Helix Visual Client(P4V)와 통합하여 개발자가 Perforce CLI를 사용하여 작업 공간을 관리할 수 있도록 합니다. 이를 통해 개발자는 프로젝트와 작업 공간 간에 빠르게 전환할 수 있어 개발 시간을 절약할 수 있습니다.
+
+.단계
+. 다운로드하세요 https://builders.console.workloads.netapp.com/p4v["P4V 통합 파일"^].
+. P4V를 열고 *도구* > *도구 관리* > *HTML 탭*으로 이동하세요.
+. *HTML 탭 가져오기*를 선택하세요.
+. P4V 통합 XML 파일을 선택하고 *가져오기*를 선택합니다.
+. *보기* > *워크로드 팩토리*로 이동하세요.
+
+
+.결과
+NetApp Workload Factory for EDA 웹 UI는 P4V 클라이언트 내에서 HTML 탭으로 나타납니다.
+
+.다음은 무엇인가요?
+link:manage-projects.html["마이그레이션 어드바이저를 사용하여 Amazon EC2 배포 계획을 생성합니다."].

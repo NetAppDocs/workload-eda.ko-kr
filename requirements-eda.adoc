@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: requirements-eda.html 
+keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, workload factory 
+summary: NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다. 
+---
+= EDA 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다.
+
+워크로드 팩토리 로그인 및 계정:: 당신은 다음이 필요할 것입니다 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factory에 계정을 만드세요"^] 다음 중 하나를 사용하여 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+AWS 자격 증명 및 권한:: Workload Factory에 읽기/쓰기 권한이 있는 AWS 자격 증명을 추가해야 합니다. 즉, EDA를 위해 Workload Factory를 읽기/쓰기 모드로 사용해야 합니다.
+
+
+현재 _기본_ 모드와 _읽기 전용_ 모드 권한은 지원되지 않습니다.
+
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload Factory에 AWS 자격 증명을 추가하는 방법을 알아보세요."^]
+
+ONTAP 파일 시스템용 FSx:: ONTAP 파일 시스템을 사용하려면 최소 1개의 FSx가 필요합니다.
++
+--
+* EDA는 사용자가 생성하는 프로젝트와 작업 공간을 저장하기 위해 파일 시스템을 사용합니다.
++
+이 FSx for ONTAP 파일 시스템은 FlexVol 볼륨을 사용해야 합니다. FlexGroup 볼륨은 지원되지 않습니다.
+
+* AWS FSx for ONTAP 파일 시스템이 있는 AWS 리전, VPC 및 서브넷을 알아야 합니다.
+* 파일 시스템에 다음 구성의 볼륨이 하나 이상 필요합니다.
++
+** 해당 볼륨은 NFS 공유로 구성되어야 합니다.
+** 파일 시스템은 링크로 구성되어야 합니다. https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["링크에 대해 자세히 알아보세요"^].
+
+
+* 이번 배포에 포함된 AWS 리소스에 적용할 태그 키/값 쌍을 고려해야 합니다(선택 사항).
++
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["ONTAP 파일 시스템용 FSx를 배포하고 관리하는 방법을 알아보세요."^]
+
+
+
+--
+
