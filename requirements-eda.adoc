@@ -19,6 +19,9 @@ AWS 자격 증명 및 권한:: Workload Factory에 읽기/쓰기 권한이 있�
 
 현재 _기본_ 모드와 _읽기 전용_ 모드 권한은 지원되지 않습니다.
 
+
+NOTE: AWS 자격 증명은 볼륨 성능 분석을 위해 CloudWatch 지표를 수집하는 지연 시간 모니터링 기능을 사용하는 데에도 필요합니다. link:task-monitor-latency.html["지연 시간 모니터링에 대해 알아보십시오"].
+
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload Factory에 AWS 자격 증명을 추가하는 방법을 알아보세요."^]
 
 ONTAP 파일 시스템용 FSx:: ONTAP 파일 시스템을 사용하려면 최소 1개의 FSx가 필요합니다.

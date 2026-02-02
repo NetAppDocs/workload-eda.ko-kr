@@ -351,17 +351,13 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">위에 사용된 계정 일련번호(960xxxx)를 일련번호 필드에 꼭 복사해 두세요. 이렇게 하면 계정 처리가 빨라집니다.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp 귀하에게 연락을 드릴 것입니다. 이는 신규 사용자를 대상으로 한 일회성 온보딩 과정입니다.</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">NetApp 지원 사이트 계정을 생성한 후에는 아래 단계를 완료하여 해당 계정을 NetApp Console 로그인과 연결하십시오. <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
-  <block id="487644be42ec68bfbe1af8bedccf87d4" category="summary">EDA 대시보드에 태그를 추가하여 메트릭을 수집하도록 구성하세요.</block>
   <block id="b5ca39077f3b34df657d01b0e4e66348" category="doc">대시보드를 사용하세요</block>
-  <block id="9f87c2937598d5a669f7fda9b2860b22" category="paragraph">EDA에 처음 로그인하면 대시보드를 사용하여 FSx for ONTAP 파일 시스템 및 볼륨 전체에서 프로젝트 사용량을 확인할 수 있습니다. 대시보드에는 표시되는 정보를 사용자 지정하는 데 사용할 수 있는 몇 가지 기본 필터가 포함되어 있습니다. 또한, 특정 비즈니스 요구 사항에 따라 데이터를 구성하고 필터링하기 위해 자체 AWS 태그를 생성하고 적용할 수 있습니다.</block>
-  <block id="9108e435212992e269c4a0e10c304297" category="paragraph">대시보드를 통해 할당된 용량, 사용된 용량, 처리량 및 IOPS에 대한 스토리지 사용량을 모니터링할 수 있습니다.</block>
   <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">CloudWatch에서 수집하는 지표는 다음과 같습니다.</block>
   <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">프로비저닝된 용량: 프로비저닝된 스토리지 용량을 나타내는 볼륨 수준 메트릭입니다.</block>
   <block id="99051abc318cae9824d95692d1c95b25" category="list-text">사용 용량: 사용된 저장 공간을 나타내는 볼륨 수준 측정 항목입니다.</block>
   <block id="ff1cfca20a1660c53ade527b17be8ad8" category="list-text">평균/최대 처리량: 지정된 기간 동안 읽은 데이터 바이트 수와 쓴 데이터 바이트 수의 합계의 평균 또는 최대값으로 계산됩니다.</block>
   <block id="a0932dae893409aa61370e810d740d59" category="list-text">평균/최대 IOPS: 지정된 기간 동안의 데이터 읽기 작업, 데이터 쓰기 작업 및 메타데이터 작업의 합계의 평균 또는 최댓값으로 계산됩니다.</block>
   <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">대시보드를 설정하세요</block>
-  <block id="4a77707914ca5addc817ef4b8452e03d" category="paragraph">대시보드를 효과적으로 사용하려면 비즈니스 요구 사항에 따라 프로젝트 또는 사업부를 나타내는 태그와 같이 FSx의 ONTAP 볼륨에 AWS 태그를 구성하십시오. 자세한 내용은 다음을 참조하십시오. <block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>.</block>
   <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">태그란 무엇인가요?</block>
   <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS 리소스 그룹 태깅 API 참조</block>
   <block id="3c533aef31dd27afb54ebf253685f3c2" category="paragraph">AWS 태그는 AWS 리소스에 대한 메타데이터입니다. 이러한 기능을 사용하면 프로젝트, 애플리케이션 또는 사업부 등 다양한 방식으로 AWS 리소스를 분류할 수 있습니다. 태그 지정에 대한 자세한 내용은 다음을 참조하세요.<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block> 그리고 <block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>.</block>
@@ -370,12 +366,10 @@
   <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">대시보드는 조직의 요구 사항에 따라 비용을 정리하고 추적하며 리소스를 필터링하는 데 사용할 수 있는 동적인 도구가 됩니다.</block>
   <block id="976e508c4d7059185077a486bc23c939" category="section-title">사용자 지정 필터 구성</block>
   <block id="0de06b59453acb74b09edb405890d19b" category="paragraph">대시보드를 아직 구성하지 않았다면 자동으로 구성하라는 메시지가 표시됩니다.</block>
-  <block id="b5aff8f837547a2440ebe2a08de996e4" category="list-text">필요한 각 필터에 대해 필터 레이블 이름과 해당 필터와 연결할 AWS 태그 키 이름을 추가하세요.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">*적용*을 선택하세요.</block>
   <block id="cd272c40b08a69d4fcdc74ed592a2f25" category="list-text">태그나 필터를 적용한 후 변경 사항을 확인하려면 대시보드에서 새로 고침 아이콘을 선택하세요. 새로운 필터로 구성된 동적 대시보드가 EDA 프로젝트 대시보드에 표시됩니다.</block>
   <block id="365caa3dff9ac22391eab30998fdad59" category="list-text">나중에 대시보드 구성을 수정하려면 *구성*을 선택하세요.</block>
   <block id="26949f06981e97a3e3cda29668de2aff" category="section-title">대시보드를 필터링합니다</block>
-  <block id="6e25e66f3be3bae488d3ee4d44bfdd2d" category="paragraph">대시보드에 표시되는 정보는 다음 기본 필터 중 하나 또는 전부를 선택하거나 직접 만든 사용자 지정 필터를 사용하여 필터링할 수 있습니다.</block>
   <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">신임장</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="list-text">지역</block>
   <block id="53b936091a984a22f4042eeb94499891" category="list-text">파일 시스템</block>
@@ -404,7 +398,6 @@
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">EDA용 Workload Factory의 새로운 기능을 알아보세요.</block>
   <block id="8aa901901d7a7435a17fc1f732006316" category="doc">NetApp Workload Factory for EDA의 새로운 기능은 무엇인가요?</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">Workload Factory의 EDA 기능에 새로 추가된 기능을 알아보세요.</block>
-  <block id="0ccb64fb4de18921b08df0c5dcb5549f" category="section-title">2026년 1월 4일</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025년 10월 5일</block>
   <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025년 6월 16일</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025년 5월 4일</block>
@@ -430,4 +423,140 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">알려진 제한 사항</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="sidebar">법적 고지</block>
+  <block id="efc6f47d5e8620dbd993bbf5427fa876" category="doc">사용자 지정 태그를 사용한 향상된 대시보드 필터링</block>
+  <block id="1c074117512c813d0d3c5474c6839792" category="paragraph">이제 AWS 태그를 기반으로 EDA 대시보드에서 최대 5개의 사용자 지정 필터를 구성할 수 있습니다. 각 사용자 지정 필터에는 레이블 이름, AWS 태그 키 및 선택 유형(단일 또는 다중 선택)이 포함됩니다.</block>
+  <block id="a290a89777e8fd7db6061c83affdbda9" category="paragraph">다중 선택 기능을 사용하면 여러 값을 동시에 선택할 수 있지만, 단일 선택 기능은 한 번에 하나의 값만 선택할 수 있도록 제한합니다. 사용자 지정 필터는 구성한 순서대로 표시되므로 자주 사용하는 필터를 쉽게 정리할 수 있습니다.</block>
+  <block id="a9f4d955c73322ea2697149d48ca3230" category="paragraph">사용자 지정 필터를 구성하지 않으면 기본 필터(파일 시스템, 볼륨 유형 및 시간 범위)를 계속 사용할 수 있으므로 대시보드를 계속 보고 상호 작용할 수 있습니다.</block>
+  <block id="7f599cf351ac708ac51a573f45f1adfe" category="inline-link">사용자 지정 필터 구성에 대해 자세히 알아보십시오</block>
+  <block id="b4d8b5d35eb5ad238c4bc40c7bfa5cc8" category="paragraph"><block ref="0fffea6d188f5a3a46b25be10dcf1dca" category="inline-link-rx"></block>.</block>
+  <block id="5908526b06383bf6b835d957813a0a5b" category="section-title">세부적인 성능 분석을 위한 볼륨 세부 정보 보기</block>
+  <block id="be14699d8f808150c6e3ec8fd5f5fb6f" category="paragraph">이제 대시보드는 전체 보기와 볼륨 보기의 두 가지 보기 모드를 제공합니다. 전체 보기에서는 모든 볼륨에 대한 집계 지표를 표시하고, 볼륨 보기에서는 시간 경과에 따른 상위 10개 볼륨의 개별 성능을 보여줍니다.</block>
+  <block id="6828b4aa70bf0499581d68bc0a737c8a" category="paragraph">볼륨 보기에서 마우스 오버 시 나타나는 대화형 툴팁은 볼륨 이름, 측정항목, 시간별 값 등 각 볼륨에 대한 자세한 정보를 제공합니다. 동일한 볼륨이 여러 구성요소에 걸쳐 표시되는 경우, 일관된 색상 코드를 통해 다양한 측정항목에서 특정 볼륨을 쉽게 추적할 수 있습니다.</block>
+  <block id="b7259cf0b1b93b9f8f56fd85b8a2075f" category="inline-link">볼륨 세부 정보 보기에 대해 자세히 알아보십시오</block>
+  <block id="3d218b60cf53ed75572aecfde4c1d233" category="paragraph"><block ref="fdc27d3397a23552fa2bc2b42dee0c76" category="inline-link-rx"></block>.</block>
+  <block id="a63dd8c708227f66adf2e93b1b973bfe" category="section-title">사전 예방적 성능 모니터링을 위한 지연 시간 분석</block>
+  <block id="4eca5955b4d0f7b664a2f65c49306dcf" category="paragraph">지연 시간 분석 기능을 사용하면 FSx for ONTAP 파일 시스템 전체에서 볼륨 읽기 및 쓰기 지연 시간을 모니터링할 수 있습니다. 사용자 지정 가능한 경고 및 중요 이벤트 임계값을 구성하여 EDA 워크로드에 영향을 미치기 전에 성능 병목 현상을 사전에 파악할 수 있습니다.</block>
+  <block id="40a74d0e93037927ed8b742952444782" category="paragraph">지연 시간 이벤트 테이블에는 모든 경고 및 위험 이벤트가 표시되어 볼륨 성능을 모니터링하고 최적화가 필요한 볼륨을 식별할 수 있습니다.</block>
+  <block id="40599551b14b033049a0306f8d7e0da2" category="paragraph">이 기능을 사용하려면 AWS 자격 증명이 필요하며 EDA 대시보드의 지연 시간 메뉴에서 액세스할 수 있습니다.</block>
+  <block id="195b656b2b34184ab7cb51ea0158eba0" category="inline-link">지연 시간 분석에 대해 자세히 알아보십시오</block>
+  <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>.</block>
+  <block id="6b1bfc4b2985b92dcf5662055b7cd336" category="inline-link-macro">지연 시간 모니터링</block>
+  <block id="6932162a874668e2d1dc901452dbb1b8" category="list-text"><block ref="fecda44c58c462f47e8a148f1d0d4382" category="inline-link-macro-rx"></block>: 구성 가능한 경고 및 위험 이벤트 임계값을 사용하여 볼륨 읽기 및 쓰기 지연 시간 성능을 사전에 모니터링하여 잠재적인 성능 병목 현상을 식별합니다.</block>
+  <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">지연 시간 모니터링에 대해 알아보십시오</block>
+  <block id="d3e9e776c97e0f2d8388d6d741dd47a8" category="admonition">AWS 자격 증명은 볼륨 성능 분석을 위해 CloudWatch 지표를 수집하는 지연 시간 모니터링 기능을 사용하는 데에도 필요합니다. <block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>.</block>
+  <block id="2106cf3366c1f8905dc8d0decf2ac6cc" category="summary">태그를 추가하여 메트릭을 수집하도록 EDA 대시보드를 구성하세요. 비즈니스 요구 사항에 맞춰 단일 또는 다중 선택 옵션으로 필터를 맞춤 설정하세요.</block>
+  <block id="f085cface8e84ac185b38370c5a4aead" category="paragraph">EDA에 처음 로그인하면 대시보드를 사용하여 FSx for ONTAP 파일 시스템 및 볼륨 전반에 걸친 프로젝트 사용량을 확인할 수 있습니다. 대시보드에는 표시되는 정보를 사용자 지정할 수 있는 여러 기본 필터가 포함되어 있습니다. 또한 AWS 태그를 기반으로 최대 5개의 사용자 지정 필터를 생성할 수 있으며, 단일 또는 다중 선택 옵션을 사용하여 특정 비즈니스 요구 사항에 따라 데이터를 구성하고 필터링할 수 있습니다.</block>
+  <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">볼륨 지연 시간 모니터링</block>
+  <block id="c09e7b1ab90792168923158989ca6297" category="paragraph">대시보드를 사용하면 할당된 용량, 사용된 용량, 처리량 및 IOPS에 대한 스토리지 사용량을 모니터링할 수 있습니다. 사전 예방적 지연 시간 성능 모니터링에 대해서는 <block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="3eeb776c775a0a186eaac0ae86ca4408" category="paragraph">대시보드를 효과적으로 사용하려면 프로젝트 또는 사업부를 나타내는 태그와 같이 비즈니스 요구 사항에 따라 FSx for ONTAP 볼륨에 최대 5개의 AWS 태그를 구성하십시오. 자세한 내용은 <block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>를 참조하십시오.</block>
+  <block id="b915af974b3255995db1b551b1e1dcbb" category="paragraph">AWS 태그를 기반으로 최대 5개의 사용자 지정 필터를 구성할 수 있습니다. 각 사용자 지정 필터에는 필터 레이블 이름, AWS 태그 키 이름, 선택 유형(단일 또는 다중 선택)의 세 가지 구성 요소가 필요합니다. 사용자 지정 필터를 구성하지 않으면 기본 필터(파일 시스템, 볼륨 유형 및 시간 범위)가 계속 사용 가능하므로 대시보드를 보고 상호 작용할 수 있습니다.</block>
+  <block id="27e0e44d189c553eb00dc006b35029f5" category="list-text">*+ 필터 추가*를 선택합니다.</block>
+  <block id="5678492274c56b0e9a6e36ba6f34b836" category="list-text">생성하려는 각 사용자 지정 필터(최대 5개)에 대해 다음을 제공합니다.</block>
+  <block id="7371329c5bc9fb1913a92db5445368eb" category="list-text">*필터 레이블 이름*: 대시보드에 표시되는 표시 이름입니다.</block>
+  <block id="9dc66313c07505b9b6ee97b9490648d4" category="list-text">*AWS 태그 키 이름*: 이 필터에 해당하는 AWS 리소스 태그 키입니다.</block>
+  <block id="6245bc7faa3c897c2839919b1e0f6c5d" category="list-text">*다중 선택*: 이 필터에서 단일 선택 또는 다중 선택을 허용할지 여부를 선택합니다. *다중 선택*을 선택하면 이 필터에 대해 여러 값을 동시에 선택할 수 있습니다. 단일 선택은 한 번에 하나의 값만 선택하도록 제한합니다.</block>
+  <block id="0be6ab8a3d394d63c0aaea5444fc4d94" category="admonition">필터는 구성한 순서대로 대시보드에 표시됩니다. 더 쉽게 액세스할 수 있도록 가장 자주 사용하는 필터를 먼저 구성하는 것이 좋습니다.</block>
+  <block id="58812a046615ae0cede06aa76e867511" category="paragraph">변경 사항을 적용하기 전에 해당 필터 옆에 있는 휴지통 아이콘을 선택하여 사용자 지정 필터를 삭제할 수 있습니다.</block>
+  <block id="7ad57d97a4e7251a593b560f3edd7c6c" category="paragraph">기본 필터와 사용자가 만든 사용자 지정 필터를 조합하여 대시보드에 표시되는 정보를 필터링할 수 있습니다.</block>
+  <block id="0893a6eb6fac2bd4489c23ad574e3e32" category="paragraph">다음 기본 필터는 항상 사용할 수 있습니다.</block>
+  <block id="b6c5b00ab5f9877d11bf9e5b5bc8b2fa" category="paragraph">사용자가 직접 설정한 사용자 지정 필터는 이러한 기본 필터 외에도 대시보드에 표시됩니다. 필터를 사용할 때:</block>
+  <block id="0d9da1f1a6c87419d9a59e59c2f60af2" category="list-text">*다중 선택 필터*를 사용하면 여러 값을 동시에 선택하여 보기 범위를 넓힐 수 있습니다. 예를 들어 여러 프로젝트를 선택하여 통합된 지표를 볼 수 있습니다.</block>
+  <block id="2ad8dabd47e501a4ed1c3d01be491886" category="list-text">*단일 선택 필터*는 한 번에 하나의 값만 선택할 수 있도록 제한하므로 특정 리소스 또는 범주에 집중해야 할 때 유용합니다.</block>
+  <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">볼륨 세부 정보 보기</block>
+  <block id="c42e01801b1f2ef2fbdf3f8841353b73" category="paragraph">대시보드는 스토리지 지표 분석에 도움이 되는 두 가지 보기 모드(총계 보기 및 볼륨 보기)를 제공합니다. 대시보드에서 사용 가능한 탭을 사용하여 이러한 모드 간에 전환할 수 있습니다.</block>
+  <block id="ee855ba807a55874eb4b38814389078f" category="section-title">전체 보기</block>
+  <block id="e7dd4c9a6d36b6512dda7f2c3e278b77" category="paragraph">전체 보기(기본값)는 선택한 필터와 일치하는 모든 볼륨의 집계된 메트릭을 표시합니다. 이 보기는 전체 스토리지 성능에 대한 높은 수준의 개요를 제공하며, 결합된 용량, IOPS 및 처리량 메트릭을 보여줍니다.</block>
+  <block id="515b555dcf569c4cc1d2a938ae9822d3" category="section-title">볼륨 보기</block>
+  <block id="e3f5fd2f57f7a82a665af7de374483ac" category="paragraph">볼륨 보기에서는 시간 경과에 따른 개별 볼륨 성능을 표시하며, 각 메트릭별로 상위 10개 볼륨을 보여줍니다. 이 보기를 통해 리소스 사용량을 주도하는 특정 볼륨을 파악하고 선택한 기간 동안 해당 볼륨의 동작을 관찰할 수 있습니다.</block>
+  <block id="5753fce8315ebaa06a713e75985750bf" category="paragraph">볼륨 보기로 전환하려면 대시보드에서 *볼륨* 탭을 선택합니다.</block>
+  <block id="f768a8e9133dfc338015fd0d83ec2cf0" category="section-title">표시된 볼륨 메트릭</block>
+  <block id="2347e9819148413af6cc4e5827b02d4e" category="paragraph">볼륨 보기를 선택하면 대시보드에 전체 볼륨 중 상위 10개 볼륨이 표시됩니다. * *볼륨 사용 용량*: 현재 사용 용량이 가장 높은 볼륨을 표시합니다. * *IOPS*: 선택한 기간 동안 평균 IOPS가 가장 높은 볼륨을 표시합니다. * *처리량*: 선택한 기간 동안 평균 처리량이 가장 높은 볼륨을 표시합니다.</block>
+  <block id="286b672abb5d35bb05baef5e5758a310" category="admonition">대시보드에는 각 지표별로 상위 10개 볼륨만 표시됩니다. 볼륨이 10개를 초과하는 경우 일부 볼륨은 상세 보기에서 표시되지 않을 수 있습니다.</block>
+  <block id="502ab59dcef25c014584999b381b739b" category="paragraph">*볼륨 사용 용량*, *IOPS* 및 *처리량* 메트릭에서 동일한 볼륨이 나타나는 경우 대시보드는 범례에서 일관된 색상 코딩을 사용하여 여러 메트릭에서 특정 볼륨을 더 쉽게 추적할 수 있도록 합니다.</block>
+  <block id="4745a2c999b128a25bda01aed19ab2f8" category="paragraph">가로축은 시간 범위를 표시하고, 범례는 그래프에 표시된 모든 볼륨(최대 10개)을 보여줍니다.</block>
+  <block id="90681f223ffce7f43af4ac6e8572f319" category="section-title">대화형 볼륨 데이터</block>
+  <block id="409e7e820a2aec1df14db5a88edd443e" category="paragraph">그래프에서 볼륨 라인 위에 마우스를 올리면 자세한 정보를 볼 수 있습니다.</block>
+  <block id="66098fe1f75297ccbc3e4c2332830104" category="paragraph">*볼륨 사용 용량*: 볼륨 이름, 해당 시점의 사용 용량 및 할당 용량을 표시합니다.</block>
+  <block id="748334bb99d46cf2ef3aa45e610baf24" category="paragraph">*IOPS*: 볼륨 이름, 시간 범위의 평균 IOPS 및 시간 범위의 최대 IOPS를 표시합니다.</block>
+  <block id="04eeb8d03cf6b4755481c052a6e535e6" category="paragraph">*처리량*: 볼륨 이름, 시간 범위의 평균 처리량 및 시간 범위의 최대 처리량을 표시합니다.</block>
+  <block id="f2c7e3d31586c840e7c17c779b7d70dd" category="paragraph">이 대화형 데이터는 볼륨 성능 패턴을 분석하고 잠재적인 병목 현상이나 최적화 기회를 파악하는 데 도움이 됩니다.</block>
+  <block id="300ec882ed0bc603a8bc31f188dc28e5" category="summary">구성 가능한 경고 및 위험 이벤트 임계값을 사용하여 볼륨 지연 시간 성능을 모니터링하고 분석하여 성능 병목 현상을 사전에 식별합니다.</block>
+  <block id="90d997e137ee990e196229395af6d6a7" category="paragraph">지연 시간 분석을 사용하면 FSx for ONTAP 파일 시스템 전체의 읽기 및 쓰기 지연 시간 지표를 추적하여 볼륨 성능을 사전에 모니터링할 수 있습니다. 경고 및 중요 이벤트에 대한 사용자 지정 임계값을 구성하여 EDA 워크로드에 영향을 미치기 전에 잠재적인 성능 병목 현상을 식별할 수 있습니다.</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="section-title">개요</block>
+  <block id="1c42660fdf55fec5341f109b1c18ae8c" category="paragraph">지연 시간 분석은 볼륨 읽기 및 쓰기 작업에 대한 CloudWatch 메트릭을 수집하고 모니터링합니다. 지정된 시간 범위 내의 모든 데이터 포인트에서 지연 시간 및 IOPS 임계값이 모두 초과되면 시스템은 지연 시간 이벤트 테이블에 표시되는 경고를 생성합니다. 이를 통해 다음을 수행할 수 있습니다.</block>
+  <block id="52840e6ea19e30e010425ac96fc1fd74" category="list-text">성능 저하가 발생하는 볼륨을 식별합니다.</block>
+  <block id="8111593c4b9e675b40060181e91582b7" category="list-text">경고 수준과 심각 수준 성능 문제를 구분하십시오.</block>
+  <block id="029070dac474b47b91825e694dd48f7e" category="list-text">스토리지 구성을 최적화하기 위해 시간 경과에 따른 지연 시간 추세를 추적하십시오.</block>
+  <block id="82bfba3efae839fe6bbe2de97d83c475" category="list-text">지연 시간이 워크로드 성능에 영향을 미치기 전에 사전 조치를 취하십시오.</block>
+  <block id="b18d695fc7384219d11ff79654f49701" category="paragraph">지연 시간 분석을 사용하려면 Workload Factory에 AWS 자격 증명이 구성되어 있어야 합니다. 이 기능을 사용하려면 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 CloudWatch 메트릭에 액세스할 수 있어야 합니다.</block>
+  <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="inline-link-macro">AWS 자격 증명 추가</block>
+  <block id="70317e3abbdadfb99e6ea364d432bd9b" category="paragraph">AWS 자격 증명을 구성하지 않은 경우 <block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="b7a6e29a17f641a5bd663b0c27c433ed" category="section-title">지연 시간 임계값 구성</block>
+  <block id="9b53289586841271ac6d175ca4a5af63" category="paragraph">경고 및 심각 이벤트에 대한 임계값을 구성할 수 있습니다. 각 이벤트 유형에는 읽기 및 쓰기 작업에 대한 별도의 임계값이 포함됩니다. 시스템은 이러한 임계값을 지속적으로 평가하고 조건이 충족되면 알림을 생성합니다.</block>
+  <block id="2542d3fbcc77fe58daf4a8287e4dc4ae" category="admonition">경고가 적절하게 전달되도록 하려면 중요 이벤트 임계값을 경고 이벤트 임계값보다 높게 설정해야 합니다. 그렇지 않으면 구성을 저장할 수 없습니다.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업 정보</block>
+  <block id="92aac57dc8699e8869b6e3f2aec6b360" category="paragraph">경고가 발생하려면 지정된 시간 범위 내의 모든 데이터 포인트에서 지연 시간 임계값과 IOPS 임계값이 모두 초과되어야 합니다. 이러한 이중 조건 논리는 높은 부하 상태에서도 높은 지연 시간이 유지되도록 함으로써 오탐을 줄이는 데 도움이 됩니다.</block>
+  <block id="e1cf2ece0db166d8b4c6b87f20794e11" category="inline-image-macro">햄버거 메뉴 아이콘</block>
+  <block id="c625174f1f2ee54505e8df5c7884aaa1" category="list-text">메뉴 <block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *EDA*를 선택하십시오.</block>
+  <block id="6522859d513a1a4996b48c2075e5629d" category="list-text">EDA 메뉴에서 *지연 시간*을 선택합니다.</block>
+  <block id="e98927daa3269d89ed40e1d00b9894f4" category="list-text">EDA 지연 시간 구성 페이지에서 다음 임계값을 구성하십시오.</block>
+  <block id="6a92339b37a09c472028f07967682c85" category="list-text">*경고 이벤트*</block>
+  <block id="7a9ff4c8c2260709d5b8ca3ea5720d48" category="list-text">*읽기 지연 시간 임계값*: 지연 시간 임계값을 밀리초 단위로 입력합니다. 기본값: 6ms입니다.</block>
+  <block id="c7ffe38ce2716364ec13888fb0fb4d18" category="list-text">*읽기 IOPS 임계값*: 초당 작업 수로 IOPS 임계값을 입력합니다. 기본값: 100ops/sec.</block>
+  <block id="a9c123b2457943cad2a4a7b1da9e2ba2" category="list-text">*읽기 시간 범위*: 시간 범위를 분 단위(5-20)로 입력하세요. 기본값: 10분.</block>
+  <block id="0bb2971cdc9904893b398e127f86ccc1" category="list-text">*쓰기 지연 시간 임계값*: 지연 시간 임계값을 밀리초 단위로 입력하십시오. 기본값: 8ms.</block>
+  <block id="f1d2b429b535ce1659d20f6a98f239da" category="list-text">*쓰기 IOPS 임계값*: 초당 작업 수로 IOPS 임계값을 입력합니다. 기본값: 100 ops/sec.</block>
+  <block id="a0274640a4f41ca07311c67d74f332b1" category="list-text">*쓰기 시간 범위*: 시간 범위를 분 단위로 입력합니다(5-20). 기본값: 10분.</block>
+  <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*중요 이벤트*</block>
+  <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*읽기 지연 시간 임계값*: 지연 시간 임계값을 밀리초 단위로 입력합니다. 기본값: 12ms.</block>
+  <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*쓰기 지연 시간 임계값*: 지연 시간 임계값을 밀리초 단위로 입력합니다. 기본값: 15ms.</block>
+  <block id="0073a211209725d1fd56c6533d4ffec3" category="paragraph">Workload Factory는 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 지연 시간 메트릭 수집을 시작합니다. 메트릭은 최소 20분마다 수집됩니다. 지연 시간 이벤트 테이블에는 구성된 임계값을 초과하는 볼륨이 표시됩니다.</block>
+  <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">알림 이해</block>
+  <block id="c00d3202c1a4245d5310c03fe4c4d124" category="paragraph">지연 시간 분석 기능은 CloudWatch 알람을 사용하여 볼륨 성능을 모니터링합니다. 알림이 트리거되는 방식을 이해하면 적절한 임계값을 구성하고 결과를 해석하는 데 도움이 됩니다.</block>
+  <block id="ee34286f143c9ac572df816e88226163" category="section-title">수집된 메트릭</block>
+  <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">이 시스템은 각 볼륨에 대해 다음과 같은 CloudWatch 지표를 수집합니다.</block>
+  <block id="9115f34400f66fb673aa39683fefc0a8" category="list-text">*읽기 지연 임계값*: 1000 * m2/(m1+0.000001)로 계산되며, 여기서 m1 = DataReadOperations이고 m2 = DataReadOperationTime</block>
+  <block id="507575c143ec3020fe407125ed3df334" category="list-text">*쓰기 지연 임계값*: 1000 * m2/(m1+0.000001)로 계산됩니다. 여기서 m1 = DataWriteOperations이고 m2 = DataWriteOperationTime입니다</block>
+  <block id="6c2de48345c28d8092d96aca583778d0" category="section-title">알림 트리거 조건</block>
+  <block id="9242656254a25093b3f3351379ea0f02" category="paragraph">다음 조건이 모두 충족될 경우 알림이 트리거됩니다.</block>
+  <block id="186a1bcf007367f6bc6fa82ec4719e16" category="list-text">해당 작업 유형(읽기 또는 쓰기)에 대한 지연 시간 임계값이 초과되었습니다.</block>
+  <block id="e276786b9c415526db7d13f4aa5efadd" category="list-text">작업 유형에 대한 IOPS 임계값이 초과되었습니다.</block>
+  <block id="d4f2d389a3d4d575b8158ca4417bf9a5" category="list-text">구성된 시간 범위 내의 모든 데이터 포인트에 대해 두 가지 조건 모두 지속됩니다.</block>
+  <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">예를 들어, 기본 경고 임계값을 사용하면 10분 동안 모든 데이터 포인트에 대해 읽기 지연 시간이 6ms를 초과하고 읽기 IOPS가 100ops/sec를 초과하는 경우에만 읽기 알림이 트리거됩니다.</block>
+  <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">이벤트 심각도</block>
+  <block id="c5dada127d514b30222d50c180808dff" category="list-text">*경고 이벤트*: 주의가 필요할 수 있는 지연 시간 증가를 나타냅니다.</block>
+  <block id="3b1132558500e795d2918a031b3533ea" category="list-text">*중요 이벤트*: 즉각적인 조사가 필요한 심각한 지연 시간을 나타냅니다.</block>
+  <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">지연 이벤트 보기</block>
+  <block id="7965c28e3a946fcfe26f8d31449a72e3" category="paragraph">지연 이벤트 테이블에는 지난 72시간 동안 감지된 모든 경고 및 심각 이벤트가 표시됩니다. 이 테이블을 사용하여 볼륨 성능 모니터링하고 최적화가 필요한 볼륨을 식별하십시오.</block>
+  <block id="0f68b904e33d9ac04605aecc958bcf52" category="list-title">추가 정보</block>
+  <block id="0fd27ce965f59d9ce188afda7be707f7" category="list-text">각 볼륨에 대한 최신 위반만 표에 표시됩니다. 볼륨에 여러 번의 위반이 발생한 경우 가장 최근 이벤트만 표시됩니다.</block>
+  <block id="7776f517a75d578f349901d6f0886405" category="list-text">이벤트는 72시간 후 자동으로 제거됩니다.</block>
+  <block id="99789473cc53d4c5f2666a4ab79ebb39" category="list-text">이 표에는 최대 200개의 이벤트가 표시됩니다. 새 이벤트가 추가되면 오래된 이벤트는 삭제됩니다.</block>
+  <block id="fa25e0e326e38037315b4df99a68a595" category="list-text">*지연 시간* 탭에서 지연 시간 이벤트 테이블을 확인합니다.</block>
+  <block id="dcc9848cbc440e33ab31099e592f3548" category="list-text">다음을 포함한 각 이벤트에 대한 정보를 검토하십시오.</block>
+  <block id="93051970a8383738704f4809fd35779f" category="list-text">*심각도*: 이벤트가 Critical인지 Warning인지 여부를 나타냅니다.</block>
+  <block id="9d0418bddad0434b22eddfa9e6ac70b3" category="list-text">*볼륨 이름*: 영향을 받는 볼륨의 이름입니다.</block>
+  <block id="3970adb265372ae157b79f5cf32c4654" category="list-text">*볼륨 ID*: 영향을 받는 볼륨의 ID입니다.</block>
+  <block id="94785a36456605abe135e07954560b83" category="list-text">*파일 시스템*: 볼륨이 포함된 FSx for ONTAP 파일 시스템입니다.</block>
+  <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*탐지 시간*: 침해가 탐지된 시간</block>
+  <block id="f24df78eef3360387dd1a4f2d6a0fdb0" category="list-text">*중앙값 지연 시간*: 위반 기간 동안의 중앙값 지연 시간 값입니다.</block>
+  <block id="ffdc22229e20f79439c83c1406c5988f" category="list-text">테이블을 정렬하려면 열 머리글을 선택합니다. 기본적으로 중요 이벤트가 시간별로 정렬되어 먼저 표시되고 그 다음 경고 이벤트가 시간별로 정렬되어 표시됩니다.</block>
+  <block id="c010e7ccfe39dff8710b56fb1e570258" category="list-text">하나 이상의 이벤트를 해제하려면 각 이벤트 옆에 있는 *Dismiss*를 선택하십시오.</block>
+  <block id="4592e1df7d97ccf7061a86a746d9261d" category="list-text">표에 열을 추가하려면 열 아이콘을 선택하고 열을 선택한 다음 *적용*을 선택합니다.</block>
+  <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">지연 시간 구성 관리</block>
+  <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">초기 구성 후 임계값을 편집할 수 있습니다.</block>
+  <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">*지연 시간* 페이지에서 *편집*을 선택합니다.</block>
+  <block id="d53bdccd3ec334ddfd63d2269906352a" category="list-text">필요에 따라 임계값을 수정하십시오.</block>
+  <block id="247a926ff070f20efece2fd2ed4162c3" category="admonition">중요 임계값은 경고 임계값보다 높게 유지해야 합니다. 중요 임계값을 경고 임계값보다 낮게 구성하면 시스템에서 오류가 표시됩니다.</block>
+  <block id="d3152a664d12079fbf89a50fcb166ef3" category="list-text">변경 사항을 저장하려면 *적용*을 선택합니다.</block>
+  <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">모범 사례</block>
+  <block id="9034aebe9b693f759faa32d33c7d1358" category="paragraph">지연 시간 분석을 구성하고 사용할 때 다음 권장 사항을 고려하십시오:</block>
+  <block id="6a17347e669ad40689359f41fee3efc9" category="list-text">*현실적인 임계값 설정*: 워크로드 요구 사항에 따라 임계값을 구성하십시오. 기본값은 시작점을 제공하지만 특정 환경에 맞게 조정이 필요할 수 있습니다.</block>
+  <block id="8d2a6ec04c3428e17318eec752e34640" category="list-text">*경고 임계값부터 시작하세요*: 경고 이벤트를 사용하여 중요 임계값을 미세 조정하기 전에 기준 성능 기대치를 설정하십시오.</block>
+  <block id="1f3a99c8bf0d4110ea6d8f943c76ad49" category="list-text">*시간 범위를 신중하게 고려하십시오*: 짧은 시간 범위(5~10분)는 문제를 더 빨리 감지하지만 알림 수가 더 많이 발생할 수 있습니다. 긴 시간 범위(15~20분)는 오탐을 줄이지만 감지가 지연될 수 있습니다.</block>
+  <block id="10c6a588ad4a1a320036ec18537a9783" category="list-text">*추세 모니터링*: 지연 시간 이벤트 테이블을 정기적으로 검토하여 근본적인 구성 문제를 나타낼 수 있는 패턴이나 반복되는 문제를 식별하십시오.</block>
+  <block id="582145492bc6491a13bd3c8e766df7f4" category="list-text">*IOPS 및 지연 시간 임계값 조정*: 이중 조건 논리는 두 가지 모두 초과해야 함을 의미합니다. IOPS 임계값을 너무 높게 설정하면 지연 시간이 문제가 되더라도 알림이 발생하지 않을 수 있습니다.</block>
+  <block id="829d4cdd3177ddf6591982d99aa444ab" category="list-text">*기각된 이벤트 검토*: 이벤트가 기각된 이유를 주기적으로 검토하여 임계값 조정 또는 인프라 개선 기회를 파악합니다.</block>
+  <block id="8d2488f820b40da5c2d7dfd912588e9a" category="section-title">2026년 2월 1일</block>
+  <block id="2c421bc29b0b255dff7d2788d0d1a127" category="section-title">2026년 1월 4일</block>
 </blocks>

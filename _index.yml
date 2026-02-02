@@ -16,6 +16,10 @@ indexpage:
     links:
     - title: 대시보드를 사용하세요
       url: "/task-configure-dashboard.html"
+  - title: 볼륨 지연 시간 모니터링
+    links:
+    - title: 볼륨 지연 시간 모니터링
+      url: "/task-monitor-latency.html"
   - title: Perforce 통합 기능을 사용하세요.
     links:
     - title: Perforce 통합에 대해 알아보세요.
