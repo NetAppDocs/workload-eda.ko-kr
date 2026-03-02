@@ -27,14 +27,18 @@ sidebar:
       url: "/learn-eda.html"
     - title: 빠른 시작
       url: "/quick-start-eda.html"
-  - title: 프로젝트 대시보드를 사용하세요
+  - title: EDA 스토리지 개요
     entries:
-    - title: 대시보드를 사용하세요
-      url: "/task-configure-dashboard.html"
-  - title: 볼륨 지연 시간 모니터링
+    - title: EDA 스토리지 운영 관리
+      url: "/task-use-overview-dashboard.html"
+  - title: FSx 지연 시간 분석
     entries:
-    - title: 볼륨 지연 시간 모니터링
+    - title: FSx 볼륨 지연 시간 모니터링
       url: "/task-monitor-latency.html"
+  - title: 프로젝트 사용 분석
+    entries:
+    - title: 프로젝트 스토리지 용량 사용 분석
+      url: "/task-configure-dashboard.html"
   - title: Perforce 통합 기능을 사용하세요.
     entries:
     - title: Perforce 통합에 대해 알아보세요.

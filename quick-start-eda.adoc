@@ -37,14 +37,28 @@ NFS 공유로 구성된 볼륨이 하나 이상 포함된, 배포 및 검색된 
 [role="quick-margin-para"]
 link:requirements-eda.html["EDA 요구사항에 대해 자세히 알아보세요."^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 프로젝트 대시보드를 구성하세요
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 개요 대시보드 활성화
+[role="quick-margin-para"]
+개요 대시보드를 활성화하여 FSx for ONTAP 클러스터의 상태, 용량 및 처리량을 모니터링하세요. Workload Factory가 CloudWatch 메트릭 수집을 시작하도록 허용하려면 동의 메시지를 수락하세요.
+
+[role="quick-margin-para"]
+link:task-use-overview-dashboard.html["개요 대시보드를 활성화하는 방법 알아보기"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 프로젝트 대시보드 구성
 [role="quick-margin-para"]
 프로젝트 대시보드를 구성하여 시스템 상태, 성능 및 스토리지 사용량을 모니터링하고 EDA 환경을 효과적으로 최적화할 수 있습니다.
 
 [role="quick-margin-para"]
 link:task-configure-dashboard.html["프로젝트 대시보드를 구성하는 방법을 알아보세요."^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 다른 서비스와 통합
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] FSx 지연 시간 분석 구성
+[role="quick-margin-para"]
+지연 시간 임계값을 설정하여 시뮬레이션 실행 시간에 영향을 미치기 전에 성능 문제를 사전에 파악하고 해결하십시오. 경고 및 위험 알림을 구성하고 자동화된 기본 분석을 활용하십시오.
+
+[role="quick-margin-para"]
+link:task-monitor-latency.html["지연 시간 모니터링을 구성하는 방법을 알아보십시오"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["일곱"] 다른 서비스와 통합
 [role="quick-margin-para"]
 워크로드 팩토리 REST API를 사용하여 EDA를 서비스 포털 또는 Perforce Helix Core와 같은 다른 서비스와 통합하십시오.
 
