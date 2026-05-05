@@ -17,7 +17,6 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="section-title">Ask me AI 어시스턴트 홈페이지 통합</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
   <block id="08c1bf6e31ef174ff608b5eb3d282063" category="summary">Codebox를 사용하면 호스트 배포, 데이터베이스 생성 등을 자동화할 수 있습니다.</block>
-  <block id="e7865839bdb0670c8ccd4e6029a8580b" category="doc">Codebox를 사용하여 EDA 워크로드 작업을 자동화하세요.</block>
   <block id="971492a505365b895740e7ae6a7e5a70" category="paragraph">Codebox를 사용하면 프로젝트 생성 및 데이터 보호 작업을 자동화할 수 있습니다. Codebox는 Workload Factory에서 지원하는 모든 작업을 실행하는 코드를 생성하는 데 도움이 되는 IaC(Infrastructure as Code) 보조 도구입니다.</block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="inline-link-macro">코드박스 자동화</block>
   <block id="7954c9f6b266222ad558a397a97a8531" category="paragraph">자세히 알아보기 <block ref="d6a91743d83ea88006a3d66c27289981" category="inline-link-macro-rx"></block> 그리고 사용 방법.</block>
@@ -135,11 +134,9 @@
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">마이그레이션 어드바이저를 사용하여 Amazon EC2 배포 계획을 생성합니다.</block>
   <block id="87ca10f516e69b36084d36d28809162e" category="paragraph"><block ref="a5520c5bc95caf26ab1a143ec38e8340" category="inline-link-macro-rx"></block>.</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.</block>
-  <block id="f340a055e7f6e6033a05917a218d98bf" category="doc">NetApp Workload Factory for EDA의 알려진 제한 사항</block>
   <block id="406b6743d6cb27b667d9600f28f51fe8" category="section-title">운영자 권한이 필요합니다</block>
   <block id="c1ff9ef1c0ec2e919c5fb8f99ade5a2c" category="paragraph">NetApp Workload Factory for EDA가 정상적으로 작동하려면 운영자 권한이 필요합니다.</block>
   <block id="09593340bc6b0dc8107502c02818e9b4" category="summary">NetApp Workload Factory for EDA에서 Perforce 통합을 사용하는 방법을 알아보세요.</block>
-  <block id="1df0a36c15777610fdaa9898d2c03d7b" category="doc">NetApp Workload Factory for EDA에서 Perforce 통합에 대해 알아보세요.</block>
   <block id="aaece55db43004e3cc685d5bd165253e" category="paragraph">Perforce를 CI/CD 파이프라인과 통합하면 빌드, 테스트 및 배포를 자동화하여 개발 프로세스를 개선하고 더 빠르고 안정적인 소프트웨어 제공이 가능해집니다.</block>
   <block id="e365225a054a446470ef3e9d340e350c" category="paragraph">EDA에서 지속적 통합 및 지속적 배포(CI/CD)는 소프트웨어 개발자를 위한 신속한 빌드 환경 구축 도구입니다. 이를 통해 개인 개발 환경을 빠르게 설정할 수 있어 시간을 절약하고 개발자가 셀프 서비스를 이용할 수 있으며, DevOps 팀은 인프라에 대한 제어권을 유지할 수 있습니다. CI/CD를 사용하면 소프트웨어 개발자는 특수 데이터 저장소나 개발 인프라에 대한 이해 없이도 신속하게 작업 공간을 만들 수 있습니다.</block>
   <block id="44583f52606e67cb0d8ed1bc84bffdad" category="section-title">CI/CD란 무엇인가요?</block>
@@ -211,20 +208,13 @@
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp Workload Factory</block>
   <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
   <block id="aee6f8bed903be1fd0e588691dc83ee2" category="summary">Workload Factory for Databases에서 Microsoft SQL Server 인스턴스를 관리하세요.</block>
-  <block id="542205217e86e3e0edf1c789d246d4ba" category="doc">EDA 프로젝트 관리</block>
   <block id="7a96064e2353eee73d82c2c834e20b4f" category="paragraph">NetApp Workload Factory for EDA에서 각 프로젝트의 코드 및 아티팩트 관리 방식을 제어하려면 EDA 프로젝트를 관리할 수 있습니다.</block>
   <block id="be86ca474df5e14056bc0f20d2cdb767" category="section-title">프로젝트 만들기</block>
-  <block id="595ed1445f27184aa0033396b3201df3" category="paragraph">Amazon FSX for NetApp ONTAP 파일 시스템의 데이터 보호 기능을 활용하여 코드와 아티팩트를 보호할 수 있도록 새로운 EDA 프로젝트를 생성할 수 있습니다. 단계</block>
-  <block id="b69f6093d3af738998065396fbb1b499" category="list-text">*프로젝트 생성*을 선택하세요.</block>
   <block id="3b6aee0d7586fa2e996955209e86b05d" category="list-text">프로젝트 생성 페이지에서 다음 정보를 입력하세요.</block>
   <block id="7ee7bbb308ec85b0e9fa63e91fe6f62f" category="list-text">*프로젝트명*: 프로젝트명을 입력하세요.</block>
   <block id="0cca7644aa0cba3c4f8ebb05e857a455" category="list-text">*설명*: 프로젝트에 대한 설명을 입력하세요.</block>
   <block id="ba325028343b8f10b90df796110a4920" category="list-text">*파일 시스템*: 다음 정보를 제공하십시오.</block>
-  <block id="595ae27652f3e5fcd27b27dd7e2995ec" category="list-text">*자격 증명*: 사용할 Amazon AWS 자격 증명을 선택하십시오. EDA는 이러한 자격 증명을 사용하여 이 프로젝트에서 사용할 수 있는 FSx for ONTAP 파일 시스템을 검색하고 프로젝트의 복제본 및 스냅샷을 생성합니다.</block>
-  <block id="8f4fb3217144e591177c8ab486235b32" category="list-text">*지역*: 이 FSx for ONTAP 파일 시스템이 위치한 지역을 선택하십시오.</block>
-  <block id="66386ee0d90d8185f4bf8daf0ad53e14" category="list-text">*FSx for ONTAP 파일 시스템*: 이 프로젝트에서 사용할 FSx for ONTAP 파일 시스템을 선택하십시오.</block>
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">링크에 대해 자세히 알아보세요</block>
-  <block id="d81239812675b4359f2d53d5493ec461" category="paragraph">링크가 구성된 파일 시스템만 선택할 수 있습니다.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
   <block id="ec138dddaf46c45871ca71eed01a3e90" category="list-text">*볼륨 선택*: 프로젝트를 저장할 볼륨을 선택하십시오. EDA는 이 볼륨을 소프트웨어 저장소로 사용합니다.</block>
   <block id="73699ce7a6810990bfdfcd9d66248475" category="paragraph">NFS 공유로 구성된 볼륨만 선택할 수 있습니다.</block>
   <block id="54707d044b3f7dbd9190e90c0c26da4b" category="list-text">*운영 정책*: 프로젝트 복제본에 대한 제한 사항을 설정하세요.</block>
@@ -258,9 +248,6 @@
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">*삭제*를 선택하세요.</block>
   <block id="8186fba50e8e4d5abb2f25404b3ac987" category="list-text">확인 대화 상자에서 *삭제*를 선택합니다.</block>
   <block id="6acbdc8ddf8c914f95d450771ab7cede" category="paragraph">프로젝트가 삭제되고, 프로젝트와 관련된 모든 코드 또는 아티팩트가 볼륨에서 삭제됩니다. 프로젝트의 스냅샷과 복제본이 보존됩니다.</block>
-  <block id="22358702cb945913fe9b03fc1642777a" category="summary">데이터베이스에는 요구 사항이 서로 다른 세 가지 모드가 있습니다.</block>
-  <block id="761a234d3f3830d5e2b894f7f8c6df06" category="doc">EDA 빠른 시작</block>
-  <block id="67a78d8a3f1d46031c9a29ea5fc8a03a" category="paragraph">EDA 프로젝트 생성을 시작해 보세요. 관리자와 팀 리더는 EDA를 사용하여 개발자 팀의 프로젝트 및 작업 공간을 관리할 수 있습니다.</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">하나</block>
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 워크로드 팩토리에 로그인하세요</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">Workload Factory에 계정을 만드세요</block>
@@ -283,7 +270,6 @@
   <block id="dce6d9a52d216801c96ea309acf6ac73" category="inline-link-macro">Perforce와 EDA를 통합하는 방법을 알아보세요.</block>
   <block id="79d86c078f10e35b854431eab12b31a6" category="paragraph"><block ref="46b2e9ce515b7538a0db67e1aa1bc892" category="inline-link-macro-rx"></block>.</block>
   <block id="0ce746c3ad5ad5ef805497116e224e0c" category="summary">NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다.</block>
-  <block id="a464dafbec2b55bfe0812751d811de55" category="doc">EDA 요구 사항</block>
   <block id="e637e8dfaf1801d56b1ae323e4bb23fb" category="paragraph">NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다.</block>
   <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">워크로드 팩토리 로그인 및 계정</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS 자격 증명 및 권한</block>
@@ -295,14 +281,11 @@
   <block id="f9fada3871257363b73049c3d57c6260" category="list-text">EDA는 사용자가 생성하는 프로젝트와 작업 공간을 저장하기 위해 파일 시스템을 사용합니다.</block>
   <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">이 FSx for ONTAP 파일 시스템은 FlexVol 볼륨을 사용해야 합니다. FlexGroup 볼륨은 지원되지 않습니다.</block>
   <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">AWS FSx for ONTAP 파일 시스템이 있는 AWS 리전, VPC 및 서브넷을 알아야 합니다.</block>
-  <block id="a0241ec69557b1efd3602bf4d51ce98e" category="list-text">파일 시스템에 다음 구성의 볼륨이 하나 이상 필요합니다.</block>
   <block id="a138b35d2cf3191dc5044ce9b7c8afc6" category="list-text">해당 볼륨은 NFS 공유로 구성되어야 합니다.</block>
-  <block id="d22045fbfcf6f7c1c69b271245369732" category="list-text">파일 시스템은 링크로 구성되어야 합니다.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
   <block id="1f44141a0f383810dac8c932e0d76754" category="list-text">이번 배포에 포함된 AWS 리소스에 적용할 태그 키/값 쌍을 고려해야 합니다(선택 사항).</block>
   <block id="d5858b81edfda50f75f7994c971764f0" category="inline-link">ONTAP 파일 시스템용 FSx를 배포하고 관리하는 방법을 알아보세요.</block>
   <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">NetApp 기술 지원팀에 지원 사례를 접수하기 전에 Workload Factory에 NetApp 지원 사이트 계정을 추가하고 지원을 등록해야 합니다.</block>
-  <block id="ba0f011d5889db25564cd78e6f5b974f" category="doc">NetApp Workload Factory for EDA 지원을 신청하세요.</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">NetApp Workload Factory 및 해당 스토리지 솔루션과 서비스에 대한 기술 지원을 받으려면 지원 등록이 필요합니다. Workload Factory와는 별도의 웹 기반 콘솔인 NetApp Console 에서 지원을 등록해야 합니다.</block>
   <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">지원 등록을 한다고 해서 NetApp 클라우드 공급자 파일 서비스에 대한 지원을 받을 수 있는 것은 아닙니다. 클라우드 제공업체의 파일 서비스, 해당 인프라 또는 해당 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 Workload Factory 설명서의 "도움 받기" 섹션을 참조하십시오.</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
@@ -368,9 +351,7 @@
   <block id="8a9876fcec3611024b1737894816d045" category="paragraph">필요한 필터를 선택했으면 새로고침 아이콘을 선택하여 대시보드 정보를 업데이트하세요.</block>
   <block id="a3f123658200529c4e7f0b941eeacf6a" category="paragraph">카드에 표시된 정보에 대한 설명을 보려면 해당 카드의 정보 아이콘을 선택하십시오.</block>
   <block id="663855c524023164098db8a9a351a92a" category="summary">스냅샷과 클론을 사용하여 EDA 프로젝트의 버전을 관리하세요.</block>
-  <block id="72cc10b2027da541649606ce0bdc96d6" category="doc">EDA 프로젝트를 위한 NetApp Workload Factory 의 버전을 관리합니다.</block>
   <block id="0270aa16b7068d8fdfd9200b20cfc5ce" category="inline-link">워크로드 팩토리 REST API</block>
-  <block id="5c9c8db206c0c8031726241f0cedacaa" category="paragraph">Workload Factory에서 필요에 따라 스냅샷과 클론을 직접 생성하여 EDA 프로젝트의 다양한 버전을 사용할 수 있습니다. 프로젝트의 스냅샷과 복제본은 프로젝트가 생성될 당시 연결되었던 파일 시스템에 저장됩니다. 스냅샷과 클론도 관리할 수 있습니다.<block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>.</block>
   <block id="1c88041df602722b072eab90c31d79ca" category="section-title">프로젝트 스냅샷을 생성합니다.</block>
   <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">다음 단계를 따르면 프로젝트 스냅샷을 만들 수 있습니다.</block>
   <block id="b6dd3178b375027143d1694361b475e4" category="list-text">프로젝트 페이지에서 선택하세요 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 스냅샷을 찍으려는 프로젝트의 경우.</block>
@@ -386,7 +367,6 @@
   <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">클론의 기반으로 사용할 스냅샷을 선택하세요.</block>
   <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">워크로드 팩토리는 프로젝트의 새로운 복제본을 생성하고, 이 복제본은 프로젝트 페이지에 새로운 프로젝트로 나타납니다.</block>
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">EDA용 Workload Factory의 새로운 기능을 알아보세요.</block>
-  <block id="8aa901901d7a7435a17fc1f732006316" category="doc">NetApp Workload Factory for EDA의 새로운 기능은 무엇인가요?</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">Workload Factory의 EDA 기능에 새로 추가된 기능을 알아보세요.</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025년 10월 5일</block>
   <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025년 6월 16일</block>
@@ -481,9 +461,7 @@
   <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*중요 이벤트*</block>
   <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*읽기 지연 시간 임계값*: 지연 시간 임계값을 밀리초 단위로 입력합니다. 기본값: 12ms.</block>
   <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*쓰기 지연 시간 임계값*: 지연 시간 임계값을 밀리초 단위로 입력합니다. 기본값: 15ms.</block>
-  <block id="0073a211209725d1fd56c6533d4ffec3" category="paragraph">Workload Factory는 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 지연 시간 메트릭 수집을 시작합니다. 메트릭은 최소 20분마다 수집됩니다. 지연 시간 이벤트 테이블에는 구성된 임계값을 초과하는 볼륨이 표시됩니다.</block>
   <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">알림 이해</block>
-  <block id="c00d3202c1a4245d5310c03fe4c4d124" category="paragraph">지연 시간 분석 기능은 CloudWatch 알람을 사용하여 볼륨 성능을 모니터링합니다. 알림이 트리거되는 방식을 이해하면 적절한 임계값을 구성하고 결과를 해석하는 데 도움이 됩니다.</block>
   <block id="ee34286f143c9ac572df816e88226163" category="section-title">수집된 메트릭</block>
   <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">이 시스템은 각 볼륨에 대해 다음과 같은 CloudWatch 지표를 수집합니다.</block>
   <block id="9115f34400f66fb673aa39683fefc0a8" category="list-text">*읽기 지연 임계값*: 1000 * m2/(m1+0.000001)로 계산되며, 여기서 m1 = DataReadOperations이고 m2 = DataReadOperationTime</block>
@@ -496,13 +474,8 @@
   <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">예를 들어, 기본 경고 임계값을 사용하면 10분 동안 모든 데이터 포인트에 대해 읽기 지연 시간이 6ms를 초과하고 읽기 IOPS가 100ops/sec를 초과하는 경우에만 읽기 알림이 트리거됩니다.</block>
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">이벤트 심각도</block>
   <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">지연 이벤트 보기</block>
-  <block id="0fd27ce965f59d9ce188afda7be707f7" category="list-text">각 볼륨에 대한 최신 위반만 표에 표시됩니다. 볼륨에 여러 번의 위반이 발생한 경우 가장 최근 이벤트만 표시됩니다.</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">이벤트는 72시간 후 자동으로 제거됩니다.</block>
-  <block id="99789473cc53d4c5f2666a4ab79ebb39" category="list-text">이 표에는 최대 200개의 이벤트가 표시됩니다. 새 이벤트가 추가되면 오래된 이벤트는 삭제됩니다.</block>
-  <block id="fa25e0e326e38037315b4df99a68a595" category="list-text">*지연 시간* 탭에서 지연 시간 이벤트 테이블을 확인합니다.</block>
-  <block id="dcc9848cbc440e33ab31099e592f3548" category="list-text">다음을 포함한 각 이벤트에 대한 정보를 검토하십시오.</block>
   <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*탐지 시간*: 침해가 탐지된 시간</block>
-  <block id="ffdc22229e20f79439c83c1406c5988f" category="list-text">테이블을 정렬하려면 열 머리글을 선택합니다. 기본적으로 중요 이벤트가 시간별로 정렬되어 먼저 표시되고 그 다음 경고 이벤트가 시간별로 정렬되어 표시됩니다.</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">지연 시간 구성 관리</block>
   <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">초기 구성 후 임계값을 편집할 수 있습니다.</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">*지연 시간* 페이지에서 *편집*을 선택합니다.</block>
@@ -531,13 +504,10 @@
   <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">새로운 북마크를 클릭하면 어느 페이지에서든 Ask Me를 열 수 있습니다. 현재 작업 중인 내용을 방해하지 않고 사이드 패널에 Ask Me가 실행되어, 현재 작업과 관련된 간단한 설명과 추천 사항을 제공합니다.</block>
   <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">Ask Me에 대해 자세히 알아보기</block>
   <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
-  <block id="af1eef28f8038566e17f51ba82615700" category="inline-link-macro">FSx 지연 시간 분석</block>
   <block id="9f8fc4b6d5129d1b72493ddaf0f177cd" category="inline-link-macro">프로젝트 대시보드</block>
   <block id="2621556594828dd93047cabafe8b26f2" category="list-text"><block ref="bac4b9b5c5366540fe87e1b00f6342f2" category="inline-link-macro-rx"></block>: FSx for ONTAP 파일 시스템 전반의 스토리지 사용량을 중앙 집중식으로 확인하여 프로젝트 전반에 걸쳐 스토리지 사용량을 계획하고, 비용을 평가하고, 관련 정보를 수집할 수 있도록 지원합니다.</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6</block>
-  <block id="036ef06a76b0cf0f6ab9f48a023460ac" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> FSx 지연 시간 분석 구성</block>
   <block id="7a13522750dff612c4af95a525a5075b" category="inline-link-macro">지연 시간 모니터링을 구성하는 방법을 알아보십시오</block>
-  <block id="3bc5828357e9bc5a0fa43a8464306aef" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>.</block>
   <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">일곱</block>
   <block id="28d16b2155b937481f163959c1136c11" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 다른 서비스와 통합</block>
   <block id="0069d41df3c7692bcf3427c1413ed191" category="paragraph">EDA 워크로드를 관리하는 IT 관리자 또는 프로젝트 관리자는 프로젝트 탭을 사용하여 FSx for ONTAP 파일 시스템 및 볼륨 전반의 프로젝트 사용량을 관찰하고 분석할 수 있습니다. 대시보드를 통해 용량을 계획하고, 비용을 평가하고, 리소스 할당에 대한 데이터 기반 의사 결정을 내릴 수 있습니다. AWS 태그를 기반으로 최대 5개의 사용자 지정 필터를 생성할 수 있으며, 단일 또는 다중 선택 옵션을 사용하여 프로젝트, 팀 또는 애플리케이션과 같은 특정 비즈니스 요구 사항에 따라 데이터를 구성하고 필터링할 수 있습니다.</block>
@@ -551,15 +521,12 @@
   <block id="3b2e82a7db8895e573b7793ae75197df" category="paragraph">전체 보기(기본값)는 선택한 필터와 일치하는 모든 볼륨의 집계된 메트릭을 표시합니다. 이 보기는 전체 스토리지 성능에 대한 높은 수준의 개요를 제공하며, 결합된 용량, IOPS 및 처리량 메트릭을 보여줍니다. 이 보기를 사용하여 전반적인 추세를 파악하고, 향후 용량 계획을 수립하고, 프로젝트 또는 팀 전체의 총 리소스 사용량을 보고할 수 있습니다.</block>
   <block id="50bd9972092e5f07d70cda13706daa20" category="paragraph">볼륨 보기에서는 시간 경과에 따른 개별 볼륨 성능을 표시하며, 각 메트릭별로 상위 10개 볼륨을 보여줍니다. 이 보기를 통해 리소스 사용량을 주도하는 특정 볼륨을 파악하고 선택한 기간 동안의 동작을 관찰할 수 있습니다. 이 보기를 활용하여 성능 병목 현상을 찾고, 볼륨 크기 조정이 필요한 부분을 식별하거나, 가장 많은 리소스를 소비하는 특정 프로젝트 또는 워크로드를 정확히 찾아낼 수 있습니다.</block>
   <block id="d9bc5fa39156750788e0c19b51ff9b90" category="paragraph">대화형 호버 데이터는 특정 시점의 정확한 메트릭을 제공하여 성능 변화와 특정 이벤트 또는 기간 사이의 상관관계를 파악하는 데 도움을 줍니다. 이러한 상세 정보는 성능 문제 해결, 최적화 노력 검증 또는 이해관계자에게 리소스 사용 패턴을 설명하는 데 유용합니다.</block>
-  <block id="c71b8351410f1c02368d50df93b2ea3f" category="summary">구성 가능한 경고 및 중요 이벤트 임계값을 사용하여 볼륨 지연 성능을 모니터링하고 분석합니다. 자동화된 기본 분석을 통해 성능 병목 현상을 사전에 파악하고 해결합니다.</block>
-  <block id="d96fe1e44083a9dcf823433db5fb7b02" category="doc">EDA 워크로드에서 볼륨 지연 시간 모니터링</block>
   <block id="bb3f1fee880e4d3b2d95074d40c5f096" category="paragraph">지연 시간 모니터링 및 분석 기능을 사용하려면 다음 요구 사항을 충족해야 합니다.</block>
   <block id="c4909262f33027f9d6430abfd14a7941" category="list-text">Workload Factory에 읽기/쓰기 권한이 있는 AWS 자격 증명을 추가해야 합니다. 지연 시간 모니터링 기능을 사용하려면 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 CloudWatch 메트릭에 액세스해야 합니다.</block>
   <block id="c2ef204dc55e5ae693bd27e7c1a816a4" category="list-text">AWS 환경에 볼륨이 배포된 FSx for ONTAP 파일 시스템이 하나 이상 필요합니다. 지연 시간 모니터링 기능은 구성된 AWS 자격 증명과 연결된 모든 볼륨에 대한 메트릭을 자동으로 수집합니다.</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="list-text">FSx for ONTAP에 연결</block>
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="inline-link-macro">링크 생성</block>
   <block id="e631d9996b49ecdb5d4d4146db562c6d" category="paragraph">링크를 생성하고 연결하는 방법에 대한 지침은 <block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="54d8e530acdf0c4b7b3dc9aacdf0cb74" category="section-title">기본 분석 이해</block>
   <block id="1ca1e4067fc4b6f31aac0c6e9c6b5efe" category="admonition">ONTAP QoS 분석과 CloudWatch 데이터의 지연 시간 값은 데이터 수집 방식의 차이로 인해 약간의 차이가 있을 수 있습니다. 기본 분석에서는 근본 원인 파악을 위해 ONTAP 데이터를 사용합니다.</block>
   <block id="ce963a448d1278ae4d6db6d01991d19b" category="paragraph">대시보드에는 다음이 포함됩니다.</block>
   <block id="bf7cc54e388f0b806386888989c37589" category="list-text">보기 권한이 있는 AWS 자격 증명</block>
@@ -573,7 +540,6 @@
   <block id="cc88c8520cacdcbd154b678b080f5359" category="list-text">*AWS 계정*: 구성된 자격 증명과 연결된 하나 이상의 AWS 계정으로 필터링합니다.</block>
   <block id="f1dd68ee490b7c8bd34a8f05569cfb01" category="section-title">클러스터 상태</block>
   <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="section-title">지연 시간</block>
-  <block id="aa7b6cabe2e36a5e27d3d99844a44339" category="list-text">지연 시간 모니터링을 활성화한 경우에만 지연 시간 정보를 볼 수 있습니다. 지연 시간 임계값을 구성하지 않은 경우 *구성*을 선택하십시오. 지연 시간 모니터링에 대한 자세한 내용은 <block ref="bb13c4bd03249e499d4f9abd1d69f517" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="section-title">용량</block>
   <block id="596b10dc3c83c43203ecb5e35057ea82" category="list-text">디렉토리 크기가 가득 찼습니다</block>
   <block id="8e556aa1506dff11340a95a83ac47877" category="list-text">Inode 가득 찼음</block>
@@ -604,7 +570,6 @@
   <block id="2c5e7dde0b5d8fe45e7e905c674f4c31" category="section-title">2026년 3월 1일</block>
   <block id="4fdbac3671b30e3a2d6d3233ee4023d0" category="sidebar">EDA 스토리지 개요</block>
   <block id="ea637c5687abbd47d05bd10d63c621ce" category="sidebar">EDA 스토리지 운영 관리</block>
-  <block id="159811235c973c8931bfb09d9271a253" category="sidebar">FSx 볼륨 지연 시간 모니터링</block>
   <block id="d0efe11222ff735f348a5bd5e26ce56d" category="sidebar">프로젝트 사용 분석</block>
   <block id="c5fc13d61eed82ccc80e74a9ac0ecd18" category="sidebar">프로젝트 스토리지 용량 사용 분석</block>
   <block id="baf7dcba0c4a80ef2ec1dd0465a27ee0" category="paragraph">수십 개의 FSx for ONTAP 파일 시스템을 관리하는 IT 관리자는 개요 대시보드를 사용하여 클러스터 상태, 활용률 및 볼륨 배치와 관련된 일반적인 운영 질문에 대한 답을 찾을 수 있습니다.</block>
@@ -631,7 +596,6 @@
   <block id="af2687c5a2b9873716f0987242df8169" category="paragraph"><block ref="2915288e95b80b72c9de65e94d4fc279" category="inline-link-rx"></block>.</block>
   <block id="903ae19f4744109bd449ffef22e131cc" category="inline-link-macro">개요 대시보드</block>
   <block id="ad3ee48dbaf8bd15170288a8cbaf9111" category="list-text"><block ref="c43085d6db3011d68248506cba6c2189" category="inline-link-macro-rx"></block>: FSx for ONTAP 클러스터의 상태, 용량 및 처리량을 모니터링하고, 새 볼륨을 배치할 위치를 결정하고, 용량 및 처리량 확장에 대한 정보에 입각한 결정을 내리고, 자동화된 용량 권장 사항을 받을 수 있도록 중앙 집중식 클러스터 보기를 제공합니다.</block>
-  <block id="1d50fec2796c0c79711a5921504f8be6" category="list-text"><block ref="2a69c5ddcbc71f72803fea54e985fdc0" category="inline-link-macro-rx"></block>: 구성 가능한 경고 및 위험 이벤트 임계값을 사용하여 볼륨 읽기 및 쓰기 지연 시간 성능을 사전에 모니터링합니다. ONTAP QoS 지연 센터 메트릭을 사용한 자동화된 기본 분석과 더 심층적인 근본 원인 식별이 필요한 복잡한 시나리오를 위한 선택적 AI 에이전트 분석이 포함되어 있습니다.</block>
   <block id="76fe6a2921854a310876f2886d0744fa" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 개요 대시보드 활성화</block>
   <block id="208586cd32a8a0d00042653ba4659b8e" category="paragraph">개요 대시보드를 활성화하여 FSx for ONTAP 클러스터의 상태, 용량 및 처리량을 모니터링하세요. Workload Factory가 CloudWatch 메트릭 수집을 시작하도록 허용하려면 동의 메시지를 수락하세요.</block>
   <block id="c2151e2d1dba976fab30173e26e64ace" category="inline-link-macro">개요 대시보드를 활성화하는 방법을 알아보십시오</block>
@@ -640,43 +604,30 @@
   <block id="37be776cacb7f2116612a9a0dd1fe4be" category="paragraph">프로젝트 대시보드를 구성하여 시스템 상태, 성능 및 스토리지 사용량을 모니터링하고 EDA 환경을 효과적으로 최적화할 수 있습니다.</block>
   <block id="c6be2ff5f814ccc204c4fa5cc9a26402" category="inline-link-macro">프로젝트 대시보드 구성 방법 알아보기</block>
   <block id="5eec74fa0479342640b4f0cf89f95ace" category="paragraph"><block ref="dee2cdd0dc5bf217faec6f43b7f77ae0" category="inline-link-macro-rx"></block>.</block>
-  <block id="f825ea95c51e7db323bcf5afc1eccf71" category="paragraph">지연 시간 임계값을 설정하여 시뮬레이션 실행 시간에 영향을 미치기 전에 성능 문제를 사전에 파악하고 해결하십시오. 경고 및 중요 알림을 구성하고, 자동화된 기본 분석을 활용하며, 선택적으로 Amazon Bedrock 모델 ARN을 구성하여 복잡한 시나리오에 대한 AI 에이전트 분석을 활성화할 수 있습니다.</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">현재 _Basic_ 모드 및 _Read-only_ 모드 권한은 지원되지 않습니다.</block>
-  <block id="46e3675e5a355e5ddd370afe3d3bb024" category="admonition">지연 시간 모니터링 기능을 사용하려면 AWS 자격 증명이 필요하며, 이 기능은 볼륨 성능 분석을 위해 CloudWatch 메트릭을 수집합니다. 복잡한 지연 시간 시나리오에 대한 선택적 AI 에이전트 분석을 활성화하려면 Amazon Bedrock 모델 ARN도 제공해야 합니다. <block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>.</block>
   <block id="e8a5e8ec2e90f68cc56140acc19fe659" category="summary">EDA Project 대시보드에 태그를 추가하여 메트릭을 수집하도록 구성하십시오. 비즈니스 요구 사항에 맞게 단일 또는 다중 선택 옵션으로 필터를 사용자 지정하십시오.</block>
-  <block id="8d12d5ef44c0be20d992555dfe8bd5ea" category="doc">프로젝트 대시보드 사용</block>
   <block id="e532219ff10a9efe2b7516b9eabb80ec" category="admonition">프로젝트 대시보드에 액세스하는 첫 번째 관리자 사용자만 사용자 지정 필터를 구성, 추가 또는 삭제할 수 있습니다. 이후 관리자를 포함한 다른 모든 사용자는 필터에 대한 읽기 전용 액세스 권한만 갖습니다.</block>
   <block id="2a4f511f8ad738b70bd3748a9e642173" category="paragraph">EDA 워크로드를 관리하는 IT 관리자 또는 DevOps 엔지니어는 지연 시간 분석을 사용하여 FSx for ONTAP 볼륨 읽기 및 쓰기 지연 시간을 모니터링할 수 있습니다. 경고 및 심각 임계값을 구성하여 성능 문제를 조기에 감지할 수 있습니다. 이벤트가 발생하면 Workload Factory에서 자동화된 기본 분석을 제공하며, 선택적으로 AI 에이전트 분석을 실행하여 근본 원인 세부 정보, 영향을 받는 클라이언트 및 권장 해결 단계를 확인할 수 있습니다.</block>
-  <block id="689a108e68521950894e8ac6a0fc47a0" category="paragraph">지연 시간 분석은 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨의 읽기 및 쓰기 작업에 대한 CloudWatch 메트릭을 수집합니다. 구성된 시간 범위 내의 모든 데이터 포인트에 대해 지연 시간 임계값과 IOPS 임계값이 모두 초과되면 경고가 생성됩니다. 이러한 이중 조건 논리는 실제 부하 상태에서도 높은 지연 시간이 유지되도록 함으로써 오탐을 줄입니다.</block>
-  <block id="212bf221315f2f291088e19612047005" category="paragraph">이벤트가 감지되면 Workload Factory는 ONTAP QoS 지연 센터 메트릭을 사용하여 기본 분석을 실행하고 주요 지연 원인(예: FlexCache, 용량 풀, QoS 제한, 디스크, 데이터, 클러스터 또는 기타 서브시스템)을 식별합니다.</block>
-  <block id="a76fb03e89ec717d2f62c29e99f6b806" category="paragraph">데이터 및 클러스터 시나리오의 경우, 지연 시간 분석 패널에서 AI 에이전트 분석을 선택적으로 호출하여 자세한 근본 원인 설명, 영향을 받는 EC2 클라이언트 목록 및 권장 해결 단계를 확인할 수 있습니다.</block>
   <block id="14148bac5b7c3663c54f10f09a5bd49a" category="paragraph">_Basic_ 모드 및 _Read-only_ 모드 권한은 지연 시간 모니터링에 지원되지 않습니다.</block>
   <block id="289fde61867c520c9e1b763ec58e4782" category="list-text">Amazon Bedrock 모델 ARN(선택 사항)</block>
   <block id="2c428aa993eaa904ca8a12c78bcdf21a" category="list-text">선택적 AI 에이전트 분석 기능을 사용하려면 Workload Factory 설정에서 Amazon Bedrock 모델 ARN을 제공해야 합니다.</block>
   <block id="a6390dd71ac213c8926f4e003361b1c7" category="inline-link-macro">기본 GenAI 요구 사항</block>
   <block id="544f338acee9a38350cfd4ac8846e75e" category="paragraph">자세한 내용은 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="714634b35768346f156bd0791bc13f1b" category="paragraph">Bedrock 모델 ARN을 구성하지 않더라도 지연 시간 모니터링 및 자동화된 기본 분석은 계속 사용할 수 있습니다. AI 에이전트 분석은 사용할 수 없습니다.</block>
-  <block id="4c7dd9b5d68b3c4e5e772a88842e087c" category="list-text">지연 시간 이벤트 테이블 및 분석 패널에서 기본 분석 정보를 확인하려면 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. 링크가 없으면 이벤트는 감지되지만 분석에서 제공하는 정보는 제한적입니다. 링크가 연결되어 있지 않은 경우 EDA에서 *링크 연결*을 선택하고 새 링크를 생성할지 또는 기존 링크를 연결할지 선택한 다음 *계속*을 선택하여 스토리지 워크로드의 링크 생성 페이지로 자동 이동하십시오.</block>
   <block id="cb9b360ea843c63638883c1cd17f136a" category="list-text">*경고 이벤트*: 주의가 필요할 수 있는 지연 시간 증가를 나타냅니다</block>
   <block id="a76142b21bf8fd3e217700ad47520a99" category="list-text">*중요 이벤트*: 즉각적인 조사가 필요한 심각한 지연 현상을 나타냅니다.</block>
-  <block id="798bca0593da51c40ef2141d8e58a22c" category="paragraph">읽기 및 쓰기 작업에 대한 경고 및 위험 임계값을 구성하십시오. 시스템은 임계값을 지속적으로 평가하고 조건이 충족되면 알림을 생성합니다.</block>
   <block id="85af8e40cac423345858be0210476d20" category="list-text">*지연 시간* 탭을 선택합니다.</block>
   <block id="a336da6bfc59dea8a34a61e330a80866" category="paragraph">지연 이벤트 테이블은 지난 72시간 동안 감지된 모든 경고 및 위험 이벤트에 대한 중앙 집중식 보기를 제공합니다.</block>
-  <block id="7ace6e09b4fff3abb19be79c34bbc1ff" category="list-text">파일 시스템과 연결된 링크가 없더라도 이벤트가 표에 표시됩니다. 기본 분석 세부 정보를 보고 AI 에이전트 분석을 실행하려면 링크가 필요합니다.</block>
   <block id="0dea20f75813d2ed33976d047d4feb75" category="list-text">*심각도*: 이벤트가 Critical인지 Warning인지 여부를 나타냅니다</block>
   <block id="ab9c0c767f9043ec9da24ddf4988d6df" category="list-text">*볼륨 이름*: 영향을 받는 볼륨의 이름</block>
   <block id="6b854e2d874f08fa11e8527be7a67311" category="list-text">*볼륨 ID*: 영향을 받는 볼륨의 ID</block>
   <block id="a4ea9bee29b55456bed1615792abaa8d" category="list-text">*파일 시스템*: 볼륨을 포함하는 FSx for ONTAP 파일 시스템</block>
   <block id="f0abce0c8eb9545d70bbad5d74599eec" category="list-text">*중앙값 지연 시간(ms)*: 침해 기간 동안의 중앙값 지연 시간 값</block>
   <block id="65b8e7b4f221cb001b2617746bfea3c2" category="list-text">*임계값 초과 비율*: 지연 시간이 구성된 임계값을 초과한 비율(%)</block>
-  <block id="c8b406ee0737347eaec26ec6b4bb8dd7" category="list-text">지연 이벤트에 대한 세부 정보를 보려면 지연 이벤트 테이블의 *심각도* 열에서 해당 이벤트를 선택하십시오. 그러면 해당 이벤트에 대한 지연 분석 패널이 열립니다.</block>
   <block id="039dfdde9abd9ac1aa8a2a98cfb44323" category="inline-image-macro">작업 메뉴 아이콘</block>
   <block id="8915e02d8d5fd0d498876dbe62c67555" category="list-text">하나 이상의 이벤트를 해제하려면 각 이벤트 옆에 있는 <block ref="fae3e4e28bd0d43fa65e8d02aaf53cac" category="inline-image-macro-rx" type="image"></block> *해제*를 선택합니다.</block>
   <block id="d539b5c7c0d30ab9075ef09bb7eeaed1" category="inline-image-macro">열 아이콘</block>
   <block id="628efbb82f0f8c3afdae512a42ac4ffd" category="list-text">표에 열을 추가하려면 <block ref="82e9020bee7d7516519b387592b50c34" category="inline-image-macro-rx" type="image"></block>을(를) 선택하고 열을 선택한 다음 * 적용 * 을 선택합니다.</block>
-  <block id="3b181dc5b029a9f49372c67a9623539a" category="paragraph">기본 분석을 통해 수동 조사 없이 지연 문제의 근본 원인을 신속하게 파악할 수 있습니다. 지연 이벤트가 감지되면 Workload Factory는 ONTAP QoS 지연 센터 메트릭을 사용하여 자동으로 기본 분석을 수행합니다. 이 분석은 지연을 유발하는 구성 요소를 식별하고 지연 분석 패널에 간략한 설명을 제공합니다.</block>
   <block id="38eacd6054dad756b607d4c8329eee03" category="section-title">지연 시간 분석 패널</block>
-  <block id="65af6daa7b3bc1df873f030e52a4c6cd" category="paragraph">지연 이벤트 표의 *심각도* 열에서 지연 이벤트를 선택하면 해당 이벤트에 대한 지연 분석 패널이 열립니다.</block>
   <block id="5ce70a0653bfe7f6bff6e2eddd206a0e" category="list-text">*FlexCache*: FlexCache 작업으로 인한 지연 시간</block>
   <block id="68ba76b3b80fb774692fafaa3bca3244" category="list-text">*용량 풀*: 용량 풀 작업의 지연 시간</block>
   <block id="df0c1b63249b6e6a43327ad7270f9a50" category="list-text">*QoS min*: QoS 정책 그룹 하한값에 따른 지연 시간</block>
@@ -685,10 +636,8 @@
   <block id="1b04caaa22ceaef074dc3dd87240ca56" category="list-text">*데이터*: CPU 처리, 메타데이터 업데이트 및 캐시 관리를 포함한 WAFL 서브시스템의 지연 시간</block>
   <block id="de3ae150d2eddb964a39576f4d93c994" category="list-text">*Cluster*: 내부적으로 연결된 노드 간의 지연 시간</block>
   <block id="214e41afc37c18a28923389d4435f505" category="list-text">*기타*: NVRAM 및 네트워크와 같은 다른 스토리지 서브시스템으로 인한 지연 시간</block>
-  <block id="5b3e80a77345a3fde070c3875e367213" category="paragraph">Amazon Bedrock 모델 ARN이 구성된 경우 패널에는 데이터 및 클러스터 시나리오에 대한 AI 에이전트 분석을 실행하는 옵션도 포함됩니다. Bedrock이 구성되지 않은 경우 패널에는 특정 파일 시스템에 대한 스토리지 워크로드 구성 페이지 링크가 표시되며, 여기에서 Bedrock 액세스를 구성할 수 있습니다.</block>
   <block id="1af9d8d07caa5522beed26e2ac87c9b0" category="section-title">AI 에이전트 분석 실행</block>
   <block id="b82697b621a677f2c131ea161ca15ca5" category="paragraph">기본 분석을 통해 지연 원인을 파악할 수 있지만, 데이터 또는 클러스터 구성 요소와 관련된 복잡한 시나리오에서는 구체적인 근본 원인과 해결 방안을 파악하기 위해 심층적인 조사가 필요한 경우가 많습니다. AI 에이전트 분석은 기본 분석으로는 감지할 수 없는 bully 볼륨, 최적화되지 않은 구성 또는 스케일 아웃 요구 사항과 같은 문제를 식별하여 이러한 심층적인 문제 해결을 지원합니다.</block>
-  <block id="db235dae74c9a799569fa1e4489546b0" category="paragraph">Workload Factory 설정에서 Amazon Bedrock 모델 ARN을 구성해야 합니다.</block>
   <block id="390b6ebb0dada50f5e02de14863d5d9a" category="paragraph">AI 에이전트 분석을 실행하면 시스템이 기본 분석 데이터를 자동으로 갱신하고 이를 AI 에이전트의 입력으로 사용합니다. AI 에이전트는 지연 시나리오를 평가하고 다음과 같은 결과를 제공합니다:</block>
   <block id="f825ff4432099d6f44cdb5f8f4bfc6db" category="list-text">*잠재적 근본 원인*: 지연 문제의 원인에 대한 자세한 설명</block>
   <block id="102e5bfcdb00d2737ee47f8cfa62267e" category="list-text">*영향을 받는 클라이언트*: 지연 현상의 영향을 받는 EC2 인스턴스 이름 목록</block>
@@ -699,18 +648,10 @@
   <block id="7b4aa399068fb6652866c4a35815dac2" category="list-text">FlexGroup 리밸런싱 요구 사항(클러스터 지연 관련)</block>
   <block id="7b9daeff6b6cce80aff1d790b8c602de" category="list-text">확장 요구 사항(클러스터 지연의 경우)</block>
   <block id="e38b13dd2c91516a7427e9ddddaee80a" category="list-text">*지연 시간* 탭에서 분석하려는 이벤트를 찾습니다.</block>
-  <block id="42b7829927e2fa6f02a6e4ba2b9ec5c4" category="list-text">지연 이벤트 테이블의 *심각도* 열에서 지연 이벤트를 선택하여 해당 이벤트에 대한 분석 패널을 엽니다.</block>
-  <block id="13d475257a740ba4ce84906a2bafa093" category="paragraph">파일 시스템에 연결된 링크가 없는 경우, 해당 파일 시스템에 링크를 연결하라는 메시지가 표시됩니다. 메시지를 선택하면 해당 파일 시스템의 링크 설정 페이지로 이동합니다. 툴팁에는 리디렉션에 대한 설명과 함께 링크를 연결하고 Bedrock 액세스를 구성(권장)하면 전체 이벤트 분석이 가능하다는 내용이 표시됩니다.</block>
-  <block id="456a8fbc2d19dbd69f55af63c28595bd" category="list-text">분석 패널에서 기본 분석 결과를 검토하여 지연 원인을 파악하십시오.</block>
-  <block id="982100e600eb543d7485fe38c9894e28" category="list-text">지연 시간 소스가 데이터 또는 클러스터로 식별되면 *분석*을 선택합니다.</block>
-  <block id="fdfbcf69c9e66f145ac674d580b525aa" category="list-text">AI 에이전트 분석 결과를 검토하십시오. 분석 결과에는 다음 내용이 포함됩니다.</block>
-  <block id="90eebe71ac2449100110ef08efa3640f" category="list-text">근본 원인 설명</block>
-  <block id="e3a0a543235123ca6d6b552288ef2b74" category="list-text">잠재적 개선 조치</block>
   <block id="55778645f90c4570ed888c2e7a8fd0cd" category="list-text">지연 문제를 해결하기 위해 권장되는 개선 조치를 실행하십시오.</block>
   <block id="eef392bb1b41a4e082bfc98d04dc9517" category="list-text">문제 해결 후 지연 시간 이벤트 테이블을 모니터링하여 문제가 해결되었는지 확인하십시오.</block>
   <block id="f425eb4d55adb205ccf2c677df8ee7a9" category="list-text">*AI 에이전트 분석을 전략적으로 활용하세요*: 기본 분석에서 AI 에이전트 분석이 필요하다고 판단되는 데이터 및 클러스터 시나리오에 대해 분석을 실행하세요. AI 에이전트 분석은 상세한 문제 해결이 필요한 복잡한 성능 문제에 대한 심층적인 통찰력을 제공합니다.</block>
   <block id="8d2d238b8187f64d495cfc9978b55898" category="summary">개요 대시보드를 사용하여 FSx for ONTAP 파일 시스템의 상태, 용량 및 처리량을 모니터링하십시오. 대규모 스토리지 사용량을 확인하고 볼륨 배치 및 용량 확장에 대해 정보에 입각한 결정을 내리십시오.</block>
-  <block id="6c636a9a325c9ce22f7136ea460fdb4f" category="doc">EDA 워크로드에서 개요 대시보드 사용</block>
   <block id="027bcc17ae543ed5fe33c2d273a75b59" category="paragraph">여러 FSx for ONTAP 파일 시스템(ONTAP 클러스터)에서 EDA 워크로드를 관리하는 IT 관리자는 Overview 대시보드를 사용하여 클러스터 상태 및 사용량을 신속하게 평가할 수 있습니다. 이 대시보드를 활용하여 새 볼륨이나 작업을 배치할 위치를 결정하고, 볼륨이나 SVM을 이동할 후보를 식별하고, 용량 또는 처리량을 확장해야 할 시기를 판단할 수 있습니다.</block>
   <block id="000c45e9b90aaab86ef0c09071b10409" category="paragraph">개요 대시보드는 용량 및 처리량을 포함하여 FSx for ONTAP 클러스터에 대한 중앙 집중식 보기를 제공합니다. 이를 사용하여 새 볼륨을 배치하고, 워크로드를 재분배하고, 용량 또는 처리량 확장을 계획할 수 있습니다.</block>
   <block id="cb545ee4a07ff5112b26d255e807b577" category="list-text">*클러스터 상태*: 대시보드 상단에 요약된 정보로, 파일 시스템 전반의 지연 이벤트, SSD 사용률 및 용량 권장 사항, ONTAP EMS 이벤트를 강조 표시합니다.</block>
@@ -763,4 +704,139 @@
   <block id="ee6f79302596ffa7d6d6cdb31d87b1de" category="paragraph">파일 시스템의 용량 한계에 근접했는지 확인하려면 *SSD 사용량*을 사용하십시오. 처리량 요구량을 프로비저닝된 처리량 SKU와 비교하려면 *처리량 사용량(P99)*을 사용하십시오. 계산 세부 정보를 보려면 처리량 열 헤더 위에 마우스를 올려놓으십시오.</block>
   <block id="87805a3d803959d3dcd34427a660d169" category="admonition">활성 용량 권장 사항이 있는 파일 시스템은 표에 전구 표시기가 표시됩니다. 파일 시스템 이름을 선택하면 해당 파일 시스템의 SSD 용량 메트릭, 과거 사용 추세 및 용량 권장 사항을 볼 수 있습니다.</block>
   <block id="6f600db4b9fe06680f2ac280db49796a" category="section-title">2026년 4월 6일</block>
+  <block id="97c13014b9e16335b445d04850fb955f" category="doc">지연 이벤트에 대한 이메일 및 SNS 알림</block>
+  <block id="c31a2fa4340e87df74fd4add6857d037" category="paragraph">이제 FSx for ONTAP 볼륨에서 지연 시간 이벤트가 감지되면 자동 알림을 받을 수 있습니다. Workload Factory 설정에서 이메일 또는 Amazon SNS 알림을 구성하여 볼륨이 구성된 지연 시간 임계값을 위반할 경우 실시간 알림을 받을 수 있습니다.</block>
+  <block id="64252b5e1bc1f93bfafd01c34fd0860b" category="paragraph">알림은 파일 시스템 단위로 전송되며 영향을 받는 모든 볼륨에 대한 세부 정보, 심각도 수준, 임계값 비교 및 조사를 위한 지연 시간 페이지로의 직접 링크를 포함합니다.</block>
+  <block id="95e7f36fe4398f41dfcbc5591df71f8d" category="inline-link">지연 시간 알림을 구성하는 방법을 알아보세요.</block>
+  <block id="547067437333ccf9f6257f448035fd15" category="paragraph"><block ref="2a3ce45bc4405505b722625836bbe768" category="inline-link-rx"></block>.</block>
+  <block id="f18c989c700bb32f3bcb80ace5539b64" category="section-title">대화형 그래프를 사용한 지연 시간 추세 시각화</block>
+  <block id="11ef7238b057019c31802d06c0bf5b75" category="paragraph">지연 시간 분석 패널에 이제 포괄적인 지연 시간 분석을 위한 탭 인터페이스가 포함되었습니다.</block>
+  <block id="eb39bcaa5c101fc5087275547ab8e3e6" category="list-text">*개요*: 지연 시간을 유발하는 구성 요소를 보여주는 자동화된 기본 분석 결과를 확인합니다.</block>
+  <block id="142deff8a2ec74d2d2667eca22500eab" category="list-text">*시간 경과*: 여러 시간대(1시간, 3시간, 12시간, 24시간 또는 72시간)에 걸쳐 대화형 그래프로 볼륨 지연 시간 동작을 시각화합니다</block>
+  <block id="5ff8bee829d6ed38b529ef851b350ad1" category="paragraph">*시간 경과에 따른 변화* 탭에는 원시 CloudWatch 지연 시간 데이터(알람 발생 원인에 따라 읽기 또는 쓰기)가 경고 및 위험 임계값 선, 위반 표시기, 각 위반에 대한 세부 메트릭과 함께 표시됩니다.</block>
+  <block id="7eec84a410cc084b608a43e90acfccd1" category="paragraph">이 포괄적인 시각화를 통해 패턴을 식별하고, 지연 시간 문제가 반복적인지 또는 일회성인지 파악하며, 해결 방법에 대해 더 많은 정보를 바탕으로 의사 결정을 내릴 수 있습니다.</block>
+  <block id="7d36db06649fc95af5dde34418ae17ae" category="inline-link">지연 시간 추세를 분석하는 방법을 알아보십시오</block>
+  <block id="89bed93f6bbf811d8bd82c2b7fbc1dea" category="paragraph"><block ref="ed7c0b83df2858b326a608c49012d510" category="inline-link-rx"></block>.</block>
+  <block id="1b7cd457fc475dbfd2701715e71744fd" category="doc">Codebox를 사용하여 EDA 워크로드 자동화</block>
+  <block id="791db8833b44f1d41d04a774478eca01" category="doc">EDA용 Workload Factory를 Perforce와 통합</block>
+  <block id="bd454b1eeeb8c3bf10186291d2f90f87" category="doc">EDA용 Workload Factory의 알려진 제한 사항</block>
+  <block id="11aaba4197d60cd84ae00b147f30a239" category="doc">Workload Factory for EDA에서 Perforce 통합에 대해 알아보십시오</block>
+  <block id="05e71e57ff2860f766cafa61669afd90" category="doc">EDA용 Workload Factory에 대해 알아보세요</block>
+  <block id="60476976a2c1ab2169570786b32dba09" category="list-text"><block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>: 구성 가능한 경고 및 위험 이벤트 임계값을 사용하여 볼륨 읽기 및 쓰기 지연 시간 성능을 사전에 모니터링합니다. 이벤트가 감지되면 이메일 또는 SNS 알림을 받습니다. ONTAP QoS 지연 센터 메트릭을 사용한 자동화된 기본 분석과 더 깊은 근본 원인 식별이 필요한 복잡한 시나리오를 위한 선택적 AI 에이전트 분석이 포함됩니다.</block>
+  <block id="4f4aa40f24b705f5a6b2c8eddeef1e5e" category="inline-link-macro">지연 시간 추세 분석</block>
+  <block id="ac4297ca80ae5408e173c35ab73d1280" category="list-text"><block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>: 대화형 지연 시간 그래프를 사용하여 시간 경과에 따른 지연 시간 동작을 시각화하고, 패턴을 파악하고, 성능 문제가 반복적인지 아니면 일시적인지 이해하고, 데이터 기반의 개선 조치를 취할 수 있습니다.</block>
+  <block id="91a16b40f1b5f0084e50d6535c5f55b4" category="doc">Workload Factory for EDA에서 EDA 프로젝트 관리</block>
+  <block id="cecbffda9cc78eb8d6a8d543df4aa712" category="paragraph">FSx for ONTAP 파일 시스템의 데이터 보호 기능을 활용하여 코드와 아티팩트를 보호할 수 있도록 새로운 EDA 프로젝트를 생성할 수 있습니다. .단계</block>
+  <block id="59178bd9ff8874d092f5bfbdecf79b81" category="list-text">*프로젝트 추가*를 선택합니다.</block>
+  <block id="1ecd985fc0693d958ad07611d2deb457" category="list-text">*자격 증명*: 사용할 Amazon AWS 자격 증명을 선택하십시오. EDA는 이러한 자격 증명을 사용하여 이 프로젝트에서 사용할 수 있는 FSx for ONTAP 파일 시스템을 검색하고 프로젝트의 클론 및 스냅샷을 생성합니다.</block>
+  <block id="060b67e800a6d9a85b502dd348d56951" category="list-text">*지역*: 이 FSx for ONTAP 파일 시스템이 상주하는 지역을 선택합니다.</block>
+  <block id="e79582136788303ae03dfadcec648921" category="list-text">*FSx for ONTAP 파일 시스템*: 이 프로젝트에서 사용할 FSx for ONTAP 파일 시스템을 선택하십시오.</block>
+  <block id="f84de4f2f9588a1f1267bf2c1f67bba6" category="paragraph">링크로 구성된 파일 시스템만 선택할 수 있습니다<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
+  <block id="d336a06e84d74c4a2d8a59e458f6a7c1" category="summary">환경을 설정하고, 모니터링 대시보드를 활성화하고, 지연 시간 분석을 구성하여 EDA용 Workload Factory를 시작하십시오.</block>
+  <block id="2edaf9b54abbf5ae956607d1cce3419f" category="doc">EDA용 Workload Factory 빠른 시작</block>
+  <block id="0595b103e9174c24b7fffa0491687cc5" category="paragraph">환경을 설정하고, 모니터링 대시보드를 활성화하고, 지연 시간 분석을 구성하여 EDA 워크로드에 대한 FSx for ONTAP 성능을 최적화함으로써 Workload Factory for EDA를 시작하십시오.</block>
+  <block id="47fc6ce38b51022ce7378bb818bcbdbc" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>ONTAP 지연 시간 분석을 위해 FSx를 구성합니다</block>
+  <block id="71385bd4e1d4e5dbe86dc9b6f19b8d0b" category="paragraph">지연 시간 임계값을 설정하여 시뮬레이션 실행 시간에 영향을 미치기 전에 성능 문제를 사전에 파악하고 해결하십시오. 경고 및 중요 알림을 구성하고, 실시간 알림을 수신할 수 있도록 이메일 또는 SNS 알림을 설정하고, 자동화된 기본 분석을 활용하고, 선택적으로 Amazon Bedrock 모델 ARN을 구성하여 복잡한 시나리오에 대한 AI 에이전트 분석을 활성화할 수 있습니다.</block>
+  <block id="e92f1fd565b0115330969e68f1df5c93" category="inline-link-macro">지연 시간 추세 분석</block>
+  <block id="2d6493eae43920f1f398fd04ec507f90" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>. 이벤트가 감지되면 대화형 그래프를 사용하여 <block ref="17d96e1b2696eabecce662ae85cda8e7" category="inline-link-macro-rx"></block>할 수 있습니다.</block>
+  <block id="b888e1d990c199d358b31e27c7359f42" category="doc">EDA 요구 사항을 위한 Workload Factory</block>
+  <block id="4a3f64eab77f5b895962c42b557e049a" category="admonition">AWS 자격 증명은 볼륨 성능 분석을 위해 CloudWatch 메트릭을 수집하는 지연 시간 모니터링 기능을 사용하는 데에도 필요합니다. 지연 시간 이벤트에 대한 알림을 받으려면 Workload Factory 설정에서 알림 기본 설정을 구성하십시오. 복잡한 지연 시간 시나리오에 대한 선택적 AI 에이전트 분석을 활성화하려면 Amazon Bedrock 모델 ARN도 제공해야 합니다. <block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>.</block>
+  <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">파일 시스템에 다음 구성을 사용하는 볼륨이 하나 이상 필요합니다.</block>
+  <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">파일 시스템에 링크가 구성되어 있어야 합니다.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
+  <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">EDA용 Workload Factory 지원 등록</block>
+  <block id="41de4d3965fbdf03451b2ecaee5868c7" category="summary">대화형 지연 시간 그래프를 사용하여 시간 경과에 따른 볼륨 지연 시간 추세를 분석하고, 패턴을 파악하고, 개선 효과를 추적하십시오.</block>
+  <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">Workload Factory에서 EDA의 지연 시간 추세 분석</block>
+  <block id="156ab2ccf351bba06d7f02e1ec744738" category="paragraph">지연 이벤트가 감지되면 대화형 그래프를 사용하여 시간 경과에 따른 볼륨 지연 동작을 분석할 수 있습니다. 이를 통해 패턴을 파악하고, 성능 문제가 반복적인지 아니면 일시적인지 판단하고, 데이터 기반의 문제 해결 방안을 결정할 수 있습니다.</block>
+  <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">구성된 지연 시간 모니터링</block>
+  <block id="b701766ddd7336d0a918a31e319d2571" category="paragraph"><block ref="440ca031eed7454e03c10d86a7d6dd9c" category="inline-link-macro-rx"></block> 및 최소 하나 이상의 지연 이벤트가 감지되어야 합니다.</block>
+  <block id="4c3f875147f0522c1d3edae65b6aa9b4" category="paragraph">지연 시간 그래프는 시간에 따른 볼륨 지연 시간 동작을 시각적으로 보여줍니다.</block>
+  <block id="bb50ee329f41648c14ad144ed9d1cdb6" category="paragraph">지연 시간 그래프는 영향을 받는 볼륨에 대한 CloudWatch 지연 시간 데이터를 표시합니다. 그래프는 이벤트를 발생시킨 알람에 따라 읽기 지연 시간 또는 쓰기 지연 시간을 자동으로 표시합니다. 시간 범위를 조정하여 다양한 기간 동안의 지연 시간 동작을 확인할 수 있습니다.</block>
+  <block id="1e050c450cfafbc3c2fda5ecebd63af7" category="paragraph">다음 내용이 포함됩니다.</block>
+  <block id="f03c16f986b72acbbdf628dfd10a0b51" category="list-text">*지연 시간 메트릭 라인*: 시간 경과에 따라 CloudWatch에서 수집된 실제 지연 시간 값(밀리초)을 표시합니다</block>
+  <block id="064a04ae1c8486ab33731c46e16abac9" category="list-text">*임계값 선*: 구성된 경고 및 위험 임계값을 나타내는 점선 가로선</block>
+  <block id="f247d21c54dee6a9da91ec04bea153d4" category="list-text">*위반 지표*: 해당 기간 동안 임계값이 초과된 시점과 횟수를 시각적으로 보여주는 표시</block>
+  <block id="49ea2afc06991af328a208ffc74482e5" category="list-text">*위반 세부 정보*: 각 위반에 대해 중앙값 지연 시간 값, 임계값 초과 백분율, QoS 지연 센터 데이터 및 감지 시간을 확인합니다</block>
+  <block id="fec795816c8e9333dd5705b026e4ec1f" category="list-text">*지연 시간* 탭의 이벤트 테이블에서 지연 시간 이벤트를 선택합니다.</block>
+  <block id="0200e9f9651c0f9055af3ded58c679fe" category="paragraph">지연 시간 분석 패널이 열립니다.</block>
+  <block id="8ea49b1b8804030fecb789ed69b3cfe9" category="list-text">*Over time* 탭을 선택합니다.</block>
+  <block id="e1910deb08cddd0290229b853b206bd8" category="list-text">지난 3시간 동안의 지연 시간 데이터를 표시하는 기본 그래프 보기를 검토하십시오.</block>
+  <block id="ace589dd459188c9daef10587e3d2d84" category="list-text">시간 범위를 변경하여 다양한 기간을 분석하고 패턴을 파악하십시오.</block>
+  <block id="92f4dcf159ac91d85d16636551b8aa6a" category="list-text">지연 시간 추세선을 임계값 선과 비교하여 관찰하십시오.</block>
+  <block id="adddb6f86948c81a28a630bf5670f578" category="list-text">그래프에서 위반 지표를 검토하십시오.</block>
+  <block id="66e5eeaa9c5a5e85f002a526f487eb9f" category="paragraph">표시된 기간 동안 임계값이 여러 번 초과될 경우, 위반 표시는 임계값이 초과된 시점을 나타냅니다.</block>
+  <block id="7b51c983f61adc3fc3762edefb24a139" category="list-text">위반 세부 정보를 보려면 위반 표시기 위에 마우스를 올리거나 선택하십시오.</block>
+  <block id="ab9d5820afcd30d44b00f88542fb3ed7" category="list-text">침해 건수 요약을 검토하십시오.</block>
+  <block id="42f95c5c49ae4bfc59a3331fe794cec9" category="paragraph">이 그래프는 선택한 기간 동안 감지된 경고 또는 위험 위반의 총 수를 표시합니다.</block>
+  <block id="e97d67b4026b09dfe5111a6baff734ef" category="list-text">그래프 인사이트를 사용하여 다음을 수행하십시오.</block>
+  <block id="e6457816dd203346decc0f7bdbdaea16" category="list-text">지연 문제가 일회성인지 반복적인 문제인지 판단하십시오</block>
+  <block id="c1c5e009e9c61c517e422eaa4c74d9f3" category="list-text">높은 지연 시간과 상관관계가 있는 시간대 패턴을 파악합니다</block>
+  <block id="86fed5ffa42593b5101b7ad513d49455" category="list-text">지연 시간 급증이 일시적인지 지속적인지 평가하십시오.</block>
+  <block id="c8d51a833ee2014de902d1b9c1dc0873" category="list-text">지연 이벤트와 워크로드 패턴 또는 시스템 변경 사항 간의 상관관계를 분석합니다.</block>
+  <block id="0abcfc51827656f379392888538d542a" category="paragraph">시간 경과에 따른 볼륨 지연 시간 동작을 종합적으로 파악할 수 있으므로 즉각적인 해결이 필요한지, 임계값을 조정해야 하는지, 또는 기본 인프라 문제를 조사해야 하는지에 대해 정보에 입각한 결정을 내릴 수 있습니다.</block>
+  <block id="10019e7ce311e2d67a73e473efe11bce" category="admonition">지연 시간 그래프는 CloudWatch 메트릭 데이터를 보여줍니다. 이 데이터는 수집 방식의 차이로 인해 ONTAP QoS 지연 센터 데이터와 약간의 차이가 있을 수 있습니다. 종합적인 분석을 위해 두 가지 데이터 소스가 모두 제공됩니다.</block>
+  <block id="21468bcc44334c21cf2648bb0c3286b5" category="section-title">그래프 해석</block>
+  <block id="010dcaeaa54e0eae36c515aeeb05d93b" category="paragraph">지연 시간 추세를 분석할 때 다음 권장 사항을 고려하십시오.</block>
+  <block id="da4cbffca80b5fcc48303a9607a2df01" category="list-text">*다양한 시간 범위를 활용하세요*: 그래프를 여러 시간 범위에 걸쳐 검토하여 일시적인 성능 급증과 지속적인 성능 저하를 구분하세요. 먼저 24H 보기를 통해 전체적인 맥락을 파악한 다음, 더 짧은 기간으로 확대하여 특정 사건을 분석하거나 72H로 확장하여 일별 패턴을 확인하세요.</block>
+  <block id="2efe84d84a5ebc28d037f7b8aa8f15c7" category="list-text">*임계값을 시각적으로 비교하세요*: 그래프의 임계값 선을 사용하여 구성한 경고 및 임계값이 워크로드 패턴에 적합한지 평가하세요. 지연 시간이 임계값에 자주 근접하지만 넘지 않는다면 임계값이 너무 높게 설정된 것은 아닌지 검토하세요. 반대로 작업에 영향을 미치지 않는 짧은 시간 동안의 임계값 통과가 자주 발생한다면 임계값이 너무 민감할 수 있습니다.</block>
+  <block id="349c1be118a8dc9b143ce40e9e857c35" category="list-text">*일일 패턴 파악*: 24H 및 72H 보기를 사용하여 시간대별 패턴을 파악하십시오. 지연 시간 급증이 예측 가능한 시간에 발생하는 경우 리소스 집약적인 작업을 사용률이 낮은 기간 동안 사전에 예약하거나 피크 로드를 처리하기 위해 용량을 추가할 수 있습니다.</block>
+  <block id="2a4a2c3acb655929dec3604e91b0b330" category="list-text">*스파이크 유형 구분*: 짧고 급격한 스파이크는 일시적인 문제(예: 일시적인 리소스 경합)를 나타내는 반면, 지속적인 지연 시간 증가는 시스템적인 문제(예: 용량 제약 또는 구성 문제)를 시사합니다. 각 유형에는 서로 다른 해결 접근 방식이 필요합니다.</block>
+  <block id="28e474bab8647ecce9f08a9afd675d51" category="list-text">*변경 후 추세 모니터링*: 임계값을 조정하거나, 용량을 추가하거나, 구성을 변경한 후에는 최소 72시간 동안 그래프를 모니터링하여 변경 사항이 원하는 효과를 가져오는지 확인하십시오.</block>
+  <block id="6dbd7482391c0182c5dea0993791246b" category="doc">EDA를 위해 Workload Factory의 프로젝트 대시보드를 사용하세요</block>
+  <block id="80a2bede41d4c6da374d247221296718" category="summary">구성 가능한 경고 및 중요 이벤트 임계값을 사용하여 볼륨 지연 성능을 모니터링하세요. 자동화된 기본 분석 및 AI 에이전트 분석을 활용하여 성능 병목 현상을 사전에 파악하고 해결하세요.</block>
+  <block id="2e83aef101312851fc79c1478837c2b4" category="doc">EDA용 Workload Factory에서 볼륨 지연 시간을 모니터링합니다</block>
+  <block id="9d504bf7450321a349bb17f0e68762ae" category="paragraph">지연 시간 분석은 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨의 읽기 및 쓰기 작업에 대한 CloudWatch 메트릭을 수집합니다. 구성된 시간 범위 내의 모든 데이터 포인트에서 지연 시간 임계값과 IOPS 임계값이 모두 초과되면 경고가 생성됩니다. 이를 통해 실제 부하 상태에서도 높은 지연 시간이 유지되도록 하여 오탐을 줄일 수 있습니다. 감지된 모든 이벤트를 확인할 수 있으며, 알림을 구성한 경우 영향을 받는 볼륨에 대한 세부 정보가 포함된 이메일 또는 Amazon SNS 알림을 받게 됩니다.</block>
+  <block id="6920ac32a3375288ebdf06facc39e6af" category="paragraph">이벤트가 감지되면 Workload Factory는 ONTAP QoS 지연 센터 메트릭을 사용하여 기본 분석을 실행하고 주요 지연 원인(예: FlexCache, 용량 풀, QoS 제한, 디스크, 데이터, 클러스터 또는 기타 하위 시스템)을 식별합니다. 그런 다음 <block ref="672f9645415c0125cfd8e23383946617" category="inline-link-macro-rx"></block> 대화형 그래프를 사용하여 확인할 수 있습니다.</block>
+  <block id="d149e138ca1f3814e3ddc350907b4b4f" category="paragraph">데이터 및 클러스터 시나리오의 경우 선택적으로 AI 에이전트 분석을 실행하여 자세한 근본 원인 설명, 영향을 받는 EC2 클라이언트 목록 및 권장 해결 단계를 확인할 수 있습니다.</block>
+  <block id="27e09936f431721e0ec32c3d3d21885c" category="list-text">기본 분석 정보를 보려면 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. 링크가 없으면 이벤트는 감지되지만 분석에서 제공하는 정보는 제한적입니다. 링크가 연결되어 있지 않은 경우 EDA에서 *링크 연결*을 선택하고 새 링크를 생성할지 기존 링크를 연결할지 선택한 다음 *계속*을 선택하여 스토리지 워크로드의 링크 생성 페이지로 자동 이동하십시오.</block>
+  <block id="7096afe055eda8f68401dc699f62aa71" category="paragraph">Bedrock 모델 ARN을 구성하지 않더라도 지연 시간 모니터링 및 자동화된 기본 분석은 사용할 수 있지만 AI 에이전트 분석은 사용할 수 없습니다.</block>
+  <block id="1068f745b93ee031c494800d88399506" category="list-text">알림 구성(선택 사항)</block>
+  <block id="bccf4a154062c04971c782a1a33ba164" category="list-text">지연 이벤트가 감지될 때 이메일 또는 Amazon SNS 알림을 받으려면 Workload Factory 설정에서 알림 기본 설정을 구성하십시오. 자세한 내용은 <block ref="6c57f686ffc3c80537465140f26ad896" category="inline-xref-macro-rx"></block>를 참조하십시오.</block>
+  <block id="d51cdc3a782f07f214d065d32392cd4a" category="paragraph">지연 시간 분석은 CloudWatch 알람을 사용하여 볼륨 성능을 모니터링합니다. 알림이 트리거되는 방식을 이해하면 적절한 임계값을 구성하고 결과를 해석하는 데 도움이 됩니다.</block>
+  <block id="38f4c4b38520d15824f4ab473c208770" category="paragraph">읽기 및 쓰기 작업에 대한 경고 및 위험 임계값을 구성할 수 있습니다. 시스템은 임계값을 지속적으로 평가하고 조건이 충족되면 알림을 생성합니다.</block>
+  <block id="061b69757df18e0f80dd6951d4a87bc0" category="paragraph">Workload Factory는 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 지연 시간 메트릭 수집을 시작합니다. 메트릭은 최소 20분마다 수집됩니다. 구성된 임계값을 초과하는 볼륨이 표시됩니다.</block>
+  <block id="e47a2805498d3bd68e7615f5a9695ad0" category="list-text">각 볼륨에 대해 가장 최근에 발생한 침해 사고만 표시됩니다. 한 볼륨에서 여러 번 침해 사고가 발생한 경우에도 가장 최근의 사고만 표시됩니다.</block>
+  <block id="e83c229f37cf36a4d502c243dffb6c3d" category="list-text">최대 200개의 이벤트가 표시됩니다. 새로운 이벤트가 추가되면 오래된 이벤트는 삭제됩니다.</block>
+  <block id="b028238b7d6c951434ecd797dfecd43f" category="list-text">파일 시스템에 연결된 링크가 없더라도 이벤트가 표시됩니다. 기본 분석 세부 정보를 보고 AI 에이전트 분석을 실행하려면 링크가 필요합니다.</block>
+  <block id="81db793f48cabf755c5da85566220fe0" category="list-text">*지연 시간* 탭에서 다음을 포함한 각 이벤트에 대한 정보를 검토하십시오.</block>
+  <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">지연 이벤트에 대한 세부 정보를 보려면 *심각도* 열에서 해당 이벤트를 선택하십시오. 그러면 해당 이벤트에 대한 지연 분석 패널이 열립니다.</block>
+  <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">표를 정렬하려면 열 머리글을 선택합니다. 기본적으로 중요 이벤트가 시간별로 먼저 표시되고 그 다음 경고 이벤트가 시간별로 표시됩니다.</block>
+  <block id="8f366b4a3c1ee9db68d65977ad160a9e" category="list-text">시간 경과에 따른 지연 시간 추세를 분석하려면 이벤트를 선택하여 지연 시간 분석 패널을 여세요. *시간 경과에 따른 변화* 탭을 사용하여 대화형 지연 시간 그래프를 볼 수 있습니다. 자세한 내용은 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>을 참조하세요.</block>
+  <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">지연 이벤트 분석</block>
+  <block id="e819192d011b6b3e3f4bbd9fc359c099" category="paragraph">기본 분석을 통해 수동 조사 없이 지연 문제의 근본 원인을 신속하게 파악할 수 있습니다. 지연 이벤트가 감지되면 Workload Factory는 ONTAP QoS 지연 센터 메트릭을 사용하여 자동으로 기본 분석을 수행합니다. 이 분석은 지연을 유발하는 구성 요소를 식별하고 간략한 설명을 제공합니다.</block>
+  <block id="1bd47873c66482991cb879180d2867cc" category="paragraph">*심각도* 열에서 지연 이벤트를 선택하면 해당 이벤트에 대한 지연 분석 패널이 열립니다. 패널에는 지연 이벤트에 대한 다양한 보기를 제공하는 탭이 포함되어 있습니다.</block>
+  <block id="c2fb795bc2e1a609303d9e00777fdb2e" category="list-text">*개요*: 지연 시간을 유발하는 구성 요소를 보여주는 기본 분석 결과를 표시합니다.</block>
+  <block id="748595841e3c3b1b5183a7d6077dffdd" category="list-text">*시간 경과에 따른 변화*: 기간별 데이터가 포함된 대화형 지연 시간 그래프를 표시합니다</block>
+  <block id="7bc1f28b4c89677e5f6cfb8399c63ac9" category="paragraph">*개요* 탭에는 자동화된 기본 분석 결과가 표시되며, 어떤 구성 요소가 지연을 유발하는지 식별합니다.</block>
+  <block id="c9a0323fbd3e3be5e48738ff08051151" category="paragraph">Amazon Bedrock 모델 ARN이 구성된 경우 *개요* 탭에는 데이터 및 클러스터 시나리오에 대한 AI 에이전트 분석을 실행하는 옵션도 포함됩니다. Bedrock이 구성되지 않은 경우 해당 탭에는 특정 파일 시스템에 대한 스토리지 워크로드 구성 페이지 링크가 표시되며, 여기에서 Bedrock 액세스를 구성할 수 있습니다.</block>
+  <block id="7f5bfa6c2ae6835ebe3f8cfab65e7d77" category="section-title">시간이 지남에 따라</block>
+  <block id="88b98d83646123ee99ac10d567d7bad8" category="paragraph">*시간 경과* 탭에는 영향을 받는 볼륨에 대한 CloudWatch 지연 시간 메트릭을 시간 경과에 따라 보여주는 대화형 지연 시간 그래프가 표시됩니다. 그래프는 이벤트를 트리거한 알람 유형에 따라 읽기 또는 쓰기 지연 시간을 표시합니다. 다양한 시간 프레임(1H, 3H, 12H, 24H, 72H)을 선택하여 여러 기간 동안의 지연 시간 동작을 확인할 수 있습니다.</block>
+  <block id="b938fe219e0d3269febbb2f4ce0e4d4f" category="paragraph">그래프 사용에 대한 자세한 지침은 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">Workload Factory 설정에서 Amazon Bedrock 모델 ARN을 구성하려면 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="2f4239783073f0a94706e2317e78bba8" category="list-text">*심각도* 열에서 지연 이벤트를 선택하여 해당 이벤트에 대한 분석 패널을 엽니다.</block>
+  <block id="354b602de39fd16c2e8213c6420af87b" category="paragraph">파일 시스템에 연결된 링크가 없는 경우, 해당 파일 시스템에 링크를 연결하라는 메시지가 표시됩니다. 메시지를 선택하면 해당 파일 시스템의 링크 설정 페이지로 이동합니다.</block>
+  <block id="6b11475664ca5049823829bb74e3334d" category="list-text">*개요* 탭을 검토하여 기본 분석 결과를 이해하고 지연 원인을 파악하십시오.</block>
+  <block id="f59e8b0685757d07e5ad61ebc46a87c4" category="list-text">지연 원인이 데이터 또는 클러스터로 식별되면 *분석*을 선택하여 AI 에이전트 분석을 실행하십시오.</block>
+  <block id="a34b99c45f1060fa36c26445937a8916" category="list-text">AI 에이전트 분석 결과를 검토하십시오.</block>
+  <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">지연 시간 알림 구성</block>
+  <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">알림 설정 구성</block>
+  <block id="3d6c653a360d87aa37c2b5f066b22cf0" category="paragraph">지연 시간 이벤트가 감지될 때 알림을 받도록 이메일 또는 Amazon SNS 알림을 구성할 수 있습니다. 볼륨이 구성된 임계값을 초과할 때마다 알림이 전송되어 성능 문제를 실시간으로 파악할 수 있습니다. 알림을 활성화하려면 <block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="fc5cf4b9e620903fdc3e72c98ed92e50" category="paragraph">지연 시간 알림은 파일 시스템 단위로 전송됩니다. 파일 시스템 내 하나 이상의 볼륨이 지연 시간 임계값을 초과하면 영향을 받는 모든 볼륨 목록이 포함된 단일 알림을 받게 됩니다.</block>
+  <block id="d161804a8b38f48ce78c8bdf17d57cef" category="admonition">영향을 받는 볼륨이 10개 이상인 경우, 이메일에는 처음 10개의 볼륨과 추가로 영향을 받는 볼륨의 수가 표시됩니다. 영향을 받는 모든 볼륨은 Workload Factory 콘솔에서 확인할 수 있습니다.</block>
+  <block id="8f54abe0ef3af482bad46fd8ebb01724" category="paragraph">알림에는 다음이 포함됩니다.</block>
+  <block id="9575316a51e8af711966e6ef73e107a8" category="list-text">파일 시스템 세부 정보</block>
+  <block id="6e5e5a57e2d312d021faf48fbf359263" category="list-text">임계값을 위반한 볼륨 목록</block>
+  <block id="29e5a7a6d5b174fac3e647e10a8e3d8f" category="list-text">이벤트 심각도(Warning 또는 Critical)</block>
+  <block id="f44901cc21e17ffa2243cecaabcb0d12" category="list-text">지연 시간 값 및 임계값 비교</block>
+  <block id="c95bd15aedfd92163fb52171e80e4aad" category="list-text">조사를 위한 지연 시간 페이지로 직접 연결되는 링크</block>
+  <block id="daab441d1213ea1ae747f6f3fc4f0f86" category="paragraph">알림 채널:</block>
+  <block id="d3ac5879c6e6d4037eeb5996a078c1eb" category="list-text">*이메일*: Workload Factory 알림 설정에서 구성한 이메일 주소로 전송됩니다.</block>
+  <block id="521affd4c31056b034895f68689c40d6" category="list-text">*Amazon SNS*: 다른 시스템과의 통합을 위해 구성된 SNS 주제에 게시됩니다</block>
+  <block id="8fe1d189cc79e42edfd18c2ab7312a9b" category="paragraph">지연 시간 추세 분석에 대한 모범 사례는 <block ref="80a684273373f0a4a9c65645f4543291" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="f2abe5914eba19478c3b813d9def8548" category="inline-link-macro">FSx for ONTAP 지연 시간 분석</block>
+  <block id="00972c5586727b10755c077cb571302f" category="list-text">지연 시간 모니터링을 활성화한 경우에만 지연 시간 정보를 볼 수 있습니다. 지연 시간 임계값을 구성하지 않은 경우 *구성*을 선택하십시오. 지연 시간 모니터링에 대한 자세한 내용은 <block ref="e98e4afc77d2de893746a62416cafbb2" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="228ef1bb0e07fcafe49318ab6cd2b44e" category="doc">EDA 프로젝트용 Workload Factory 버전 관리</block>
+  <block id="533773babd56d9aeab3d01b7003792d3" category="paragraph">Workload Factory에서 필요에 따라 스냅샷과 클론을 직접 생성하여 EDA 프로젝트의 다양한 버전을 사용할 수 있습니다. 프로젝트의 스냅샷과 클론은 프로젝트 생성 시 연결된 파일 시스템에 저장됩니다. <block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>을 사용하여 스냅샷과 클론을 관리할 수도 있습니다.</block>
+  <block id="cccb746459589dc88647e759315c1e14" category="doc">EDA용 Workload Factory의 새로운 기능</block>
+  <block id="a2129af669bcf43206fc6eda2e181958" category="section-title">2026년 5월 3일</block>
+  <block id="bef2ad04af6788871805dcd9435635f7" category="sidebar">FSx for ONTAP 볼륨 지연 시간 모니터링</block>
 </blocks>

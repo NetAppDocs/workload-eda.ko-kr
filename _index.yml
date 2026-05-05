@@ -16,9 +16,9 @@ indexpage:
     links:
     - title: EDA 스토리지 운영 관리
       url: "/task-use-overview-dashboard.html"
-  - title: FSx 지연 시간 분석
+  - title: FSx for ONTAP 지연 시간 분석
     links:
-    - title: FSx 볼륨 지연 시간 모니터링
+    - title: FSx for ONTAP 볼륨 지연 시간 모니터링
       url: "/task-monitor-latency.html"
   - title: 프로젝트 사용 분석
     links:

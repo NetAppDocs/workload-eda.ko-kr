@@ -4,7 +4,7 @@ permalink: task-use-overview-dashboard.html
 keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, cluster usage, capacity, throughput, IOPS, EMS events, latency events, performance widgets, clusters table, volume placement, scale up, scale down, CloudWatch metrics, CSV export 
 summary: 개요 대시보드를 사용하여 FSx for ONTAP 파일 시스템의 상태, 용량 및 처리량을 모니터링하십시오. 대규모 스토리지 사용량을 확인하고 볼륨 배치 및 용량 확장에 대해 정보에 입각한 결정을 내리십시오. 
 ---
-= EDA 워크로드에서 개요 대시보드 사용
+= EDA 스토리지 운영 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -89,7 +89,7 @@ Workload Factory는 구성된 AWS 자격 증명과 연결된 모든 FSx for ONTA
 범위 내 파일 시스템 전체에서 감지된 지연 이벤트 수를 표시합니다.
 
 * *검토*를 선택하면 *지연 시간* 탭이 표시됩니다.
-* 지연 시간 모니터링을 활성화한 경우에만 지연 시간 정보를 볼 수 있습니다. 지연 시간 임계값을 구성하지 않은 경우 *구성*을 선택하십시오. 지연 시간 모니터링에 대한 자세한 내용은 link:task-monitor-latency.html["FSx 지연 시간 분석"^]을 참조하십시오.
+* 지연 시간 모니터링을 활성화한 경우에만 지연 시간 정보를 볼 수 있습니다. 지연 시간 임계값을 구성하지 않은 경우 *구성*을 선택하십시오. 지연 시간 모니터링에 대한 자세한 내용은 link:task-monitor-latency.html["FSx for ONTAP 지연 시간 분석"^]을 참조하십시오.
 
 
 
