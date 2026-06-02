@@ -17,7 +17,7 @@ summary: 대화형 지연 시간 그래프를 사용하여 시간 경과에 따�
 
 == 시작하기 전에
 
-link:task-monitor-latency.html["구성된 지연 시간 모니터링"] 및 최소 하나 이상의 지연 이벤트가 감지되어야 합니다.
+link:task-configure-latency-monitoring.html["구성된 지연 시간 모니터링"] 및 최소 하나 이상의 지연 이벤트가 감지되어야 합니다.
 
 
 

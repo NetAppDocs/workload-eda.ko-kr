@@ -1,0 +1,147 @@
+---
+sidebar: sidebar 
+permalink: task-configure-latency-monitoring.html 
+keywords: latency analysis, configure thresholds, CloudWatch alarms, latency monitoring, FSx for ONTAP, warning events, critical events, latency notifications, email notifications, SNS notifications, latency configuration 
+summary: FSx for ONTAP 볼륨의 성능 문제를 감지하고 대응하기 위해 지연 시간 모니터링 임계값 및 알림 설정을 구성하십시오. 
+---
+= EDA용 Workload Factory에서 지연 시간 모니터링 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAP 볼륨 성능을 모니터링하기 위해 읽기 및 쓰기 지연 시간에 대한 경고 및 위험 임계값을 구성하십시오. 지연 이벤트가 감지될 때 실시간 알림을 받도록 선택적으로 이메일 또는 Amazon SNS 알림을 설정하십시오.
+
+
+
+== 시작하기 전에
+
+지연 시간 모니터링을 구성하기 전에 다음 요구 사항을 충족하는지 확인하십시오.
+
+
+
+=== AWS 자격 증명 및 권한
+
+Workload Factory에 읽기/쓰기 권한이 있는 AWS 자격 증명을 추가해야 합니다. 지연 시간 모니터링 기능을 사용하려면 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 CloudWatch 메트릭에 액세스해야 합니다.
+
+_Basic_ 모드 및 _Read-only_ 모드 권한은 지연 시간 모니터링에 지원되지 않습니다.
+
+AWS 자격 증명을 구성하지 않은 경우 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 자격 증명 추가"^]을 참조하십시오.
+
+
+
+=== ONTAP 파일 시스템용 FSx
+
+AWS 환경에 볼륨이 배포된 FSx for ONTAP 파일 시스템이 하나 이상 필요합니다. 지연 시간 모니터링 기능은 구성된 AWS 자격 증명과 연결된 모든 볼륨에 대한 메트릭을 자동으로 수집합니다.
+
+
+
+=== FSx for ONTAP에 연결
+
+기본 분석 정보를 보려면 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. 링크가 없으면 이벤트는 감지되지만 분석에서 제공하는 정보는 제한적입니다. 링크가 연결되어 있지 않은 경우 EDA에서 *링크 연결*을 선택하고 새 링크를 생성할지 기존 링크를 연결할지 선택한 다음 *계속*을 선택하여 스토리지 워크로드의 링크 생성 페이지로 자동 이동하십시오.
+
+링크를 생성하고 연결하는 방법에 대한 지침은 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["링크 생성"^]을 참조하십시오.
+
+
+
+=== Amazon Bedrock 모델 ARN(선택 사항)
+
+선택적 AI 에이전트 분석 기능을 사용하려면 Workload Factory 설정에서 Amazon Bedrock 모델 ARN을 제공해야 합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["기본 GenAI 요구 사항"^]을 참조하십시오.
+
+Bedrock 모델 ARN을 구성하지 않더라도 지연 시간 모니터링 및 자동화된 기본 분석은 사용할 수 있지만 AI 에이전트 분석은 사용할 수 없습니다.
+
+
+
+=== 알림 구성(선택 사항)
+
+지연 이벤트가 감지될 때 이메일 또는 Amazon SNS 알림을 받으려면 Workload Factory 설정에서 알림 기본 설정을 구성하십시오. 자세한 내용은 <<지연 시간 알림 구성>>를 참조하십시오.
+
+
+
+== 지연 시간 임계값 구성
+
+읽기 및 쓰기 작업에 대한 경고 및 위험 임계값을 구성하십시오. 시스템은 임계값을 지속적으로 평가하고 조건이 충족되면 알림을 생성합니다.
+
+
+NOTE: 경고가 적절하게 전달되도록 하려면 중요 이벤트 임계값을 경고 이벤트 임계값보다 높게 설정해야 합니다. 그렇지 않으면 구성을 저장할 수 없습니다.
+
+
+NOTE: EDA에서 설정한 지연 시간 임계값은 기본적으로 계정 전체에 적용됩니다. 일반 스토리지 워크로드에서 개별 볼륨의 지연 시간 임계값을 설정할 수도 있으며, 해당 볼륨에 대해서는 볼륨 설정이 우선 적용됩니다. EDA에서 계정 수준 임계값을 업데이트해도 볼륨 수준 설정은 변경되지 않습니다.
+
+.단계
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴 image:workloads-menu-icon.png["햄버거 메뉴 아이콘"]를 선택한 다음 *EDA*를 선택하십시오.
+. *지연 시간* 탭을 선택합니다.
+. EDA 지연 시간 구성 페이지에서 다음에 대한 임계값을 구성합니다.
++
+** 읽기 지연 시간(경고 및 위험)
+** 쓰기 지연 시간(경고 및 심각)
+** 각 항목별 IOPS 임계값
+** 평가 기간
+
+
+. *적용*을 선택하여 구성을 저장합니다.
+
+
+.결과
+Workload Factory는 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 지연 시간 메트릭 수집을 시작합니다. 메트릭은 최소 20분마다 수집됩니다. 구성된 임계값을 초과하는 볼륨은 지연 시간 이벤트 테이블에 표시됩니다.
+
+
+
+== 지연 시간 알림 구성
+
+지연 이벤트가 감지될 때 알림을 받도록 이메일 또는 Amazon SNS 알림을 구성하세요. 볼륨이 구성된 임계값을 초과할 때마다 알림이 전송되어 성능 문제를 실시간으로 파악할 수 있습니다.
+
+지연 시간 알림은 파일 시스템 단위로 전송됩니다. 파일 시스템 내 하나 이상의 볼륨이 지연 시간 임계값을 초과하면 영향을 받는 모든 볼륨 목록이 포함된 단일 알림을 받게 됩니다.
+
+
+NOTE: 영향을 받는 볼륨이 10개 이상인 경우, 이메일에는 처음 10개의 볼륨과 추가로 영향을 받는 볼륨의 수가 표시됩니다. 영향을 받는 모든 볼륨은 Workload Factory 콘솔에서 확인할 수 있습니다.
+
+알림 채널:
+
+* *이메일*: Workload Factory 알림 설정에서 구성한 이메일 주소로 전송됩니다.
+* *Amazon SNS*: 다른 시스템과의 통합을 위해 구성된 SNS 주제에 게시됩니다
+
+
+알림을 활성화하려면 link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html#wf-console-email-notifications["알림 설정 구성"]을 참조하십시오.
+
+
+
+== 지연 시간 구성 관리
+
+초기 구성 후 필요에 따라 임계값을 편집할 수 있습니다.
+
+.단계
+. *지연 시간* 페이지에서 *편집*을 선택합니다.
+. 필요에 따라 임계값을 수정하십시오.
++
+
+NOTE: 중요 임계값은 경고 임계값보다 높게 유지해야 합니다. 중요 임계값을 경고 임계값보다 낮게 구성하면 시스템에서 오류가 표시됩니다.
+
+. 변경 사항을 저장하려면 *적용*을 선택합니다.
+
+
+
+
+== 모범 사례
+
+지연 시간 모니터링을 구성할 때 다음 권장 사항을 고려하십시오.
+
+* *현실적인 임계값 설정*: 워크로드 요구 사항에 따라 임계값을 구성하십시오. 기본값은 시작점을 제공하지만 특정 환경에 맞게 조정이 필요할 수 있습니다.
+* *경고 임계값부터 시작하세요*: 경고 이벤트를 사용하여 중요 임계값을 미세 조정하기 전에 기준 성능 기대치를 설정하십시오.
+* *시간 범위를 신중하게 고려하십시오*: 짧은 시간 범위(5~10분)는 문제를 더 빨리 감지하지만 알림 수가 더 많이 발생할 수 있습니다. 긴 시간 범위(15~20분)는 오탐을 줄이지만 감지가 지연될 수 있습니다.
+* *IOPS 및 지연 시간 임계값 조정*: 이중 조건 논리는 두 가지 모두 초과해야 함을 의미합니다. IOPS 임계값을 너무 높게 설정하면 지연 시간이 문제가 되더라도 알림이 발생하지 않을 수 있습니다.
+* *기각된 이벤트 검토*: 이벤트가 기각된 이유를 주기적으로 검토하여 임계값 조정 또는 인프라 개선 기회를 파악합니다.
+
+
+
+
+== 관련 정보
+
+* link:learn-latency-monitoring.html["지연 시간 모니터링에 대해 알아보십시오"]
+* link:task-analyze-latency-issues.html["지연 시간 문제 분석"]
+* link:task-analyze-latency-trends.html["지연 시간 추세 분석"]
+

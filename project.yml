@@ -29,18 +29,30 @@ sidebar:
       url: "/quick-start-eda.html"
   - title: EDA 스토리지 개요
     entries:
-    - title: EDA 스토리지 운영 관리
+    - title: 개요 대시보드에 대해 알아보십시오
+      url: "/learn-overview-dashboard.html"
+    - title: 개요 대시보드 활성화
+      url: "/task-activate-overview-dashboard.html"
+    - title: 개요 대시보드 사용
       url: "/task-use-overview-dashboard.html"
   - title: FSx for ONTAP 지연 시간 분석
     entries:
-    - title: FSx for ONTAP 볼륨 지연 시간 모니터링
-      url: "/task-monitor-latency.html"
+    - title: 지연 시간 모니터링에 대해 알아보십시오
+      url: "/learn-latency-monitoring.html"
+    - title: 지연 시간 모니터링 구성
+      url: "/task-configure-latency-monitoring.html"
+    - title: 지연 시간 문제 분석
+      url: "/task-analyze-latency-issues.html"
     - title: 지연 시간 추세 분석
       url: "/task-analyze-latency-trends.html"
   - title: 프로젝트 사용 분석
     entries:
-    - title: 프로젝트 스토리지 용량 사용 분석
-      url: "/task-configure-dashboard.html"
+    - title: 프로젝트 대시보드에 대해 알아보십시오
+      url: "/learn-project-dashboard.html"
+    - title: 프로젝트 대시보드 구성
+      url: "/task-configure-project-dashboard.html"
+    - title: 프로젝트 대시보드 사용
+      url: "/task-use-project-dashboard.html"
   - title: Perforce 통합 기능을 사용하세요.
     entries:
     - title: Perforce 통합에 대해 알아보세요.

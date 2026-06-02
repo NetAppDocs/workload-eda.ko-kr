@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-activate-overview-dashboard.html 
+keywords: activate dashboard, CloudWatch metrics, AWS credentials, view permissions, FSx for ONTAP, cluster overview, enable dashboard 
+summary: 개요 대시보드를 활성화하여 FSx for ONTAP 파일 시스템에 대한 CloudWatch 메트릭 수집을 시작하세요. 
+---
+= EDA용 Workload Factory에서 개요 대시보드 활성화
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+개요 대시보드를 활성화하여 FSx for ONTAP 파일 시스템에 대한 CloudWatch 메트릭 수집을 시작하세요. 활성화되면 대시보드를 통해 클러스터 상태, 용량 및 처리량을 중앙에서 모니터링할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+대시보드를 활성화하기 전에 다음 요구 사항을 충족하는지 확인하십시오.
+
+
+
+=== 보기 권한이 있는 AWS 자격 증명
+
+Workload Factory에서 AWS 자격 증명을 구성할 때는 일반 스토리지에 대한 읽기(보기) 권한 이상을 부여해야 합니다. _Basic_ 자격 증명은 지원되지 않습니다.
+
+보기 권한이 있는 자격 증명을 구성하지 않은 경우 개요 탭을 열면 AWS 자격 증명 설정 페이지로 리디렉션됩니다.
+
+AWS 자격 증명을 구성하지 않은 경우 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 자격 증명 추가"^]을 참조하십시오.
+
+
+
+== 대시보드 활성화
+
+Workload Factory에서 보기 권한이 있는 자격 증명을 확인한 후에는 대시보드를 활성화하여 FSx for ONTAP 파일 시스템에 대한 CloudWatch 메트릭 수집을 시작해야 합니다.
+
+
+NOTE: 동의를 제공한 후 메트릭 수집에 다소 시간이 걸릴 수 있습니다. 대시보드는 초기 수집이 진행되는 동안 알림을 표시합니다.
+
+.단계
+. 다음 중 하나를 사용하여 로그인하세요. link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+. 메뉴 image:workloads-menu-icon.png["햄버거 메뉴 아이콘"]를 선택한 다음 *EDA*를 선택하십시오.
+. *개요* 탭을 선택합니다.
+. 보기 권한이 있는 자격 증명이 감지되지 않으면 *자격 증명 추가*를 선택하고 안내에 따라 보기 권한이 있는 AWS 자격 증명을 구성하십시오. 그런 다음 *개요* 탭으로 돌아가십시오.
+. FSx for ONTAP 파일 시스템에 대해 수집될 CloudWatch 메트릭을 설명하는 동의 프롬프트를 검토하십시오.
+. 대시보드를 활성화하고 지표 수집을 시작하려면 *활성화*를 선택하세요.
+
+
+.결과
+Workload Factory는 구성된 AWS 자격 증명과 연결된 모든 FSx for ONTAP 파일 시스템에 대한 CloudWatch 메트릭 수집을 시작합니다. 메트릭을 사용할 수 있게 되면 대시보드가 채워집니다. 수집이 진행 중인 경우 알림이 표시됩니다.
+
+
+
+== 다음 단계
+
+대시보드를 활성화한 후 다음을 수행할 수 있습니다.
+
+* link:task-use-overview-dashboard.html["개요 대시보드 사용"] 클러스터 상태 및 용량 모니터링
+* SSD 용량 관리 모드(자동, 권장 또는 없음)를 구성합니다.
+* 특정 리전 또는 AWS 계정에 초점을 맞추도록 필터를 설정하세요.
+
+
+
+
+== 관련 정보
+
+* link:learn-overview-dashboard.html["개요 대시보드에 대해 알아보십시오"]
+* link:task-use-overview-dashboard.html["개요 대시보드 사용"]
+

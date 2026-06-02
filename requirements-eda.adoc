@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: requirements-eda.html 
-keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, workload factory 
+keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, Workload Factory 
 summary: NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다. 
 ---
 = EDA 요구 사항을 위한 Workload Factory
@@ -13,14 +13,14 @@ summary: NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 
 [role="lead"]
 NetApp Workload Factory EDA에 사용하기 전에 Workload Factory와 AWS가 올바르게 설정되었는지 확인하십시오. 여기에는 AWS 로그인 자격 증명, 배포된 FSx for ONTAP 파일 시스템 등이 포함됩니다.
 
-워크로드 팩토리 로그인 및 계정:: 당신은 다음이 필요할 것입니다 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factory에 계정을 만드세요"^] 다음 중 하나를 사용하여 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
+Workload Factory 로그인 및 계정:: 당신은 다음이 필요할 것입니다 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factory에 계정을 만드세요"^] 다음 중 하나를 사용하여 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 경험"^].
 AWS 자격 증명 및 권한:: Workload Factory에 읽기/쓰기 권한이 있는 AWS 자격 증명을 추가해야 합니다. 즉, EDA를 위해 Workload Factory를 읽기/쓰기 모드로 사용해야 합니다.
 
 
 현재 _Basic_ 모드 및 _Read-only_ 모드 권한은 지원되지 않습니다.
 
 
-NOTE: AWS 자격 증명은 볼륨 성능 분석을 위해 CloudWatch 메트릭을 수집하는 지연 시간 모니터링 기능을 사용하는 데에도 필요합니다. 지연 시간 이벤트에 대한 알림을 받으려면 Workload Factory 설정에서 알림 기본 설정을 구성하십시오. 복잡한 지연 시간 시나리오에 대한 선택적 AI 에이전트 분석을 활성화하려면 Amazon Bedrock 모델 ARN도 제공해야 합니다. link:task-monitor-latency.html["지연 시간 모니터링에 대해 알아보십시오"].
+NOTE: AWS 자격 증명은 볼륨 성능 분석을 위해 CloudWatch 메트릭을 수집하는 지연 시간 모니터링 기능을 사용하는 데에도 필요합니다. 지연 시간 이벤트에 대한 알림을 받으려면 Workload Factory 설정에서 알림 기본 설정을 구성하십시오. 복잡한 지연 시간 시나리오에 대한 선택적 AI 에이전트 분석을 활성화하려면 Amazon Bedrock 모델 ARN도 제공해야 합니다. link:learn-latency-monitoring.html["지연 시간 모니터링에 대해 알아보십시오"].
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload Factory에 AWS 자격 증명을 추가하는 방법을 알아보세요."^]
 
