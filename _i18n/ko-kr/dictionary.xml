@@ -875,7 +875,6 @@
   <block id="c8cc2ccf33cdc30737f78ff90de2445d" category="paragraph">지연 시간 분석은 AWS 계정에 연결된 모든 FSx for ONTAP 볼륨의 읽기 및 쓰기 활동에 대한 CloudWatch 메트릭을 수집합니다. 정의된 제한값과 이러한 메트릭을 지속적으로 비교하여 성능 문제를 조기에 감지합니다.</block>
   <block id="590fb1ff71e09ae10025da434d4a576d" category="paragraph">지연 시간이 증가하면 Workload Factory는 ONTAP QoS 지연 메트릭을 자동으로 검토하여 속도 저하의 주요 원인을 파악합니다. 데이터 또는 클러스터 구성 요소와 관련된 더 복잡한 문제의 경우, 선택적 AI 분석을 실행하여 근본 원인을 파악하고 영향을 받는 클라이언트를 식별하며 문제 해결 단계를 제안할 수 있습니다.</block>
   <block id="f5c07c8cce2b621540390923f8c67ffc" category="paragraph">경고는 선택한 전체 시간 범위 동안 다음 두 조건이 모두 충족될 때만 발생합니다. 즉, 지연 시간이 임계값 이상으로 유지되고 IOPS가 임계값 이상으로 유지되는 경우입니다. 두 조건을 모두 충족하도록 요구함으로써 시스템이 실제 작업 부하를 처리하는 동안 높은 지연 시간이 발생하도록 하여 오경보를 줄입니다.</block>
-  <block id="7719c0ad2aed2107222044fb60d905ae" category="paragraph">감지된 모든 이벤트는 지연 시간 이벤트 테이블에 표시됩니다. 알림이 설정된 경우, 영향을 받는 볼륨에 대한 세부 정보가 포함된 이메일 또는 Amazon SNS 메시지도 수신하게 됩니다.</block>
   <block id="dc61eabb4b4720779ffd0ea863639346" category="paragraph">지연 이벤트가 발생하면 Workload Factory는 자동으로 기본 분석을 실행하여 원인을 파악합니다. ONTAP QoS 지연 센터 메트릭을 사용하여 FlexCache, 용량 풀, QoS 제한, 디스크, 데이터, 클러스터 또는 기타 하위 시스템과 같은 구성 요소 중 어떤 것이 속도 저하의 원인인지 확인합니다. 이를 통해 수동 조사 없이 지연의 원인을 신속하게 식별할 수 있습니다.</block>
   <block id="8eb98f7a0459d22ab367426190a3fb48" category="admonition">FSx for ONTAP 파일 시스템에 링크가 연결된 경우에만 구성 요소 분석을 볼 수 있습니다. 링크가 없는 경우에도 지연 시간, IOPS 및 처리량 그래프는 볼 수 있습니다.</block>
   <block id="eb40849137a407e18ca35f8df5165003" category="admonition">ONTAP QoS 분석과 CloudWatch의 지연 시간 값은 데이터 수집 방식이 다르기 때문에 약간의 차이가 있을 수 있습니다. 기본 분석에서는 ONTAP 데이터를 사용하여 근본 원인을 파악합니다.</block>
@@ -992,7 +991,6 @@
   <block id="59cbd9a4d580062062bfc4ff383f14c2" category="paragraph">읽기 및 쓰기에 대한 경고 및 임계 한계를 설정합니다. 시스템은 이러한 한계를 지속적으로 확인하고 한계에 도달하면 경고를 보냅니다.</block>
   <block id="11fda7252f626757b0488cd577f27860" category="admonition">중요 이벤트 임계값을 경고 임계값보다 높게 설정하십시오. 그렇지 않으면 구성을 저장할 수 없습니다.</block>
   <block id="5a1211a74ff4c3bb3c0672678c971e1f" category="paragraph">Workload Factory는 AWS 자격 증명에 연결된 모든 FSx for ONTAP 볼륨의 지연 시간 메트릭을 수집합니다. 이러한 메트릭은 최소 20분마다 수집됩니다. 설정한 임계값을 초과하는 볼륨은 지연 시간 이벤트 테이블에 표시됩니다.</block>
-  <block id="14bf5360fe55779f5e2e14b0c58169e4" category="paragraph">지연 시간이 길어질 경우 알림을 받도록 이메일 또는 Amazon SNS 알림을 설정하세요. 설정한 임계값을 초과할 때마다 알림을 받게 되므로 성능 문제가 발생하면 즉시 알 수 있습니다.</block>
   <block id="d1b1c2aa5d228f69be0ebddab772256e" category="admonition">영향을 받는 볼륨이 10개 이상인 경우, 이메일에는 처음 10개의 볼륨과 추가로 영향을 받는 볼륨의 수가 표시됩니다. 영향을 받는 모든 볼륨은 Workload Factory 콘솔에서 확인할 수 있습니다.</block>
   <block id="95ae0d98cc5a0df87238eb0392c461da" category="paragraph">설정 후에는 언제든지 임계값을 변경할 수 있습니다.</block>
   <block id="f40c1de6b7f8b45f157d4a9ef124471c" category="admonition">위험 임계값은 경고 임계값보다 높게 설정하십시오. 위험 임계값을 낮게 설정하면 시스템에 오류가 표시됩니다.</block>
@@ -1051,4 +1049,16 @@
   <block id="06557d42c1d11c10994b04fb503bc5ea" category="list-text">정상적인 성능 수준을 기록해 두면 나중에 비정상적인 동작을 더 쉽게 발견할 수 있습니다.</block>
   <block id="910779fa193225b42eb7f118f9e0fbf8" category="list-text">데이터 분석을 통해 얻은 정보를 활용하여 워크로드에 영향을 미치기 전에 리소스를 조정하거나, 볼륨 크기를 조정하거나, 성능을 개선하십시오.</block>
   <block id="52c4cfa377c69894b03ee8c538f7d3c7" category="section-title">2026년 7월 5일</block>
+  <block id="7e2652d4b25a337c594774fc14c2ab17" category="section-title">지연 알림 빈도 설정</block>
+  <block id="39b4011c4c170e1b29e7d8710812c644" category="paragraph">이제 지연 시간 초과에 대한 이메일 알림을 받는 빈도를 선택할 수 있습니다.</block>
+  <block id="9b4c72b587622d268ed8a5a315219fb5" category="list-text">*매일 알림 설정(권장)*: FSx for ONTAP 파일 시스템에서 새로운 문제가 발생할 때 알림을 받습니다.</block>
+  <block id="b1960d91c54aac51310626fca3cc3b48" category="paragraph">하루에 동일한 파일 시스템에서 여러 차례 지연 문제가 발생하더라도 이메일은 한 번만 발송됩니다.</block>
+  <block id="a6f20e83b8038d1aeb40bd01b25f763e" category="paragraph">Workload Factory는 파일 시스템에 대한 지연 시간 알림을 보낸 후 24시간 동안 기다린 뒤 해당 파일 시스템에 대한 또 다른 알림을 보냅니다.</block>
+  <block id="e2a4178b795c9afb4497b6549895fe0f" category="list-text">*지연 시간 위반 시 알림(20분마다)*: 최대 20분마다 한 번씩 지연 시간 위반이 감지되면 알림을 받습니다.</block>
+  <block id="943fb48a5bde64c680308a09af0a0832" category="paragraph">지연 문제 발생 시 이메일 수신량을 줄이면서도 알림을 받을 수 있도록 기본적으로 일일 알림이 활성화되어 있습니다. 지연 모니터링 설정 또는 임계값 설정 편집 시 알림 기본 설정을 변경할 수 있습니다.</block>
+  <block id="496e68c00adfe40e8730acfccde74f6b" category="paragraph"><block ref="9cf52e304b2518ca53073fc069c5a89c" category="inline-link-rx"></block>.</block>
+  <block id="c078c522f0c0f69cbe3ee348a3929074" category="paragraph">감지된 모든 이벤트는 지연 이벤트 테이블에 표시됩니다. 알림이 설정된 경우, 영향을 받는 볼륨에 대한 세부 정보가 포함된 이메일 또는 Amazon SNS 메시지도 수신하게 됩니다. 알림 수신 빈도는 파일 시스템별로 매일 또는 20분마다 설정할 수 있습니다.</block>
+  <block id="eeaf9b0486df56b5ef23ab55b9b5c590" category="paragraph">지연 시간이 길어질 경우 알림을 받도록 이메일 또는 Amazon SNS 알림을 설정하세요. 알림 빈도는 두 가지 옵션으로 제어할 수 있습니다.</block>
+  <block id="f0ac07f7c61e9a1057c26af44dc07e0f" category="list-text">*매일 알림 설정(권장)*: 파일 시스템에서 새로운 침해 사고가 발생하면 알림을 받습니다. 파일 시스템에 대한 알림을 보낸 후, 동일한 파일 시스템에 대해 다시 알림을 보내기 전에 24시간을 기다립니다.</block>
+  <block id="787290df504f1549bf1bea416b297658" category="list-text">*지연 시간 초과 시 알림(20분마다)*: 지연 시간 초과가 감지되면 최대 20분마다 한 번씩 알림을 받습니다.</block>
 </blocks>
