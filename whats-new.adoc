@@ -15,6 +15,31 @@ Workload Factory의 EDA 기능에 새로 추가된 기능을 알아보세요.
 
 
 
+== 2026년 7월 5일
+
+
+
+=== IOPS 및 처리량 그래프를 활용한 향상된 지연 시간 분석
+
+이제 지연 시간 분석 패널의 *시간 경과* 탭에 동기화된 성능 그래프가 표시됩니다.
+
+* *지연 시간 그래프*: 시간 경과에 따른 지연 시간 변화를 보여주며, 임계값 선과 임계값 초과 시 경고를 표시합니다.
+* *IOPS 그래프*: 초당 연산 횟수를 보여주며, 임계값 선과 과거 한도 초과 표시기가 함께 표시됩니다.
+* *처리량 그래프*: 데이터 전송 속도(DataReadBytes 또는 DataWriteBytes)를 표시합니다.
+
+
+모든 그래프는 동일한 타임라인을 사용하며, 이벤트가 읽기인지 쓰기인지에 따라 올바른 메트릭을 자동으로 표시합니다.
+
+새로운 필터를 사용하면 전체, 읽기, 쓰기 또는 메타데이터 작업 중에서 선택하여 더욱 자세한 분석을 수행할 수 있습니다.
+
+이 그래프는 지연 시간, IOPS 및 처리량 간의 관계를 시각적으로 보여주므로 성능 문제의 원인을 쉽게 파악하고 해결 방법을 결정할 수 있습니다.
+
+이제 성능 그래프는 AWS 자격 증명이 제공된 경우에만 사용할 수 있습니다. FSx for ONTAP 링크는 기본 및 AI 분석의 구성 요소별 분석을 위해서만 필요합니다.
+
+https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-trends.html["다양한 그래프를 사용하여 지연 시간 추세를 분석하는 방법을 알아보십시오."^].
+
+
+
 == 2026년 5월 31일
 
 
@@ -125,18 +150,18 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 === 자동화된 AI 지연 시간 분석
 
-지연 시간 분석에 이제 AI 에이전트 분석이 포함됩니다.
+지연 시간 분석에 이제 AI 분석이 포함됩니다.
 
-데이터 또는 클러스터 지연 시간과 관련된 복잡한 시나리오의 경우 AI 에이전트 분석을 호출하여 다음을 수신할 수 있습니다.
+데이터 또는 클러스터 지연과 관련된 복잡한 시나리오의 경우 AI 분석을 실행하여 다음을 수신할 수 있습니다.
 
 * 상세한 근본 원인 식별
 * 영향을 받는 EC2 클라이언트 목록
 * 구체적인 개선 조치
 
 
-AI 에이전트 분석에는 Amazon Bedrock 모델 ARN 구성이 필요하며 기본 분석에서 심층 조사를 권장하는 시나리오에 대해 온디맨드로 제공됩니다. AI 에이전트는 과부하 볼륨, 최적화되지 않은 마운트 포인트 구성, FlexGroup 리밸런싱 필요성 및 스케일아웃 요구 사항과 같은 문제를 식별할 수 있습니다.
+AI 분석에는 Amazon Bedrock 모델 ARN 구성이 필요하며, 기본 분석에서 심층 조사가 필요한 시나리오에 대해 온디맨드로 제공됩니다. AI 에이전트는 과부하 볼륨, 최적화되지 않은 마운트 포인트 구성, FlexGroup 리밸런싱 요구 사항 및 스케일 아웃 요구 사항과 같은 문제를 식별할 수 있습니다.
 
-https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["AI 에이전트 분석에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["AI 분석에 대해 자세히 알아보기"^].
 
 
 
@@ -182,7 +207,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
-=== 사용자 지정 태그를 사용한 향상된 대시보드 필터링
+=== EDA 워크로드에서 사용자 지정 가능한 태그를 사용한 향상된 대시보드 필터링
 
 이제 AWS 태그를 기반으로 EDA 대시보드에서 최대 5개의 사용자 지정 필터를 구성할 수 있습니다. 각 사용자 지정 필터에는 레이블 이름, AWS 태그 키 및 선택 유형(단일 또는 다중 선택)이 포함됩니다.
 
@@ -248,7 +273,7 @@ BlueXP 데이터 인프라 관리에 있어서의 역할을 더 잘 반영하도
 
 
 
-=== 클론 지원
+=== 빌더를 위한 Workload Factory의 클론 지원
 
 이제 BlueXP Workload Factory for Builders에서 프로젝트를 복제할 수 있습니다. 프로젝트를 복제하면 Builders는 스냅샷에서 원본과 동일한 구성의 새 프로젝트를 생성합니다. 클론 기능은 유사한 프로젝트를 빠르게 생성하거나 테스트 목적으로 사용할 때 유용합니다. Builders의 지침에 따라 새 프로젝트 복제본을 마운트할 수 있습니다.
 
@@ -260,7 +285,7 @@ https://docs.netapp.com/us-en/workload-builders/version-projects.html["BlueXP Wo
 
 
 
-=== 업데이트된 권한 용어
+=== EDA용 Workload Factory의 권한 관련 용어가 업데이트되었습니다.
 
 Workload Factory 사용자 인터페이스 및 문서에서는 이제 읽기 권한을 나타낼 때 "읽기 전용"이라는 용어를, 자동화 권한을 나타낼 때 "읽기/쓰기"라는 용어를 사용합니다.
 
