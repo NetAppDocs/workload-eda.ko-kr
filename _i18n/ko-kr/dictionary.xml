@@ -410,7 +410,6 @@
   <block id="d4f2d389a3d4d575b8158ca4417bf9a5" category="list-text">구성된 시간 범위 내의 모든 데이터 포인트에 대해 두 가지 조건 모두 지속됩니다.</block>
   <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">예를 들어, 기본 경고 임계값을 사용하면 10분 동안 모든 데이터 포인트에 대해 읽기 지연 시간이 6ms를 초과하고 읽기 IOPS가 100ops/sec를 초과하는 경우에만 읽기 알림이 트리거됩니다.</block>
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">이벤트 심각도</block>
-  <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">지연 이벤트 보기</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">이벤트는 72시간 후 자동으로 제거됩니다.</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">지연 시간 구성 관리</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">*지연 시간* 페이지에서 *편집*을 선택합니다.</block>
@@ -533,14 +532,10 @@
   <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">파일 시스템에 다음 구성을 사용하는 볼륨이 하나 이상 필요합니다.</block>
   <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">파일 시스템에 링크가 구성되어 있어야 합니다.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
   <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">EDA용 Workload Factory 지원 등록</block>
-  <block id="41de4d3965fbdf03451b2ecaee5868c7" category="summary">대화형 지연 시간 그래프를 사용하여 시간 경과에 따른 볼륨 지연 시간 추세를 분석하고, 패턴을 파악하고, 개선 효과를 추적하십시오.</block>
   <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">Workload Factory에서 EDA의 지연 시간 추세 분석</block>
   <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">구성된 지연 시간 모니터링</block>
   <block id="1e050c450cfafbc3c2fda5ecebd63af7" category="paragraph">다음 내용이 포함됩니다.</block>
-  <block id="fec795816c8e9333dd5705b026e4ec1f" category="list-text">*지연 시간* 탭의 이벤트 테이블에서 지연 시간 이벤트를 선택합니다.</block>
   <block id="0200e9f9651c0f9055af3ded58c679fe" category="paragraph">지연 시간 분석 패널이 열립니다.</block>
-  <block id="8ea49b1b8804030fecb789ed69b3cfe9" category="list-text">*Over time* 탭을 선택합니다.</block>
-  <block id="ab9d5820afcd30d44b00f88542fb3ed7" category="list-text">침해 건수 요약을 검토하십시오.</block>
   <block id="e97d67b4026b09dfe5111a6baff734ef" category="list-text">그래프 인사이트를 사용하여 다음을 수행하십시오.</block>
   <block id="21468bcc44334c21cf2648bb0c3286b5" category="section-title">그래프 해석</block>
   <block id="1068f745b93ee031c494800d88399506" category="list-text">알림 구성(선택 사항)</block>
@@ -548,14 +543,9 @@
   <block id="e83c229f37cf36a4d502c243dffb6c3d" category="list-text">최대 200개의 이벤트가 표시됩니다. 새로운 이벤트가 추가되면 오래된 이벤트는 삭제됩니다.</block>
   <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">지연 이벤트에 대한 세부 정보를 보려면 *심각도* 열에서 해당 이벤트를 선택하십시오. 그러면 해당 이벤트에 대한 지연 분석 패널이 열립니다.</block>
   <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">표를 정렬하려면 열 머리글을 선택합니다. 기본적으로 중요 이벤트가 시간별로 먼저 표시되고 그 다음 경고 이벤트가 시간별로 표시됩니다.</block>
-  <block id="8f366b4a3c1ee9db68d65977ad160a9e" category="list-text">시간 경과에 따른 지연 시간 추세를 분석하려면 이벤트를 선택하여 지연 시간 분석 패널을 여세요. *시간 경과에 따른 변화* 탭을 사용하여 대화형 지연 시간 그래프를 볼 수 있습니다. 자세한 내용은 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>을 참조하세요.</block>
   <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">지연 이벤트 분석</block>
-  <block id="1bd47873c66482991cb879180d2867cc" category="paragraph">*심각도* 열에서 지연 이벤트를 선택하면 해당 이벤트에 대한 지연 분석 패널이 열립니다. 패널에는 지연 이벤트에 대한 다양한 보기를 제공하는 탭이 포함되어 있습니다.</block>
-  <block id="748595841e3c3b1b5183a7d6077dffdd" category="list-text">*시간 경과에 따른 변화*: 기간별 데이터가 포함된 대화형 지연 시간 그래프를 표시합니다</block>
   <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">Workload Factory 설정에서 Amazon Bedrock 모델 ARN을 구성하려면 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="2f4239783073f0a94706e2317e78bba8" category="list-text">*심각도* 열에서 지연 이벤트를 선택하여 해당 이벤트에 대한 분석 패널을 엽니다.</block>
-  <block id="354b602de39fd16c2e8213c6420af87b" category="paragraph">파일 시스템에 연결된 링크가 없는 경우, 해당 파일 시스템에 링크를 연결하라는 메시지가 표시됩니다. 메시지를 선택하면 해당 파일 시스템의 링크 설정 페이지로 이동합니다.</block>
-  <block id="6b11475664ca5049823829bb74e3334d" category="list-text">*개요* 탭을 검토하여 기본 분석 결과를 이해하고 지연 원인을 파악하십시오.</block>
   <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">지연 시간 알림 구성</block>
   <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">알림 설정 구성</block>
   <block id="fc5cf4b9e620903fdc3e72c98ed92e50" category="paragraph">지연 시간 알림은 파일 시스템 단위로 전송됩니다. 파일 시스템 내 하나 이상의 볼륨이 지연 시간 임계값을 초과하면 영향을 받는 모든 볼륨 목록이 포함된 단일 알림을 받게 됩니다.</block>
@@ -722,10 +712,6 @@
   <block id="91b5f8f96066d41fb5057458a69d5f81" category="list-text"><block ref="91b5f8f96066d41fb5057458a69d5f81" category="inline-link-macro-rx"></block></block>
   <block id="7c7708c4a86b73bb59e5e08ced5293bf" category="doc">EDA용 Workload Factory에서 지연 시간 문제 분석</block>
   <block id="ed960c97b9cba50c54da4a4beb0cddea" category="paragraph">지연 시간 이벤트를 보고 분석하려면 먼저 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block>이(가) 있어야 합니다.</block>
-  <block id="c7091d0edc98eba35097c5fee111cbeb" category="list-text">지연 이벤트 표에서 각 이벤트에 대한 정보를 검토하십시오.</block>
-  <block id="1d75c8bd88c404ae20531903bd0c61be" category="section-title">개요 탭</block>
-  <block id="90106254d1f94b759470c5feef52980a" category="section-title">시간 경과 탭</block>
-  <block id="eb0d7435aac1126c7c337315ad2941fa" category="list-text">선택적으로 *Over time* 탭을 선택하여 영향을 받는 볼륨의 지연 시간 추세를 확인할 수 있습니다.</block>
   <block id="d5f97a1cb8e0382743f28559f0c6ace7" category="list-text">잠재적 근본 원인 설명</block>
   <block id="0a3d11a9c21fb1f2a4dc021dc4a83aad" category="list-text">권장 해결 단계</block>
   <block id="f6da12ee5ed910433c51d88e2e61a406" category="paragraph">지연 시간 문제를 분석할 때 다음 권장 사항을 고려하십시오.</block>
@@ -852,15 +838,9 @@
   <block id="a0230375de0fd0d81b6dde04b5ea448b" category="paragraph">AI 분석에는 Amazon Bedrock 모델 ARN 구성이 필요하며, 기본 분석에서 심층 조사가 필요한 시나리오에 대해 온디맨드로 제공됩니다. AI 에이전트는 과부하 볼륨, 최적화되지 않은 마운트 포인트 구성, FlexGroup 리밸런싱 요구 사항 및 스케일 아웃 요구 사항과 같은 문제를 식별할 수 있습니다.</block>
   <block id="61c60c2985e3bfc0c300130645b7c18e" category="inline-link">AI 분석에 대해 자세히 알아보기</block>
   <block id="e697fcda37139bd9c16c39e2444c7292" category="paragraph"><block ref="736e577fb94d54c1db651e1a12d438ba" category="inline-link-rx"></block>.</block>
-  <block id="33e0c31d77f9c8cc22645a3c4d8f1c27" category="doc">IOPS 및 처리량 그래프를 활용한 향상된 지연 시간 분석</block>
-  <block id="820660d0f2f623290b9d6bf61dc7b971" category="paragraph">이제 지연 시간 분석 패널의 *시간 경과* 탭에 동기화된 성능 그래프가 표시됩니다.</block>
   <block id="07139d61108a6478189b71bcdc7f39b8" category="list-text">*지연 시간 그래프*: 시간 경과에 따른 지연 시간 변화를 보여주며, 임계값 선과 임계값 초과 시 경고를 표시합니다.</block>
   <block id="390641ad0fb5c4dcbd3e1ea9a432933d" category="list-text">*IOPS 그래프*: 초당 연산 횟수를 보여주며, 임계값 선과 과거 한도 초과 표시기가 함께 표시됩니다.</block>
-  <block id="167a301ac11e90acd4e01899787518a1" category="list-text">*처리량 그래프*: 데이터 전송 속도(DataReadBytes 또는 DataWriteBytes)를 표시합니다.</block>
   <block id="38f51c8db276cb26c3c7af52f545996e" category="paragraph">모든 그래프는 동일한 타임라인을 사용하며, 이벤트가 읽기인지 쓰기인지에 따라 올바른 메트릭을 자동으로 표시합니다.</block>
-  <block id="40f862a8ef42e494a25d0887d6827d75" category="paragraph">새로운 필터를 사용하면 전체, 읽기, 쓰기 또는 메타데이터 작업 중에서 선택하여 더욱 자세한 분석을 수행할 수 있습니다.</block>
-  <block id="b8f78f4759a5bd3c20308a67276707aa" category="paragraph">이 그래프는 지연 시간, IOPS 및 처리량 간의 관계를 시각적으로 보여주므로 성능 문제의 원인을 쉽게 파악하고 해결 방법을 결정할 수 있습니다.</block>
-  <block id="41b8190fd8c34e03bd93c4234b033876" category="paragraph">이제 성능 그래프는 AWS 자격 증명이 제공된 경우에만 사용할 수 있습니다. FSx for ONTAP 링크는 기본 및 AI 분석의 구성 요소별 분석을 위해서만 필요합니다.</block>
   <block id="8dd5201c5cc5a3396ebbb0eed3c4385d" category="inline-link">다양한 그래프를 사용하여 지연 시간 추세를 분석하는 방법을 알아보십시오.</block>
   <block id="96f2a9474e94ea84ba4915ee29411c85" category="paragraph"><block ref="6741c3b9db1b1d3c4d7831b9652aaaca" category="inline-link-rx"></block>.</block>
   <block id="3cb8dabed434a6eb71085c376220f787" category="paragraph">Workload Factory for EDA는 여러 파일 시스템에서 Amazon FSx for ONTAP을 관리할 수 있도록 지원합니다. 스토리지 설정을 자동으로 조정하고, 지연 문제를 찾아내며, EDA 프로젝트에 대한 유용한 정보를 제공하여 성능을 향상시키고 비용을 절감합니다.</block>
@@ -930,54 +910,25 @@
   <block id="56ec2175657135172133d058c441dd94" category="paragraph">Workload Factory에서 보기 권한이 있는 자격 증명을 확인한 후 대시보드를 활성화하여 FSx for ONTAP 파일 시스템에 대한 CloudWatch 메트릭 수집을 시작하십시오.</block>
   <block id="d13a18ba5d5fe55df783d45bf87a6b38" category="admonition">동의하신 후 측정항목 수집에는 다소 시간이 소요될 수 있습니다. 첫 번째 수집이 진행되는 동안 대시보드에서 알림을 받으실 수 있습니다.</block>
   <block id="7b76cd809591b8cb2b82a5d96bf92502" category="paragraph">Workload Factory는 AWS 자격 증명에 연결된 모든 FSx for ONTAP 파일 시스템에 대한 CloudWatch 메트릭 수집을 시작합니다. 메트릭이 수집되는 대로 대시보드가 업데이트됩니다. 데이터 수집이 진행 중인 동안에는 알림이 표시됩니다.</block>
-  <block id="7166341e6629a086fb60bd72086a1b38" category="summary">FSx for ONTAP 볼륨의 성능 문제를 찾기 위해 지연 시간 이벤트를 확인하고 분석하십시오. 자동 기본 분석 및 선택적 AI 분석을 사용하여 근본 원인과 해결 방법을 파악할 수 있습니다.</block>
   <block id="8a362591ef9c6b566a626a00a92fbba2" category="paragraph">감지된 지연을 확인하고 자동화 도구를 사용하여 FSx for ONTAP 볼륨의 성능 저하 원인을 찾아 해결하십시오.</block>
-  <block id="f711be5333bd85de02b523276cc8cb8c" category="paragraph">지연 이벤트 표는 지난 72시간 동안 발생한 모든 경고 및 심각 이벤트를 한 곳에서 보여줍니다.</block>
   <block id="84a69f3e383f767a2d335d822b6e989c" category="list-text">각 볼륨에 대해 가장 최근에 발생한 침해 사례만 표시됩니다. 동일한 볼륨에 대한 이전 침해 사례는 표시되지 않습니다.</block>
   <block id="3378724912de6e334800d398b5316fcf" category="list-text">파일 시스템 링크가 없더라도 이벤트는 표시됩니다. 기본 분석 세부 정보를 보거나 AI 분석을 실행하려면 링크가 필요합니다.</block>
   <block id="132c7aceca8c73d5c769da788336b55b" category="paragraph">기본 분석을 통해 수동으로 조사할 필요 없이 속도 저하의 원인을 신속하게 찾을 수 있습니다.</block>
-  <block id="7468d6830cb23bfdfd8742183eb2b05f" category="list-text">*개요*: 지연을 유발하는 구성 요소를 파악하는 기본적인 결과를 보여줍니다.</block>
-  <block id="b4d17021d2fd4f6f0b2d385551078ec1" category="paragraph">*개요* 탭에는 자동 분석 결과가 표시됩니다. 파일이 파일 시스템에 연결되어 있는 경우 구성 요소별 분석 결과가 표시되고 지연을 유발하는 구성 요소를 확인할 수 있습니다. 연결이 없는 경우 연결을 추가하라는 메시지가 나타납니다.</block>
-  <block id="9b7634cd203249c15963dfbf6e385742" category="paragraph">Amazon Bedrock 모델 ARN이 구성된 경우 **개요** 탭에서 데이터 및 클러스터 시나리오에 대한 AI 분석을 실행할 수 있습니다. Bedrock이 구성되지 않은 경우 해당 탭에는 해당 파일 시스템의 Storage Workloads 구성 페이지 링크가 표시되며, 여기에서 Bedrock 액세스를 설정할 수 있습니다.</block>
-  <block id="91189500d01b54cfc4e5b51a57725e2d" category="paragraph">**시간 경과** 탭에서는 해당 볼륨에 대한 CloudWatch 메트릭의 대화형 그래프를 볼 수 있습니다. 이 그래프는 시간 경과에 따른 지연 시간, IOPS 및 처리량을 표시합니다. 이벤트를 트리거한 알람에 따라 읽기 또는 쓰기 메트릭이 표시됩니다. 1H, 3H, 12H, 24H, 72H 등 다양한 시간 범위를 선택할 수 있으며, 필터를 사용하여 전체, 읽기, 쓰기 또는 메타데이터 작업을 볼 수 있습니다.</block>
   <block id="0a59976bcdf12b05f8003b9abf1bba03" category="paragraph">그래프 사용에 대한 자세한 지침은 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="99515c8f20938128355a8ab92321b752" category="list-text">*개요* 탭을 검토하세요. 링크가 연결되어 있으면 구성 요소 분석을 열어 지연 원인을 확인하세요. 링크가 연결되어 있지 않으면 구성 요소를 분석할 수 있도록 링크를 연결하라는 메시지를 선택하세요.</block>
-  <block id="64bdd7457fca2682d76127c1f3a1af51" category="list-text">지연 시간이 데이터 또는 클러스터 문제와 같은 더 심층적인 조사가 필요한 경우 AI 분석을 실행하십시오.</block>
-  <block id="baabc288be01830359f768fb417acd0d" category="section-title">AI 분석 실행</block>
-  <block id="fef5556b92f893491a43dafa9f8d0a61" category="paragraph">AI 분석은 보다 심층적인 조사를 통해 구체적인 근본 원인과 잠재적인 해결 방안을 파악하는 데 도움을 줍니다.</block>
-  <block id="de70637161ed14985a52197093b2fe0d" category="paragraph">AI 분석을 실행하면 시스템이 기본 분석 데이터를 자동으로 새로 고쳐 AI 분석의 입력값으로 사용합니다.</block>
-  <block id="c32a556228c48c9a5f8dd1095155182d" category="list-text">지연 원인이 데이터 또는 클러스터로 식별되면 *분석*을 선택하여 AI 분석을 실행하십시오.</block>
   <block id="988f6f9e1ca459bc23b17e74878baf18" category="list-text">결과를 검토하세요. 여기에는 다음 사항이 포함됩니다.</block>
   <block id="2ee13e9159673165c37cf0d7f447b211" category="list-text">지연 문제를 해결하려면 권장 단계를 따르십시오.</block>
   <block id="5aa3b359f497fc0a5eeeb342451eeec1" category="list-text">변경 사항을 적용한 후 지연 이벤트 테이블을 확인하여 문제가 해결되었는지 확인하십시오.</block>
-  <block id="064b74fea1cdacebab7e0dc88641bf4e" category="list-text">*추세 모니터링*: 지연 시간 이벤트 테이블을 정기적으로 확인하여 구성 문제를 나타낼 수 있는 패턴이나 반복적인 문제를 파악하십시오.</block>
   <block id="ef622497150b9c041987a9ecb7e5e9be" category="list-text">*AI 분석을 전략적으로 활용하세요*: 기본 분석 결과 AI 분석이 필요하다고 판단되면 데이터 검토 시 AI 분석을 활용하십시오. AI 분석은 상세한 문제 해결이 필요한 복잡한 성능 문제에 대한 심층적인 통찰력을 제공할 수 있습니다.</block>
   <block id="2378536f0c8de1c9b95a1bfc39f271fa" category="list-text">*기각된 이벤트 검토*: 이벤트가 기각된 이유를 정기적으로 검토하여 임계값을 조정하거나 시스템을 개선해야 하는지 확인하십시오.</block>
-  <block id="89cfa7714878d3bae6764f2493deccb7" category="paragraph">지연 이벤트가 감지되면 대화형 그래프를 사용하여 시간 경과에 따른 지연 시간 및 볼륨 변화를 확인할 수 있습니다. 이를 통해 패턴을 파악하고 문제가 자주 발생하는지 아니면 한 번만 발생하는지 확인하여 데이터를 기반으로 해결 방법을 결정할 수 있습니다.</block>
-  <block id="42012da84b9ebf577ec707f6bd6c6459" category="paragraph"><block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block>와 최소 하나 이상의 지연 이벤트가 감지되어야 합니다. AWS 자격 증명이 있으면 성능 그래프를 볼 수 있습니다. 구성 요소별 분석을 보려면 링크가 필요합니다.</block>
-  <block id="0b3449f810c0efda03af580ff808d4d1" category="paragraph">*시간 경과에 따른 변화* 탭에서는 지연 시간, IOPS 및 처리량과 같은 볼륨 동작을 분석하는 데 도움이 되는 성능 그래프를 제공합니다.</block>
-  <block id="3bed9e81863506f9cf725b0d8ea890e8" category="paragraph">이 그래프들은 영향을 받은 볼륨에 대한 CloudWatch 메트릭을 보여줍니다. 모든 그래프는 동일한 타임라인을 사용합니다. 어떤 알람이 이벤트를 트리거했는지에 따라 읽기 또는 쓰기 메트릭을 자동으로 표시합니다.</block>
   <block id="d33de6c2755f8403fea3ab90b1c8fd32" category="paragraph">시간 범위를 변경하여 다양한 기간 동안의 성능을 확인할 수 있습니다. 또한 전체, 읽기, 쓰기 또는 메타데이터 작업 중에서 선택하여 볼 수 있습니다.</block>
   <block id="5965da30ffd84e83309cf4cb698be165" category="paragraph">시각화에는 다음 내용이 포함됩니다.</block>
-  <block id="160c7282ff96708bb896c257f7fde418" category="list-text">*지연 시간 그래프*: 임계값 선 및 위반 표시기와 함께 시간에 따라 CloudWatch에서 수집된 실제 지연 시간 값(밀리초)을 표시합니다.</block>
-  <block id="f989e3bca766b7decfbd45bccb9baf8f" category="list-text">*IOPS 그래프*: CloudWatch에서 시간에 따른 실제 지연 시간(밀리초)을 표시합니다. 임계값 선은 설정된 한계를 나타내고, 마커는 해당 한계를 초과한 시점을 표시합니다. 또한 초당 작업 수도 표시되며, 임계값 선과 과거 초과 발생 시점을 나타내는 마커가 함께 표시됩니다. 읽기 활동은 DataReadOperations을, 쓰기 활동은 DataWriteOperations을 표시합니다.</block>
-  <block id="be50cc918f8276f9e1a58d2857fff12b" category="list-text">*처리량 그래프*: 데이터 전송 속도를 보여줍니다. 읽기 이벤트의 경우 DataReadBytes가 표시됩니다. 쓰기 이벤트의 경우 DataWriteBytes가 표시됩니다. 필터에서 **메타데이터**를 선택하면 처리량 그래프에 데이터가 표시되지 않습니다.</block>
-  <block id="da1c38787270bedae00107784704c362" category="list-text">*임계값 선*: 점선으로 표시된 가로선은 지연 시간 및 IOPS 그래프에서 설정한 경고 및 임계 한계를 나타냅니다.</block>
-  <block id="a3decc514e892c846fe437f752de100a" category="list-text">*위반 지표*: 임계값이 초과된 시점과 해당 기간 동안 초과된 횟수를 보여주는 시각적 표시.</block>
-  <block id="3d85dd323704153f28b89ce906a1cc51" category="list-text">*Breach details*: 각 침해 사례에 대해 중앙값 지연 시간, 제한 초과 비율, QoS 지연 센터 데이터 및 감지 시간을 확인할 수 있습니다.</block>
-  <block id="da344642138017df11eaa3f2306d9cbd" category="list-text">지난 3시간 동안의 지연 시간, IOPS 및 처리량에 대한 성능 그래프를 보여주는 기본 보기를 검토하십시오.</block>
-  <block id="e3a42503f88780c31b7d5c8afab7f115" category="list-text">선택적으로 *유형* 필터를 사용하여 전체, 읽기, 쓰기 또는 메타데이터 작업 중에서 선택할 수 있습니다. 기본값은 이벤트 유형과 일치합니다(읽기 이벤트의 경우 읽기, 쓰기 이벤트의 경우 쓰기).</block>
   <block id="6497a3f9ceaf99e91fb4279ce8d0aee9" category="list-text">기간 범위를 변경하여 다른 기간을 검토하고 패턴을 찾아보세요.</block>
   <block id="9019c3891a9f30f5e875e282b8fb3143" category="list-text">지연 시간, IOPS 및 처리량의 추세선을 확인하십시오. IOPS 및 지연 시간 그래프에는 비교를 위한 임계값 선이 포함되어 있습니다.</block>
-  <block id="566ae949dac7bd207465924a73708ce2" category="list-text">그래프에서 위반 표시를 찾아보세요. 이러한 표시는 선택한 기간 동안 임계값이 여러 번 초과될 때 나타납니다.</block>
-  <block id="f94cc1eb094d62cc0163a4436e57f706" category="list-text">자세한 내용을 보려면 침해 표시기 위에 마우스를 올리거나 선택하십시오.</block>
-  <block id="4ee7082f850ae24e840c1ee9af3f56af" category="paragraph">이 그래프는 선택된 기간 동안 발생한 경고 또는 심각한 위반의 총 건수를 보여줍니다.</block>
   <block id="da5f6ce733580dc0efac053cdb3c02a2" category="list-text">지연 문제가 한 번만 발생하는지 아니면 반복적으로 발생하는지 확인하십시오.</block>
   <block id="33c0325e8a2128563ba4d249b71eac80" category="list-text">지연 시간이 더 높은 시간대를 파악합니다.</block>
   <block id="c30c0bc3ebb09ae2a400e94d60d3b6ef" category="list-text">지연 시간 급증 현상이 단기적인지 장기적인지 판단하십시오.</block>
   <block id="160b08b76619548dc226e1be0f2bee50" category="list-text">지연 이벤트를 워크로드 패턴 또는 시스템 변경 사항과 비교합니다.</block>
   <block id="9674b9c64afd7c46e3c2a992f0619360" category="paragraph">시간 경과에 따른 볼륨 지연 시간 변화를 확인할 수 있습니다. 이를 통해 지금 조치를 취해야 할지, 알림 한도를 변경해야 할지, 아니면 시스템 문제를 확인해야 할지 결정할 수 있습니다.</block>
-  <block id="b937c3f4ce20c3c70aa8101614121add" category="admonition">지연 시간 그래프는 CloudWatch 메트릭을 사용합니다. 이러한 메트릭은 수집 방식이 다르기 때문에 ONTAP QoS 지연 센터 데이터와 약간 다를 수 있습니다. 보다 포괄적인 정보를 제공하기 위해 두 가지 모두 표시됩니다.</block>
   <block id="1e010f64da8e49bc405d8e11ea8b14fa" category="paragraph">응답 시간 변경 사항을 검토할 때 다음 팁을 활용하십시오.</block>
   <block id="d648bc371ecfca3ec80a88cdb4944d2e" category="list-text">*다양한 시간 범위를 활용하세요*: 여러 기간의 그래프를 살펴보면서 일시적인 급증과 지속적인 성능 저하를 구분하세요. 먼저 24시간 그래프를 통해 전체적인 맥락을 파악하세요. 그런 다음 더 짧은 기간으로 확대하여 특정 사건을 살펴보거나 72시간 그래프로 전환하여 일별 패턴을 확인하세요.</block>
   <block id="db6b56a4c58df637e045df981f066cff" category="list-text">*임계값을 시각적으로 비교하세요*: 그래프의 임계값 선을 사용하여 경고 및 중요 설정이 워크로드에 적합한지 확인하세요. 지연 시간이 임계값에 자주 근접하지만 넘지 않는다면 임계값이 너무 높을 수 있습니다. 반대로 임계값을 넘는 짧은 스파이크가 자주 발생하지만 운영에 영향을 미치지 않는다면 임계값이 너무 민감할 수 있습니다.</block>
@@ -1061,4 +1012,43 @@
   <block id="eeaf9b0486df56b5ef23ab55b9b5c590" category="paragraph">지연 시간이 길어질 경우 알림을 받도록 이메일 또는 Amazon SNS 알림을 설정하세요. 알림 빈도는 두 가지 옵션으로 제어할 수 있습니다.</block>
   <block id="f0ac07f7c61e9a1057c26af44dc07e0f" category="list-text">*매일 알림 설정(권장)*: 파일 시스템에서 새로운 침해 사고가 발생하면 알림을 받습니다. 파일 시스템에 대한 알림을 보낸 후, 동일한 파일 시스템에 대해 다시 알림을 보내기 전에 24시간을 기다립니다.</block>
   <block id="787290df504f1549bf1bea416b297658" category="list-text">*지연 시간 초과 시 알림(20분마다)*: 지연 시간 초과가 감지되면 최대 20분마다 한 번씩 알림을 받습니다.</block>
+  <block id="efb6a1d0d54500167c0d1ae30ab8ac5b" category="doc">동기화된 지연 시간, IOPS 및 처리량 차트를 통한 향상된 지연 시간 분석</block>
+  <block id="a868b37aeda2e8d7f0a8e48f498112fc" category="paragraph">이제 지연 시간 분석 패널에 동기화된 성능 그래프가 포함된 *상세 지연 시간 분석* 페이지가 추가되었습니다.</block>
+  <block id="a4abbd682ae58689df4450b4a65c90a2" category="list-text">*처리량 그래프*: 데이터 전송 속도(DataReadBytes 또는 DataWriteBytes)를 보여줍니다. 필터에서 메타데이터를 선택하면 처리량 그래프에 데이터가 표시되지 않습니다.</block>
+  <block id="7e9591a005bdef4cdf16dfd575186f3b" category="paragraph">보기 방식을 조정하여 지연 시간 급증과 IOPS 및 처리량 변화 간의 상관관계를 파악할 수 있습니다. 침해 표시와 마우스 오버 시 나타나는 세부 정보를 통해 임계값 초과 시점을 확인하고 감지된 침해에 대한 주요 지표를 검토할 수 있습니다.</block>
+  <block id="94865ed9933801afc860536ada02e496" category="summary">FSx for ONTAP 볼륨의 성능 문제를 찾기 위해 지연 시간 이벤트를 보고 분석하십시오. 기본 분석과 선택 사항인 AI 분석을 사용하여 근본 원인과 해결 방법을 파악할 수 있습니다.</block>
+  <block id="939c818555e5fa65655d447cc97817ae" category="section-title">지연 시간이 임계값 이상인 볼륨 보기</block>
+  <block id="bbc7d21521d2a10f49812344ac8d5c6a" category="paragraph">지연 시간이 임계값을 초과한 볼륨 테이블은 지난 72시간 동안 경고 또는 심각한 지연 시간 임계값을 초과한 볼륨을 보여줍니다.</block>
+  <block id="f06921222f3510361d45443110e72880" category="list-text">표에 있는 각 이벤트 정보를 검토하십시오.</block>
+  <block id="3cd32cbc73706e6bc220ece19622d604" category="list-text">지연 시간 분석 패널은 지연 시간 차트와 시간 범위 및 유형 제어 기능을 포함하여 침해 상황을 빠르게 확인할 수 있도록 해줍니다. *전체 분석 보기*를 선택하면 기본 분석, AI 분석(선택 사항) 및 추가 차트를 포함한 자세한 지연 시간 분석 페이지가 열립니다. 자세한 내용은 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="0665519f24690502dfcb8f5913d6b056" category="paragraph">*심각도* 열에서 지연 이벤트를 선택하면 해당 이벤트에 대한 지연 분석 패널이 열립니다. 패널에는 지연 이벤트에 대한 다양한 보기를 제공하는 탭이 포함되어 있습니다.</block>
+  <block id="c1316b241fd76c7d425cf326dd63f142" category="paragraph">Amazon Bedrock 모델 ARN이 구성된 경우 데이터 및 클러스터 시나리오에 대한 AI 분석을 실행할 수 있습니다. Bedrock이 구성되지 않은 경우 해당 파일 시스템의 Storage Workloads 구성 페이지 링크가 제공되며, 여기에서 Bedrock 액세스를 설정할 수 있습니다.</block>
+  <block id="0f76eb72044a145a7b1eb778e6653a96" category="list-text">*기본*: 자동 분석 결과를 보여줍니다. 파일 시스템에 연결된 경우 구성 요소별 분석 결과를 표시하고 지연을 유발하는 요소를 보여줍니다. 연결이 없는 경우 연결을 추가하라는 메시지가 표시됩니다. 영향을 받는 볼륨에 대한 CloudWatch 메트릭의 대화형 지연 시간 그래프가 표시됩니다. 이벤트 발생 원인에 따라 읽기 또는 쓰기 메트릭이 표시됩니다. 다양한 시간 범위를 선택하고 필터를 사용하여 전체, 읽기, 쓰기 또는 메타데이터 작업을 볼 수 있습니다.</block>
+  <block id="56dacd4284bdced92c0b004472a11758" category="list-text">*AI 분석*: 보다 심층적인 조사를 통해 구체적인 근본 원인과 잠재적인 해결 방안을 제시합니다.</block>
+  <block id="633009349fd0d4ddd69254b14ddb614b" category="list-text">*상세 지연 시간 분석*: 영향을 받는 볼륨에 대한 CloudWatch 메트릭의 대화형 그래프를 표시합니다. 이 그래프는 시간 경과에 따른 지연 시간, IOPS 및 처리량을 보여줍니다. 이벤트 발생 원인에 따라 읽기 또는 쓰기 메트릭이 표시됩니다. 다양한 시간 범위를 선택하고 필터를 사용하여 전체, 읽기, 쓰기 또는 메타데이터 작업을 볼 수 있습니다.</block>
+  <block id="b40f6683a1eb1ae3afa3737db2b06397" category="list-text">*기본* 탭을 검토하세요. 링크가 연결되어 있으면 구성 요소 분석을 열어 지연 원인을 확인하세요. 링크가 연결되어 있지 않으면 구성 요소를 분석할 수 있도록 링크를 연결하라는 메시지를 선택하세요.</block>
+  <block id="48b3037533aefc21a7c0b33e38b9d2cf" category="list-text">*AI 분석* 탭에서 *분석*을 선택하면 데이터 또는 클러스터 문제와 같은 심층 조사 결과를 확인할 수 있습니다. 이를 통해 구체적인 근본 원인과 해결 방안을 파악할 수 있습니다.</block>
+  <block id="92ffa2df9924192cd277aff197d336a5" category="list-text">AI 분석의 전체 결과를 보려면 *전체 분석 보기*를 선택하세요. 여기에는 선택한 기간 동안 CloudWatch 지표를 기반으로 한 볼륨 지연 시간, IOPS 및 처리량을 보여주는 성능 차트가 포함됩니다.</block>
+  <block id="ac750ed2f2d8556a0303fc989b1e0872" category="list-text">*모니터링 추세*: 임계값 이상의 지연 시간을 보이는 볼륨 테이블을 정기적으로 확인하여 구성 문제를 나타낼 수 있는 패턴이나 반복적인 문제를 파악하십시오.</block>
+  <block id="22da945b536d75359bd27d704612a787" category="summary">대화형 그래프를 사용하여 시간 경과에 따른 볼륨 지연 추세를 분석하고, 패턴을 파악하고, 개선 효과를 추적하세요.</block>
+  <block id="2ec452c69d214026151e8a42a419d0b1" category="paragraph">지연 시간 위반이 감지되면 차트를 사용하여 시간 경과에 따른 볼륨 지연 시간, IOPS 및 처리량의 변화를 확인하십시오. 이를 통해 패턴을 파악하고 개선 조치가 성능을 향상시켰는지 검증할 수 있습니다.</block>
+  <block id="64eb0d7530cb4d0bc81780c9ebbdcbbe" category="paragraph"><block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block>최소 한 건의 침해 감지 사례가 있어야 합니다. 차트를 보려면 AWS 자격 증명이 필요합니다. QoS 지연 시간 구성 요소 분석을 보려면 파일 시스템이 연결되어 있어야 합니다.</block>
+  <block id="3ae7414ab463567f2bf8aae54aa9a900" category="paragraph">*상세 지연 시간 분석* 페이지는 시간 경과에 따른 볼륨 동작(지연 시간, IOPS 및 처리량)을 분석하는 데 도움이 되는 성능 그래프를 제공합니다.</block>
+  <block id="f1964d68df733303823396964d8fcf09" category="paragraph">이 그래프들은 영향을 받은 볼륨에 대한 CloudWatch 메트릭을 보여줍니다. 모든 그래프는 동일한 타임라인을 사용합니다. 어떤 알람이 이벤트를 트리거했는지에 따라 메트릭이 자동으로 표시됩니다.</block>
+  <block id="4f8d18811eb9e0fcc2462824cfaa9dc6" category="list-text">*지연 시간 그래프*: 시간 경과에 따른 볼륨 지연 시간(ms)을 경고 및 위험 임계값 선과 위반 표시와 함께 보여줍니다.</block>
+  <block id="f9e375a478de51cc0f949a103b83233c" category="list-text">*IOPS 그래프*: 시간 경과에 따른 IOPS를 표시하며, 임계값 및 위반 표시(구성된 경우)가 포함됩니다.</block>
+  <block id="2fba9b89e516e96986ba8d8c890731f0" category="list-text">*처리량 그래프*: 선택한 기간 동안의 처리량을 시간 경과에 따라 보여줍니다. 필터에서 **메타데이터**를 선택하면 처리량 그래프에 데이터가 표시되지 않습니다.</block>
+  <block id="361ebfed5e970a1f8984f2d4be533e89" category="list-text">*임계선*: 점선으로 표시된 가로선은 경고 및 위험 임계값을 나타냅니다.</block>
+  <block id="0e9a1ca569cda77d4ab662d48c4cc282" category="list-text">*침해 표시*: 시각적 표시는 감지된 침해를 나타냅니다. 표시 위에 마우스를 올리면 심각도, 감지 시간, CloudWatch 중앙값 지연 시간(밀리초) 및 QoS 지연 시간 구성 요소 분석을 볼 수 있습니다.</block>
+  <block id="b943afa5c9b504ceb5e0faa4fc8420e0" category="list-text">*지연 시간* 탭에서 심각도 열에 있는 이벤트를 선택합니다.</block>
+  <block id="ca8c8ecf75417882696d3eaa0e18b608" category="list-text">선택한 *기간* 및 *유형*에 대한 지연 시간 차트와 침해 요약을 검토하십시오.</block>
+  <block id="4168f8b34d36b7302988879a17b6b48c" category="list-text">*전체 분석 보기*를 선택하여 *상세 지연 시간 분석*을 엽니다.</block>
+  <block id="359c854db96140d04018b5d3a94b7ee3" category="list-text">*지연 시간 차트*에서는 *시간 범위*(예: 72시간)와 *유형*(읽기/쓰기/메타데이터)을 사용하여 차트를 조정할 수 있습니다.</block>
+  <block id="9e915523ef64d335bfe245f9df7039e4" category="list-text">다음 항목에 대한 차트를 검토하십시오.</block>
+  <block id="5530d01f84d1c09f67656f3875630b03" category="list-text">경고/위험 임계값 선이 포함된 *지연 시간*(ms)</block>
+  <block id="168ef7d9e6c2c6a31f8e37e19d08f2e2" category="list-text">*IOPS* (임계값 라인 포함, 설정된 경우)</block>
+  <block id="9d8f83e9c0257a120404b2f01f6f84d9" category="list-text">동일한 시간 범위 내의 *처리량*</block>
+  <block id="6b0164f0c47ac1625dba2aff92f54ca0" category="list-text">스파이크 마커와 침해 요약(예: "이 기간 동안 심각한 침해 1건 감지됨")을 사용하여 지연 시간 증가와 IOPS 및 처리량 변화 간의 상관관계를 파악하십시오.</block>
+  <block id="e40e1e13d45e3125fff8c83420101578" category="list-text">침해 표시 위에 마우스를 올리면 침해 세부 정보(심각도, 감지 시간, CW 중앙값 지연 시간 및 QoS 지연 시간 구성 요소)를 볼 수 있습니다.</block>
+  <block id="d55195576b5cc1af51f0d8ba78078a8c" category="admonition">이 차트는 CloudWatch 지표를 사용합니다. 이러한 지표는 수집 방식이 다르기 때문에 QoS에서 보고하는 지연 시간 구성 요소와 약간 다를 수 있습니다.</block>
 </blocks>

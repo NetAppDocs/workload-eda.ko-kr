@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-dashboard-filtering-with-customizable-tags-in-eda-workloads]]
 === EDA 워크로드에서 사용자 지정 가능한 태그를 사용한 향상된 대시보드 필터링
 
 이제 AWS 태그를 기반으로 EDA 대시보드에서 최대 5개의 사용자 지정 필터를 구성할 수 있습니다. 각 사용자 지정 필터에는 레이블 이름, AWS 태그 키 및 선택 유형(단일 또는 다중 선택)이 포함됩니다.
@@ -16,6 +17,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html["사용
 
 
 
+[[volume-details-view-for-granular-performance-analysis]]
 === 세부적인 성능 분석을 위한 볼륨 세부 정보 보기
 
 이제 대시보드는 전체 보기와 볼륨 보기의 두 가지 보기 모드를 제공합니다. 전체 보기에서는 모든 볼륨에 대한 집계 지표를 표시하고, 볼륨 보기에서는 시간 경과에 따른 상위 10개 볼륨의 개별 성능을 보여줍니다.
@@ -26,6 +28,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html#view-vo
 
 
 
+[[latency-analysis-for-proactive-performance-monitoring]]
 === 사전 예방적 성능 모니터링을 위한 지연 시간 분석
 
 지연 시간 분석 기능을 사용하면 FSx for ONTAP 파일 시스템 전체에서 볼륨 읽기 및 쓰기 지연 시간을 모니터링할 수 있습니다. 사용자 지정 가능한 경고 및 중요 이벤트 임계값을 구성하여 EDA 워크로드에 영향을 미치기 전에 성능 병목 현상을 사전에 파악할 수 있습니다.

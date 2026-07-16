@@ -15,6 +15,7 @@ Workload Factory for EDA의 지연 시간 모니터링 기능을 사용하면 FS
 
 
 
+[[how-latency-monitoring-works]]
 == 지연 시간 모니터링 작동 방식
 
 지연 시간 분석은 AWS 계정에 연결된 모든 FSx for ONTAP 볼륨의 읽기 및 쓰기 활동에 대한 CloudWatch 메트릭을 수집합니다. 정의된 제한값과 이러한 메트릭을 지속적으로 비교하여 성능 문제를 조기에 감지합니다.
@@ -23,6 +24,7 @@ Workload Factory for EDA의 지연 시간 모니터링 기능을 사용하면 FS
 
 
 
+[[alert-generation]]
 === 경고 생성
 
 경고는 선택한 전체 시간 범위 동안 다음 두 조건이 모두 충족될 때만 발생합니다. 즉, 지연 시간이 임계값 이상으로 유지되고 IOPS가 임계값 이상으로 유지되는 경우입니다. 두 조건을 모두 충족하도록 요구함으로써 시스템이 실제 작업 부하를 처리하는 동안 높은 지연 시간이 발생하도록 하여 오경보를 줄입니다.
@@ -39,12 +41,14 @@ Workload Factory for EDA의 지연 시간 모니터링 기능을 사용하면 FS
 
 
 
+[[understanding-alerts]]
 == 알림 이해
 
 알림이 트리거되는 방식을 이해하면 적절한 임계값을 구성하고 결과를 해석하는 데 도움이 됩니다.
 
 
 
+[[metrics-collected]]
 === 수집된 메트릭
 
 이 시스템은 각 볼륨에 대해 다음과 같은 CloudWatch 지표를 수집합니다.
@@ -55,6 +59,7 @@ Workload Factory for EDA의 지연 시간 모니터링 기능을 사용하면 FS
 
 
 
+[[alert-trigger-conditions]]
 === 알림 트리거 조건
 
 다음 조건이 모두 충족될 경우 알림이 트리거됩니다.
@@ -68,6 +73,7 @@ Workload Factory for EDA의 지연 시간 모니터링 기능을 사용하면 FS
 
 
 
+[[event-severity]]
 === 이벤트 심각도
 
 * *경고 이벤트*: 주의가 필요할 수 있는 지연 시간 증가를 나타냅니다
@@ -76,12 +82,14 @@ Workload Factory for EDA의 지연 시간 모니터링 기능을 사용하면 FS
 
 
 
+[[latency-analysis]]
 == 지연 시간 분석
 
 Workload Factory는 지연 시간 문제를 해결하는 데 도움이 되는 두 가지 수준의 분석을 제공합니다.
 
 
 
+[[basic-analysis]]
 === 기본 분석
 
 지연 이벤트가 발생하면 Workload Factory는 자동으로 기본 분석을 실행하여 원인을 파악합니다. ONTAP QoS 지연 센터 메트릭을 사용하여 FlexCache, 용량 풀, QoS 제한, 디스크, 데이터, 클러스터 또는 기타 하위 시스템과 같은 구성 요소 중 어떤 것이 속도 저하의 원인인지 확인합니다. 이를 통해 수동 조사 없이 지연의 원인을 신속하게 식별할 수 있습니다.
@@ -94,6 +102,7 @@ NOTE: ONTAP QoS 분석과 CloudWatch의 지연 시간 값은 데이터 수집 �
 
 
 
+[[ai-analysis]]
 === AI 분석
 
 기본 분석을 통해 지연의 원인을 파악할 수 있지만, 데이터나 클러스터 구성 요소와 관련된 더 복잡한 상황에서는 심층적인 조사가 필요한 경우가 많습니다. AI 분석은 과부하된 볼륨, 잘못된 구성, 또는 용량 추가 필요성 등 기본 분석에서는 놓칠 수 있는 문제를 찾아내어 이러한 심층적인 문제 해결을 지원합니다.
@@ -109,6 +118,7 @@ AI 분석을 위해서는 Workload Factory 설정에 Amazon Bedrock 모델 ARN�
 
 
 
+[[related-information]]
 == 관련 정보
 
 * link:task-configure-latency-monitoring.html["지연 시간 모니터링 구성"]

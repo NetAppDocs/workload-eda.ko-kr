@@ -4,6 +4,7 @@
 
 
 
+[[eda-capacity-recommendations]]
 === EDA 용량 권장 사항
 
 Workload Factory는 이제 EDA 인벤토리에 있는 각 FSx for ONTAP 클러스터의 SSD 용량을 자동으로 분석하고 조정이 필요할 때 용량 권장 사항을 생성합니다. 알고리즘은 각 클러스터에 대해 24시간마다 한 번씩 실행됩니다.
@@ -21,6 +22,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 
 
+[[automated-ai-latency-analysis]]
 === 자동화된 AI 지연 시간 분석
 
 지연 시간 분석에 이제 AI 분석이 포함됩니다.

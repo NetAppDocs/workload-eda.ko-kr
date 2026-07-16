@@ -15,12 +15,14 @@ FSx for ONTAP 볼륨 성능을 추적하기 위해 읽기 및 쓰기 지연 시�
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 지연 시간 모니터링을 구성하기 전에 다음 요구 사항을 충족하는지 확인하십시오.
 
 
 
+[[aws-credentials-and-permissions]]
 === AWS 자격 증명 및 권한
 
 Workload Factory에 읽기/쓰기 권한이 있는 AWS 자격 증명을 추가해야 합니다. 지연 시간 모니터링 기능을 사용하려면 AWS 자격 증명과 연결된 모든 FSx for ONTAP 볼륨에 대한 CloudWatch 메트릭에 액세스해야 합니다.
@@ -31,12 +33,14 @@ AWS 자격 증명을 구성하지 않은 경우 link:https://docs.netapp.com/us-
 
 
 
+[[fsx-for-ontap-file-system]]
 === ONTAP 파일 시스템용 FSx
 
 AWS 환경에 볼륨이 배포된 FSx for ONTAP 파일 시스템이 하나 이상 필요합니다.
 
 
 
+[[link-to-fsx-for-ontap]]
 === FSx for ONTAP에 연결
 
 기본 분석에서 구성 요소 분석을 보려면 FSx for ONTAP 파일 시스템과 링크를 연결해야 합니다. 링크가 없더라도 지연 시간, IOPS 및 처리량 그래프는 볼 수 있습니다. 연결된 링크가 없는 경우 EDA에서 *링크 연결*을 선택하고 새 링크를 생성할지 또는 기존 링크를 연결할지 선택한 다음 *계속*을 선택하여 Storage workloads의 링크 생성 페이지로 자동 이동합니다.
@@ -45,6 +49,7 @@ AWS 환경에 볼륨이 배포된 FSx for ONTAP 파일 시스템이 하나 이�
 
 
 
+[[amazon-bedrock-model-arn-optional]]
 === Amazon Bedrock 모델 ARN(선택 사항)
 
 (선택 사항) AI 분석을 사용하려면 워크로드 팩토리 설정에서 Amazon Bedrock 모델 ARN을 제공해야 합니다. ARN을 제공하지 않아도 지연 시간 모니터링 및 기본 분석은 사용할 수 있습니다.
@@ -53,12 +58,14 @@ AWS 환경에 볼륨이 배포된 FSx for ONTAP 파일 시스템이 하나 이�
 
 
 
+[[notification-configuration-optional]]
 === 알림 구성(선택 사항)
 
 지연 이벤트가 감지될 때 이메일 또는 Amazon SNS 알림을 받으려면 Workload Factory 설정에서 알림 기본 설정을 구성하십시오. 자세한 내용은 <<지연 시간 알림 구성>>를 참조하십시오.
 
 
 
+[[configure-latency-thresholds]]
 == 지연 시간 임계값 구성
 
 읽기 및 쓰기에 대한 경고 및 임계 한계를 설정합니다. 시스템은 이러한 한계를 지속적으로 확인하고 한계에 도달하면 경고를 보냅니다.
@@ -89,6 +96,7 @@ Workload Factory는 AWS 자격 증명에 연결된 모든 FSx for ONTAP 볼륨�
 
 
 
+[[configure-latency-notifications]]
 == 지연 시간 알림 구성
 
 지연 시간이 길어질 경우 알림을 받도록 이메일 또는 Amazon SNS 알림을 설정하세요. 알림 빈도는 두 가지 옵션으로 제어할 수 있습니다.
@@ -112,6 +120,7 @@ NOTE: 영향을 받는 볼륨이 10개 이상인 경우, 이메일에는 처음 
 
 
 
+[[manage-latency-configuration]]
 == 지연 시간 구성 관리
 
 설정 후에는 언제든지 임계값을 변경할 수 있습니다.
@@ -128,6 +137,7 @@ NOTE: 위험 임계값은 경고 임계값보다 높게 설정하십시오. 위�
 
 
 
+[[best-practices]]
 == 모범 사례
 
 지연 시간 모니터링을 구성할 때 다음 권장 사항을 고려하십시오.
@@ -141,6 +151,7 @@ NOTE: 위험 임계값은 경고 임계값보다 높게 설정하십시오. 위�
 
 
 
+[[related-information]]
 == 관련 정보
 
 * link:learn-latency-monitoring.html["지연 시간 모니터링에 대해 알아보십시오"]

@@ -15,12 +15,14 @@ summary: 프로젝트, 팀 또는 애플리케이션과 같은 비즈니스 구�
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 사용자 지정 필터를 사용하려면 프로젝트, 팀 또는 사업부 태그와 같이 필요에 따라 FSx for ONTAP 볼륨에 AWS 태그를 추가하세요.
 
 
 
+[[configure-custom-filters]]
 == 사용자 지정 필터 구성
 
 
@@ -63,6 +65,7 @@ NOTE: 필터는 설정한 순서대로 대시보드에 표시됩니다. 가장 �
 
 
 
+[[related-information]]
 == 관련 정보
 
 * link:learn-project-dashboard.html["프로젝트 대시보드에 대해 알아보십시오"]

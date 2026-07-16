@@ -15,6 +15,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 
 
+[[operator-permissions-required]]
 == 운영자 권한이 필요합니다
 
 NetApp Workload Factory for EDA가 정상적으로 작동하려면 운영자 권한이 필요합니다.
