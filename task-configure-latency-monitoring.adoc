@@ -49,12 +49,10 @@ AWS 환경에 볼륨이 배포된 FSx for ONTAP 파일 시스템이 하나 이�
 
 
 
-[[amazon-bedrock-model-arn-optional]]
-=== Amazon Bedrock 모델 ARN(선택 사항)
+[[turn-on-ai-settings]]
+=== AI 설정 켜기
 
-(선택 사항) AI 분석을 사용하려면 워크로드 팩토리 설정에서 Amazon Bedrock 모델 ARN을 제공해야 합니다. ARN을 제공하지 않아도 지연 시간 모니터링 및 기본 분석은 사용할 수 있습니다.
-
-자세한 내용은 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["기본 GenAI 요구 사항"^]을 참조하십시오.
+계정 관리자가 AI 기능을 비활성화한 경우 메시지가 표시되며 AI 분석을 사용할 수 없습니다. 관리자에게 문의하거나 link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["AI 관리에 대해 알아보기"^]을 참조하십시오.
 
 
 
@@ -92,7 +90,7 @@ NOTE: EDA에서 설정한 지연 시간 임계값은 기본적으로 계정 전�
 
 
 .결과
-Workload Factory는 AWS 자격 증명에 연결된 모든 FSx for ONTAP 볼륨의 지연 시간 메트릭을 수집합니다. 이러한 메트릭은 최소 20분마다 수집됩니다. 설정한 임계값을 초과하는 볼륨은 지연 시간 이벤트 테이블에 표시됩니다.
+Workload Factory는 AWS 자격 증명에 연결된 모든 FSx for ONTAP 볼륨의 지연 시간 메트릭을 수집합니다. 설정한 임계값을 초과하는 볼륨은 지연 시간 이벤트 테이블에 표시됩니다.
 
 
 

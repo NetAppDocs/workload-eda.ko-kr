@@ -12,6 +12,8 @@ indexpage:
       url: "/learn-eda.html"
     - title: 빠른 시작
       url: "/quick-start-eda.html"
+    - title: 요구 사항
+      url: "/requirements-eda.html"
   - title: EDA 스토리지 개요
     links:
     - title: 개요 대시보드에 대해 알아보십시오
@@ -40,8 +42,6 @@ indexpage:
     links:
     - title: Perforce 통합에 대해 알아보세요.
       url: "/learn-eda-workloads.html"
-    - title: 요구 사항
-      url: "/requirements-eda.html"
     - title: Codebox로 자동화하세요
       url: "/automate-codebox.html"
   - title: 지식과 지원

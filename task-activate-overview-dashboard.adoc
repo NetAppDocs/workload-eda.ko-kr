@@ -25,7 +25,7 @@ summary: 개요 대시보드를 활성화하여 FSx for ONTAP 파일 시스템�
 [[aws-credentials-with-view-permissions]]
 === 보기 권한이 있는 AWS 자격 증명
 
-Workload Factory에서 AWS 자격 증명을 구성할 때는 일반 스토리지에 대한 읽기(보기) 권한 이상을 부여해야 합니다. _Basic_ 자격 증명은 지원되지 않습니다.
+Workload Factory에서 AWS 자격 증명을 구성할 때는 일반 스토리지에 대한 읽기(보기) 권한 이상을 부여해야 합니다. _Basic_ 자격 증명은 CloudWatch 메트릭에 필요한 읽기 권한이 포함되어 있지 않으므로 지원되지 않습니다.
 
 보기 권한이 있는 자격 증명을 구성하지 않은 경우 개요 탭을 열면 AWS 자격 증명 설정 페이지로 리디렉션됩니다.
 
@@ -61,15 +61,7 @@ Workload Factory는 AWS 자격 증명에 연결된 모든 FSx for ONTAP 파일 �
 대시보드를 활성화한 후 다음을 수행할 수 있습니다.
 
 * link:task-use-overview-dashboard.html["개요 대시보드 사용"] 클러스터 상태 및 용량 모니터링
-* SSD 용량 관리 모드(자동, 권장 또는 없음)를 구성합니다.
+* link:task-use-overview-dashboard.html#change-ssd-management-mode["SSD 용량 관리 모드 활성화 및 구성"] (권장, 자동화 또는 없음)
+* link:task-use-overview-dashboard.html#change-throughput-management-mode["처리량 관리 모드 활성화 및 구성"] (권장, 자동화 또는 없음)
 * 특정 리전 또는 AWS 계정에 초점을 맞추도록 필터를 설정하세요.
-
-
-
-
-[[related-information]]
-== 관련 정보
-
-* link:learn-overview-dashboard.html["개요 대시보드에 대해 알아보십시오"]
-* link:task-use-overview-dashboard.html["개요 대시보드 사용"]
 

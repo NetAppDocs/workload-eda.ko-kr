@@ -34,7 +34,7 @@ FSx for ONTAP 파일 시스템의 데이터 보호 기능을 활용하여 코드
 ... *지역*: 이 FSx for ONTAP 파일 시스템이 상주하는 지역을 선택합니다.
 ... *FSx for ONTAP 파일 시스템*: 이 프로젝트에서 사용할 FSx for ONTAP 파일 시스템을 선택하십시오.
 +
-링크로 구성된 파일 시스템만 선택할 수 있습니다 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["링크에 대해 자세히 알아보세요"^].
+링크로 구성된 파일 시스템만 선택할 수 있습니다. link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["링크에 대해 자세히 알아보세요"^].
 
 ... *볼륨 선택*: 프로젝트를 저장할 볼륨을 선택하십시오. EDA는 이 볼륨을 소프트웨어 저장소로 사용합니다.
 +
