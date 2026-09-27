@@ -453,7 +453,6 @@
   <block id="7b0ddde1961cce4426c7f0cf5da65e0d" category="doc">EDA 용량 권장 사항</block>
   <block id="edb815136867c3359e368e3f925ae387" category="paragraph">Workload Factory는 이제 EDA 인벤토리에 있는 각 FSx for ONTAP 클러스터의 SSD 용량을 자동으로 분석하고 조정이 필요할 때 용량 권장 사항을 생성합니다. 알고리즘은 각 클러스터에 대해 24시간마다 한 번씩 실행됩니다.</block>
   <block id="1f9c155d60450baccee27bca630b6497" category="paragraph">권장 사항이 확인되면:</block>
-  <block id="8d65ccbe024d7453ace82bd13b7980d8" category="list-text">즉시 이메일 또는 WAD 알림을 받게 됩니다(주간 요약에는 포함되지 않음).</block>
   <block id="8e5fe5a1e14c6d69b9c457c33f0204a7" category="list-text">Clusters 테이블에서 영향을 받는 클러스터에 전구 표시등이 나타납니다.</block>
   <block id="c38bddc25aeb4374d71816e0b71a53a0" category="list-text">Overview 대시보드의 요약에는 활성 권장 사항이 있는 클러스터의 총 수가 표시됩니다.</block>
   <block id="1471ae7120155f3a06fa9c0a62a7f3f5" category="paragraph">활성 권장 사항이 있는 클러스터를 선택하여 권장 사항을 확인하세요. 권장 사항에는 제안된 변경 사항과 그 이유가 설명되어 있습니다.</block>
@@ -1093,4 +1092,5 @@
   <block id="0ecfcdfed86b687b39299cccc3380def" category="list-text">**올바른 모드를 선택하세요**: 용량 또는 처리량 변경 사항을 직접 승인하려면 **Recommend** 모드를 사용하십시오. 시스템에서 용량 또는 처리량을 자동으로 관리하도록 하려면 **Automate** 모드를 사용하십시오.</block>
   <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**일괄 편집**: 여러 파일 시스템을 관리할 때는 일괄 편집 기능을 사용하여 설정을 일관되게 유지하세요.</block>
   <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026년 8월 3일</block>
+  <block id="73c57946c156d22b4a35f2e089180ab4" category="list-text">즉각적인 이메일 또는 잘 구성된 알림(주간 요약에는 포함되지 않음)을 받게 됩니다.</block>
 </blocks>
