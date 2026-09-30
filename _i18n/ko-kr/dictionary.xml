@@ -621,11 +621,6 @@
   <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">용량 결정 지점 이해</block>
   <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*권장 사항 결정 사항*</block>
   <block id="153ea1a28a0f56dba57777e1680e1f76" category="list-text">*자동화 의사 결정 지점*</block>
-  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">용량 조정이 얼마나 자주 필요한지 파악하십시오</block>
-  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">자동화 또는 권장 사항 모드가 워크로드 패턴에 더 적합한지 평가</block>
-  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">반복적으로 발생하는 용량 제약을 파악합니다</block>
-  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">성장 추세를 바탕으로 미래 용량 수요를 계획하십시오.</block>
-  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">자동화 시도 실패 문제 해결</block>
   <block id="0a77401b929110d42e7c36ac77c37872" category="inline-link-macro">개요 대시보드 활성화</block>
   <block id="b20e509aee340813d832ff54146a6123" category="list-text"><block ref="b20e509aee340813d832ff54146a6123" category="inline-link-macro-rx"></block></block>
   <block id="a35e94495c93c5d785f8b1240c15be6a" category="inline-link-macro">개요 대시보드 사용</block>
@@ -739,21 +734,9 @@
   <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">그래프에는 권장 사항 결정 지점과 자동화 결정 지점(자동화 모드가 활성화된 경우)도 표시됩니다. 각 결정 지점에 마우스를 올리면 해당 시점의 용량 권장 사항 또는 자동화 작업에 대한 세부 정보를 볼 수 있습니다.</block>
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">권장 사항을 적용하려면 권장 사항 메시지에 제공된 지침을 따르십시오.</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">SSD 관리 모드 변경</block>
-  <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">작업 메뉴 아이콘</block>
-  <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">클러스터 테이블에서 파일 시스템 이름을 찾으세요. 그 옆에 있는 <block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block>를 열고 *SSD 용량 관리 변경*을 선택하세요.</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">원하는 모드를 선택하십시오.</block>
-  <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">*개요* 탭의 표에서 편집할 파일 시스템을 선택합니다.</block>
-  <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">개별 파일 시스템을 선택하거나 헤더 확인란을 사용하여 표시되는 모든 파일 시스템을 선택할 수 있습니다.</block>
-  <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">원하는 모드를 선택하세요.</block>
-  <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">각 매개변수 필드에는 해당 필드의 용도와 유효 범위를 설명하는 툴팁이 포함되어 있습니다. 대화 상자에는 사용자의 선택에 따라 현재 값 또는 기본값이 표시됩니다.</block>
-  <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">선택한 모든 파일 시스템에 변경 사항을 적용하려면 * 적용 * 을 선택합니다.</block>
   <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">용량 추세 및 의사 결정 지점 분석</block>
   <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">그래프의 결정 지점은 다음과 같은 시점을 나타냅니다.</block>
-  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">*개요* 탭의 표에서 파일 시스템 이름을 선택합니다.</block>
-  <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">SSD 사용량 그래프를 검토하여 과거 용량 추세를 확인하십시오.</block>
-  <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">다양한 기간 동안의 용량 동작을 보려면 다른 시간 범위를 선택하십시오.</block>
-  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">그래프의 결정 지점에 마우스를 올리면 특정 시점의 권장 사항 또는 자동화 작업에 대한 세부 정보를 볼 수 있습니다.</block>
-  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">그래프의 인사이트를 사용하여 다음을 수행하십시오.</block>
   <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">클러스터 테이블 사용</block>
   <block id="88dc1144edaa697995919551780b6e93" category="list-text">*개요* 탭에서 클러스터 표를 검토하십시오.</block>
   <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">검색 상자를 사용하여 이름으로 특정 파일 시스템을 찾으세요.</block>
@@ -827,7 +810,6 @@
   <block id="a3eb814e72de4d40c0767efe37beafe1" category="list-text">이 인터페이스는 현재 활성 권장 사항이 있는 파일 시스템의 총 수를 보여줍니다.</block>
   <block id="f7f59f0b5632d026e80fe90b1eec8f63" category="list-text">용량 권장 사항 또는 자동화 작업을 트리거하는 SSD 사용량 백분율입니다. 예를 들어, 임계값을 80%로 설정하면 SSD 사용량이 80%에 도달할 때 권장 사항 또는 작업이 실행됩니다. 이 설정은 권장 모드와 자동화 모드 모두에서 사용할 수 있습니다.</block>
   <block id="d5a40446a028d90d5bf46fe40624722d" category="paragraph">각 파일 시스템에 대해 이러한 매개변수를 개별적으로 설정하거나 일괄 편집 기능을 사용하여 여러 파일 시스템에 동일한 설정을 적용할 수 있습니다.</block>
-  <block id="1b07a2acaea0fa364496ba3afb977975" category="paragraph">SSD 사용량 그래프는 시스템이 용량 권장 사항을 제시하거나 자동화된 조치를 취한 시점을 표시합니다. 이러한 표시는 용량 관리 알고리즘이 시간에 따라 어떻게 작동했는지 보여줍니다.</block>
   <block id="47daf1022723b90d90f96e2d735e2267" category="list-text">자동화 시스템이 SSD 용량을 늘리려고 시도할 때 나타납니다. 이 메시지는 작업이 성공했는지 실패했는지를 보여줍니다.</block>
   <block id="5d75c0e68111b8bb5d2e043a495c6e39" category="paragraph">SSD 사용량 기록 그래프를 사용하여 다음을 수행하십시오.</block>
   <block id="9515f88eb47a770a2eae21e430e5b3ff" category="list-text">스토리지 크기를 얼마나 자주 변경해야 하는지 확인하십시오.</block>
@@ -1008,7 +990,6 @@
   <block id="929261095300bce39be28cdc60e46b85" category="list-text">*파일 시스템 탄력성*</block>
   <block id="20ed77fd0e548f70d1a8b8bd340ed628" category="list-text">*SSD 용량*: SSD 용량 관리에 Automate, Recommend 또는 None을 사용하는 파일 시스템의 수를 보여줍니다.</block>
   <block id="f811d9a1edf56398351dffaef0b6506e" category="list-text">*처리량*: 파일 시스템 중 Automate, Recommend 또는 None으로 처리량을 관리하는 시스템의 수를 보여줍니다.</block>
-  <block id="94e78450902ff8802101a87715f2120e" category="paragraph">파일 시스템을 선택하여 클러스터 정보, SSD 용량 값 및 시간 경과에 따른 SSD 용량 그래프를 포함한 클러스터 세부 정보를 엽니다.</block>
   <block id="7ae10da71cdf204162f214a176b66232" category="list-text">*알림 전용 (추천 모드)*</block>
   <block id="a50d39f8ae7bb4152ca8de0ad153c7d5" category="list-text">SSD 용량 관리를 활성화하지 않은 경우 시스템에서 용량 권장 사항을 제시하거나 자동 조치를 취하지 않습니다. 용량을 직접 관리하려면 이 옵션을 사용하십시오.</block>
   <block id="f015d9c2fdd7ed0dc64dd7b4f0a18c1f" category="list-text">*Lookahead* (1-200시간)</block>
@@ -1028,7 +1009,6 @@
   <block id="622a5b145e5cdfd92b8124baf3f8e5d7" category="list-text">*최소 지연 시간(ms)* (기본값 10ms)</block>
   <block id="4067af77fe7df9f9047c8c4eeb9490b5" category="list-text">*최대 처리량 SKU* (기본값 없음)</block>
   <block id="e4612c732ae1c64db60c83cb8cae8381" category="section-title">파일 시스템 탄력성 권장 사항</block>
-  <block id="cc8b8287cb9875fcd93e6deecaaa1c10" category="paragraph">Workload Factory가 자동화 또는 권장 모드일 때, 각 FSx for ONTAP 파일 시스템을 자동으로 확인하고 용량 권장 알고리즘을 실행합니다. 시스템은 주기적으로 스캔하여 SSD 용량이나 처리량을 조정해야 하는지 확인합니다.</block>
   <block id="1c5b8d97751372161e201f333f1b4f62" category="list-text">클러스터 테이블을 필터링하여 권장 사항이 있는 파일 시스템을 식별합니다.</block>
   <block id="25dc82340ec038ecbda8ab79823e242a" category="list-text">시스템에서 SSD 용량 증설이 필요하다고 감지되면 이 메시지가 나타납니다. 용량이 증설되지 않은 경우, 이 메시지는 최대 30분마다 나타날 수 있습니다. 그래프는 가능한 경우 각 결정 시점을 표시합니다. 선택한 시간 간격이 너무 좁은 경우, 메시지들은 그룹으로 묶여서 표시됩니다.</block>
   <block id="d5781ee1e2ae2729d18fc69fc41ec67a" category="paragraph">링크로 구성된 파일 시스템만 선택할 수 있습니다. <block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block>.</block>
@@ -1064,7 +1044,6 @@
   <block id="33c83a7b34dbfa47935b0be5b097865d" category="list-text">권장 사항과 그래프를 검토하십시오.</block>
   <block id="fd896caec9b1904e01ed5b6a90b096d9" category="paragraph">이 그래프는 현재 사용량과 과거 추세를 함께 보여줍니다.</block>
   <block id="7269a303313716fe145ba2b18acc49d7" category="list-text">그래프 오른쪽 상단에서 시간 범위를 선택하여 표시되는 기간을 변경하세요.</block>
-  <block id="c7ac58faf1984cf107f3421908d2207c" category="list-text">*SSD 용량 관리 활성화*를 선택한 다음 *적용*을 선택하십시오.</block>
   <block id="da35cbad278570472c076b6042a5b528" category="list-text">SSD 용량 관리 매개변수를 구성하십시오.</block>
   <block id="166c4a53ef8fc50b9b03ca91c1c677bc" category="list-text">*임계값(%)*: 권장 사항을 트리거하는 SSD 사용률</block>
   <block id="87ad0cdc7f64b3a67d168c0b688707d9" category="list-text">*Lookback (%)*: 분석을 위한 과거 사용량 데이터 기간</block>
@@ -1073,19 +1052,11 @@
   <block id="86161e58ce8677bff58de719cb9f29a8" category="paragraph">각 파일 시스템에 대해 처리량 증가를 관리하는 방법을 선택하십시오.</block>
   <block id="441fc54d05bba2a603a05c500cf068c7" category="list-text">*개요* 탭의 클러스터 표에서 하나 이상의 파일 시스템을 선택합니다.</block>
   <block id="0231f044766e71e4fe49a62ba8e8bbbe" category="list-text">*처리량 관리 변경*을 선택합니다.</block>
-  <block id="652aab445f49bb41fa3e8774b5719cf2" category="list-text">*처리량 관리 활성화*를 선택한 다음 *적용*을 선택합니다.</block>
-  <block id="16393cf33b95f8ff007d76d513b875d7" category="list-text">대화 상자에서 처리량 관리 매개변수를 구성합니다.</block>
   <block id="083678f0efe5919237188ee0ee5d0b90" category="list-text">*평가 기간(시간)*: 처리량 패턴 분석을 위한 시간 범위</block>
   <block id="ed38b15c549d9cd41a86a3787f5fee23" category="list-text">*위반 지표(%)*: 위반 여부를 판단하는 기준이 되는 백분율 임계값</block>
-  <block id="5e1e1daa7e6d115a54180e147895003e" category="list-text">*연속 위반 시간(시간)*: 조치 전 연속 위반 발생 시간</block>
   <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*최소 지연 시간(밀리초)*: 처리량 증가를 판단하는 데 사용되는 지연 시간 임계값</block>
   <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*최대 처리량(SKUs)*: 허용되는 최대 처리량 SKU</block>
   <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">선택된 파일 시스템은 즉시 새로운 처리량 모드로 전환됩니다.</block>
-  <block id="be76a5f710c434b57d7bb9106913548d" category="section-title">일괄 편집 관리 매개변수</block>
-  <block id="399db4c92643ea16a6e10865b34f5b4f" category="paragraph">여러 파일 시스템의 설정을 한 번에 변경하여 클러스터 전체에 동일한 설정이 적용되도록 합니다.</block>
-  <block id="93343e8a72e86eb0283fa9c6fb77b48b" category="list-text">표 위에서 *SSD 용량 관리 변경* 또는 *처리량 관리 변경*을 선택하십시오.</block>
-  <block id="a707a072d0b2b11d2c3e5a2160f9cd48" category="list-text">편집 대화 상자에서 필요에 따라 매개변수를 조정하십시오.</block>
-  <block id="80c68bda2149e685b2c9d4a63c1abe0b" category="paragraph">선택된 모든 파일 시스템에 대한 매개변수가 업데이트됩니다. 권장 또는 자동화 모드에 있는 파일 시스템은 분석 및 의사 결정에 새 매개변수를 즉시 사용합니다.</block>
   <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*권장 결정 시점*: 용량 권장 알고리즘이 추가 SSD 용량이 필요하다고 판단했습니다.</block>
   <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**명확한 임계값 설정**: 워크로드 및 용량 계획에 맞는 SSD 사용량 임계값과 처리량 매개변수를 선택하십시오.</block>
   <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**권장 사항을 신속하게 검토하세요**: 클러스터 테이블에서 용량 또는 처리량 권장 사항이 있는 파일 시스템을 필터링하여 찾으세요. 해당 권장 사항을 확인하고 조치를 취하여 공간 부족을 방지하세요.</block>
@@ -1093,4 +1064,30 @@
   <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**일괄 편집**: 여러 파일 시스템을 관리할 때는 일괄 편집 기능을 사용하여 설정을 일관되게 유지하세요.</block>
   <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026년 8월 3일</block>
   <block id="73c57946c156d22b4a35f2e089180ab4" category="list-text">즉각적인 이메일 또는 잘 구성된 알림(주간 요약에는 포함되지 않음)을 받게 됩니다.</block>
+  <block id="08b543f700a568688a9f78d874d0ce8b" category="doc">향상된 SSD 용량 알림</block>
+  <block id="f37e9239265205bdf39af7b4def6f75a" category="paragraph">SSD 용량 관리 알림에 자동화 실패 문제를 해결하는 데 도움이 되는 자세한 오류 메시지가 이제 포함됩니다. 알림은 용량 증가 성공, 증가 작업 중 오류 발생, 용량 확인 실패, 임계값 경고 및 권장 사항에 대해 전송됩니다. 오류 세부 정보에는 권한 누락, 동시 업데이트 진행, AWS 쿨다운 기간 또는 CloudWatch 메트릭 검색 문제 등 구체적인 실패 원인이 포함됩니다.</block>
+  <block id="4a3354724a06bbb8040fa512f39a5e07" category="inline-link-macro">SSD 용량 관리에 대해 알아보기</block>
+  <block id="3e69b701694082d892b97eb050525650" category="paragraph"><block ref="bc2811c6501476df42adeca777dc6dd3" category="inline-link-macro-rx"></block>.</block>
+  <block id="b1b09cb9ca77b33ed95a7406fab56623" category="section-title">지연 시간 그래프의 주간 기간</block>
+  <block id="a5ff2097c50c86e897e35110fe5629d9" category="paragraph">지연 시간 분석 그래프에서 기존 옵션(1시간, 3시간, 12시간, 24시간, 72시간) 외에 1주일 기간을 추가로 지원합니다. 1주일 보기를 사용하여 볼륨 지연 시간 동작의 장기적인 패턴과 추세를 파악할 수 있습니다.</block>
+  <block id="8d6933264e6e5f9ec4a93a7936daf177" category="inline-link-macro">지연 시간 추세 분석에 대해 알아봅니다.</block>
+  <block id="f00c9e117aa43f7e65780e53b18b74a8" category="paragraph"><block ref="8280dff077bedc5ff5df29e3a9ab24f4" category="inline-link-macro-rx"></block>.</block>
+  <block id="dad79f11b2960d3be921e97689e00796" category="section-title">인터페이스에서 파일 시스템 가시성이 향상되었습니다.</block>
+  <block id="856b733ee2011b50fb74e26e28353b8c" category="paragraph">Workload Factory는 이제 인터페이스에서 파일 시스템을 더욱 명확하게 보여줍니다. 파일 시스템 개요에서 SSD 용량 및 처리량 사용 추세, 워크로드 요약, 자세한 구성 정보를 직접 확인할 수 있습니다.</block>
+  <block id="05d2715aacab706b61cab6ab5eae577f" category="paragraph">파일 시스템을 선택하여 클러스터 정보, SSD 용량 및 그래프를 포함한 클러스터 세부 정보를 확인합니다. 클러스터 세부 정보 보기에서 *처리량* 및 *SSD 용량* 옵션을 사용하여 보기 모드를 전환할 수 있습니다.</block>
+  <block id="44ad493c3ed3456875890a0633967832" category="paragraph">처리량 보기에서는 클라이언트 처리량과 리소스 활용률을 확인할 수 있습니다. SSD 용량 보기에서는 SSD 사용 추세와 용량 권장 사항을 확인할 수 있습니다.</block>
+  <block id="0575d3bb4ddf703c8919e95c56fd6669" category="paragraph">Workload Factory가 자동화 또는 권장 모드일 때, 각 FSx for ONTAP 파일 시스템을 자동으로 확인하고 용량 변경을 권장합니다. 또한 시스템을 정기적으로 스캔하여 SSD 용량 또는 처리량을 조정해야 하는지 판단합니다. 관리 기능이 활성화되면 파일 시스템 세부 정보 페이지에 SSD 용량 및 처리량과 함께 과거 추세 및 권장 조정 지점이 표시됩니다.</block>
+  <block id="3b39aa368232f477c3b4544b63a58a94" category="paragraph">SSD 사용량 그래프는 시스템에서 권장하는 용량이 변경되거나 자동으로 조정된 시점을 보여줍니다. 이러한 표시는 시스템이 시간이 지남에 따라 용량을 어떻게 관리했는지 나타냅니다. SSD 용량 관리가 비활성화된 경우, 그래프에는 과거 사용량만 표시되고 권장 사항이나 자동 조정 내역은 표시되지 않습니다.</block>
+  <block id="cc23b0ef8b8c73f4efb0ced4281250f3" category="list-text">클러스터 테이블에서 파일 시스템 이름을 찾아 선택한 다음 *SSD 용량 관리 변경*을 선택합니다.</block>
+  <block id="d9a44929e0eea557983dbb6917008a70" category="list-text">*처리량 관리 활성화*를 선택하십시오.</block>
+  <block id="1cbae666f242dee35d801763ff6c587f" category="list-text">*활용률 임계값(%)*에서 권장 사항 또는 자동화 작업을 트리거하는 활용률 수준을 설정합니다.</block>
+  <block id="e920df7cb27871af178ff85a428a8b4e" category="list-text">*고급 구성*에서 처리량 관리 매개변수를 구성하십시오.</block>
+  <block id="39122245b5363dc3871538d2ef59784e" category="list-text">*연속 침해 기간(시간)*: 조치 전 연속 침해 발생 기간</block>
+  <block id="a9d111294543c201d767519d991c1b8d" category="list-text">*연속 침해 지표(%)*: 연속 침해 여부를 판단하는 데 사용되는 백분율 임계값</block>
+  <block id="d385fd0ac858ff17553d407851f64c48" category="paragraph">SSD 용량 관리가 꺼져 있으면 그래프에는 과거 사용량만 표시되고 권장 사항이나 자동화된 결정 사항은 표시되지 않습니다.</block>
+  <block id="1de4de358ec9c3a1cd36180e2c13a443" category="list-text">*개요* 탭에서 표에서 파일 시스템 이름을 선택합니다. 클러스터 세부 정보 보기에서 *처리량* 또는 *SSD 용량* 옵션을 선택하여 그래프 표시 방식을 전환합니다.</block>
+  <block id="a01346bc61a98c025144199b0893e264" category="paragraph">*처리량*을 선택하면 그래프에 클라이언트 처리량과 활용률이 표시되어 구성된 처리량 수준 및 임계값과 수요를 비교할 수 있습니다.</block>
+  <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">*SSD 용량*을 선택하면 그래프에 SSD 사용량, 과거 용량 추세 및 용량 결정 시점 등이 표시됩니다.</block>
+  <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">다양한 기간별 처리량 또는 용량 추세를 보려면 서로 다른 시간 범위를 선택하십시오. . 그래프의 결정 지점에 마우스를 올리면 특정 시점의 권장 사항 또는 자동화 작업에 대한 세부 정보를 볼 수 있습니다. . 그래프에서 얻은 인사이트를 활용하여 다음을 수행할 수 있습니다. * 용량 조정이 필요한 빈도 파악 * 자동화 모드와 권장 모드 중 어느 모드가 워크로드 패턴에 더 적합한지 평가 * 반복되는 용량 제약 조건 식별 * 성장 추세를 기반으로 향후 용량 요구 사항 계획 * 자동화 시도 실패 문제 해결</block>
+  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026년 9월 27일</block>
 </blocks>
