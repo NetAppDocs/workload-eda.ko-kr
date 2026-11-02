@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-latency-monitoring.html 
-keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis 
+keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis, file system pressure 
 summary: Workload Factory for EDA의 지연 시간 모니터링이 자동화된 기본 분석 및 선택적 AI 분석을 통해 FSx for ONTAP 볼륨의 성능 문제를 감지하고 분석하는 데 어떻게 도움이 되는지 알아보십시오. 
 ---
 = EDA용 Workload Factory의 지연 시간 모니터링에 대해 알아보십시오
@@ -124,6 +124,13 @@ AI 분석을 실행하면 시스템에서 다음과 같은 정보를 제공합�
 * *영향을 받는 클라이언트*: 지연 현상의 영향을 받는 EC2 인스턴스 이름 목록
 * *잠재적 해결 단계*: 문제를 해결하기 위한 두 가지 이상의 구체적인 조치
 
+
+
+
+[[file-system-pressure]]
+=== 파일 시스템 압력
+
+지연 시간 경고가 있는 볼륨의 경우, 이벤트 발생 시 파일 시스템에 성능에 영향을 줄 정도의 부하가 있었는지 확인하기 위해 온디맨드 검사를 실행할 수 있습니다. 이 검사는 이벤트 발생 전 40분 동안의 CloudWatch 데이터를 검토하여 *Pressured* 또는 *Not pressured*를 반환합니다. Pressured 결과는 파일 시스템 부하가 성능 및 지연 시간에 영향을 미쳤을 가능성이 80% 이상임을 의미합니다. 또한 이 검사에는 관련 메트릭을 검토할 수 있도록 FSx for ONTAP 리소스에 대한 링크가 포함되어 있습니다.
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-analyze-latency-trends.html 
-keywords: latency graph, latency visualization, latency trends, breach patterns, latency spikes, latency patterns, time range analysis, breach frequency, iops, throughput 
+keywords: latency graph, latency visualization, latency trends, breach patterns, latency spikes, latency patterns, time range analysis, breach frequency, iops, throughput, file system pressure 
 summary: 대화형 그래프를 사용하여 시간 경과에 따른 볼륨 지연 추세를 분석하고, 패턴을 파악하고, 개선 효과를 추적하세요. 
 ---
 = Workload Factory에서 EDA의 지연 시간 추세 분석

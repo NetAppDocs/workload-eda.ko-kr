@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-use-overview-dashboard.html 
-keywords: cluster overview, filter dashboard, cluster health, capacity recommendations, SSD management, throughput management, bulk edit, decision points, clusters table, ONTAP events, latency events 
+keywords: cluster overview, filter dashboard, cluster health, capacity recommendations, SSD management, throughput management, bulk edit, decision points, throughput decision points, clusters table, ONTAP events, latency events 
 summary: 개요 대시보드를 사용하여 클러스터 상태를 모니터링하고, 용량 권장 사항을 확인하고, SSD 및 처리량 설정을 관리하고, FSx for ONTAP 파일 시스템 전반의 성능 추세를 분석할 수 있습니다. 
 ---
 = EDA를 위해 Workload Factory의 개요 대시보드를 사용하십시오
@@ -47,19 +47,6 @@ summary: 개요 대시보드를 사용하여 클러스터 상태를 모니터링
 == 클러스터 상태 보기
 
 대시보드 상단에는 선택한 파일 시스템의 상태 및 활동 요약 정보가 표시됩니다. 이 정보는 FSx for ONTAP 링크가 파일 시스템에 하나 이상 연결된 경우에만 나타납니다.
-
-.이 작업 정보
-클러스터 상태에는 다음과 같은 주요 영역이 포함됩니다.
-
-* *지연 시간*: 감지된 지연 시간 이벤트 수
-* *파일 시스템 탄력성*:
-+
-** *SSD 용량*: SSD 용량 관리에 Automate, Recommend 또는 None을 사용하는 파일 시스템의 수를 보여줍니다.
-** *처리량*: 파일 시스템 중 Automate, Recommend 또는 None으로 처리량을 관리하는 시스템의 수를 보여줍니다.
-
-
-* *ONTAP 이벤트*: 범주별 EMS 이벤트 수(용량, 가용성 및 보호, 보안 및 기타)
-
 
 .단계
 . 대시보드 상단에서 클러스터 상태를 검토합니다.
@@ -169,30 +156,31 @@ Workload Factory는 각 FSx for ONTAP 파일 시스템에 대한 권장 사항�
 
 
 
-[[analyze-capacity-trends-and-decision-points]]
-== 용량 추세 및 의사 결정 지점 분석
+[[analyze-capacity-and-throughput-trends-and-decision-points]]
+== 용량 및 처리량 추세와 의사 결정 지점을 분석합니다
 
 SSD 사용량 그래프를 사용하여 시간 경과에 따른 스토리지 사용량 변화와 패턴을 확인하십시오.
 
-.이 작업 정보
-그래프의 결정 지점은 다음과 같은 시점을 나타냅니다.
-
-* *권장 결정 시점*: 용량 권장 알고리즘이 추가 SSD 용량이 필요하다고 판단했습니다.
-* *자동화 결정 지점*: 자동화 시스템이 SSD 용량을 늘리려고 시도했습니다. 이 지점들은 해당 작업이 성공했는지 실패했는지를 보여줍니다.
-+
-SSD 용량 관리가 꺼져 있으면 그래프에는 과거 사용량만 표시되고 권장 사항이나 자동화된 결정 사항은 표시되지 않습니다.
-
-
-
 .단계
-. *개요* 탭에서 표에서 파일 시스템 이름을 선택합니다. 클러스터 세부 정보 보기에서 *처리량* 또는 *SSD 용량* 옵션을 선택하여 그래프 표시 방식을 전환합니다.
+. *개요* 탭에서 표에서 파일 시스템 이름을 선택합니다.
+. 클러스터 세부 정보 보기에서 *처리량* 또는 *SSD 용량* 옵션을 선택하여 그래프 표시를 전환하십시오.
++
+** *처리량*을 선택하면 그래프에 클라이언트 처리량과 활용률이 표시되어 구성된 처리량 수준 및 임계값과 수요를 비교할 수 있습니다.
+** *SSD 용량*을 선택하면 그래프에 SSD 사용량, 과거 용량 추세 및 용량 결정 시점 등이 표시됩니다.
 
 
-*처리량*을 선택하면 그래프에 클라이언트 처리량과 활용률이 표시되어 구성된 처리량 수준 및 임계값과 수요를 비교할 수 있습니다.
+. 다양한 기간별 처리량 또는 용량 추세를 보려면 서로 다른 시간 범위를 선택하십시오.
+. 그래프의 결정 지점에 마우스를 올리면 특정 시점의 권장 사항 또는 자동화 작업에 대한 세부 정보를 볼 수 있습니다.
+. 그래프의 인사이트를 사용하여 다음을 수행하십시오.
++
+** 용량 조정이 얼마나 자주 필요한지 파악하십시오
+** 자동화 또는 권장 사항 모드가 워크로드 패턴에 더 적합한지 평가
+** 반복적으로 발생하는 용량 제약을 파악합니다
+** 성장 추세를 바탕으로 미래 용량 수요를 계획하십시오.
+** 자동화 시도 실패 문제 해결
 
-*SSD 용량*을 선택하면 그래프에 SSD 사용량, 과거 용량 추세 및 용량 결정 시점 등이 표시됩니다.
 
-다양한 기간별 처리량 또는 용량 추세를 보려면 서로 다른 시간 범위를 선택하십시오. . 그래프의 결정 지점에 마우스를 올리면 특정 시점의 권장 사항 또는 자동화 작업에 대한 세부 정보를 볼 수 있습니다. . 그래프에서 얻은 인사이트를 활용하여 다음을 수행할 수 있습니다. * 용량 조정이 필요한 빈도 파악 * 자동화 모드와 권장 모드 중 어느 모드가 워크로드 패턴에 더 적합한지 평가 * 반복되는 용량 제약 조건 식별 * 성장 추세를 기반으로 향후 용량 요구 사항 계획 * 자동화 시도 실패 문제 해결
+
 
 
 
